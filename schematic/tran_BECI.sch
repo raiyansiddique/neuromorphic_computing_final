@@ -34,7 +34,9 @@ value=1.8}
 C {madvlsi/gnd.sym} 370 -210 0 0 {name=l20 lab=GND}
 C {madvlsi/vdd.sym} 370 -270 0 0 {name=l21 lab=VDD}
 C {devices/code.sym} 410 -110 0 0 {name=SPICE only_toplevel=false value=".param W=12
-.param L=0.5"}
+.param L=0.5
+.tran 0.01n 1u
+.save all"}
 C {madvlsi/tt_models.sym} 530 -110 0 0 {
 name=TT_MODELS
 only_toplevel=false
@@ -43,7 +45,7 @@ value=".option wnflag=1
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
 C {madvlsi/vsource.sym} 260 -250 0 0 {name=VDD1
-value=1.8}
+value=0}
 C {madvlsi/gnd.sym} 260 -220 0 0 {name=l3 lab=GND}
 C {madvlsi/vsource.sym} 170 -250 0 0 {name=VDD2
 value=0}
@@ -52,7 +54,7 @@ C {madvlsi/vsource.sym} 60 -250 0 0 {name=VDD3
 value=0}
 C {madvlsi/gnd.sym} 60 -220 0 0 {name=l7 lab=GND}
 C {madvlsi/vsource.sym} -60 -260 0 0 {name=VDD4
-value=0}
+value=1.8}
 C {madvlsi/gnd.sym} -60 -230 0 0 {name=l9 lab=GND}
 C {devices/lab_pin.sym} -60 -290 1 0 {name=p7 sig_type=std_logic lab=W3}
 C {devices/lab_pin.sym} 60 -280 1 0 {name=p8 sig_type=std_logic lab=W2}
