@@ -14,7 +14,7 @@ lab=VP}
 N 70 -10 120 -10 {
 lab=Isyn}
 N 310 20 310 120 {
-lab=#net1}
+lab=VMEMINT}
 N 150 -50 310 -50 {
 lab=VP}
 N 310 -50 310 -40 {
@@ -38,7 +38,7 @@ lab=VN}
 N 150 170 150 210 {
 lab=VN}
 N 150 20 150 110 {
-lab=#net1}
+lab=VMEMINT}
 N 90 -10 90 30 {
 lab=Isyn}
 N 40 30 90 30 {
@@ -46,11 +46,11 @@ lab=Isyn}
 N 40 20 40 30 {
 lab=Isyn}
 N 570 -10 580 -10 {
-lab=#net2}
+lab=#net1}
 N 570 -10 570 150 {
-lab=#net2}
+lab=#net1}
 N 570 150 580 150 {
-lab=#net2}
+lab=#net1}
 N 610 20 610 120 {
 lab=Vout}
 N 360 210 470 210 {
@@ -62,13 +62,13 @@ lab=VN}
 N 610 180 610 210 {
 lab=VN}
 N 430 150 440 150 {
-lab=#net1}
+lab=VMEMINT}
 N 430 -10 430 150 {
-lab=#net1}
+lab=VMEMINT}
 N 430 -10 440 -10 {
-lab=#net1}
+lab=VMEMINT}
 N 470 20 470 120 {
-lab=#net2}
+lab=#net1}
 N 360 150 410 150 {
 lab=Vout}
 N 410 150 410 250 {
@@ -80,19 +80,19 @@ lab=Vout}
 N 610 80 740 80 {
 lab=Vout}
 N 470 70 570 70 {
-lab=#net2}
+lab=#net1}
 N 310 70 430 70 {
-lab=#net1}
+lab=VMEMINT}
 N 150 70 310 70 {
-lab=#net1}
+lab=VMEMINT}
 N 340 -10 400 -10 {
-lab=#net2}
+lab=#net1}
 N 400 -80 400 -10 {
-lab=#net2}
+lab=#net1}
 N 400 -80 520 -80 {
-lab=#net2}
+lab=#net1}
 N 520 -80 520 70 {
-lab=#net2}
+lab=#net1}
 N 40 30 40 80 {
 lab=Isyn}
 C {madvlsi/pmos3.sym} 40 -10 2 0 {name=M1
@@ -225,3 +225,4 @@ C {devices/opin.sym} 740 80 0 0 {name=p1 lab=Vout}
 C {devices/iopin.sym} 340 -50 3 0 {name=p2 lab=VP}
 C {devices/iopin.sym} 340 210 1 0 {name=p3 lab=VN}
 C {devices/iopin.sym} 40 80 1 0 {name=p4 lab=Isyn}
+C {devices/lab_pin.sym} 150 90 0 0 {name=p5 sig_type=std_logic lab=VMEMINT}

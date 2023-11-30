@@ -51,10 +51,10 @@ C {madvlsi/vsource.sym} 170 -250 0 0 {name=VDD2
 value=0}
 C {madvlsi/gnd.sym} 170 -220 0 0 {name=l5 lab=GND}
 C {madvlsi/vsource.sym} 60 -250 0 0 {name=VDD3
-value=0}
+value=1.8}
 C {madvlsi/gnd.sym} 60 -220 0 0 {name=l7 lab=GND}
 C {madvlsi/vsource.sym} -60 -260 0 0 {name=VDD4
-value=1.8}
+value=0}
 C {madvlsi/gnd.sym} -60 -230 0 0 {name=l9 lab=GND}
 C {devices/lab_pin.sym} -60 -290 1 0 {name=p7 sig_type=std_logic lab=W3}
 C {devices/lab_pin.sym} 60 -280 1 0 {name=p8 sig_type=std_logic lab=W2}
@@ -74,4 +74,4 @@ C {madvlsi/vsource.sym} -240 -130 0 0 {name=VDD7
 value=0.75}
 C {madvlsi/gnd.sym} -240 -100 0 0 {name=l8 lab=GND}
 C {devices/lab_pin.sym} -240 -160 1 0 {name=p15 sig_type=std_logic lab=Vbn}
-C {/home/madvlsi/neuromorphic_computing_final/schematic/BECI_asghar_synapse.sym} 20 0 0 0 {name=X1}
+C {/home/madvlsi/Documents/neuromorphic_computing_final/schematic/BECI_asghar_synapse.sym} 20 0 0 0 {name=X1}
