@@ -5,6 +5,8 @@ K {}
 V {}
 S {}
 E {}
+N 340 -120 360 -120 {
+lab=IEX}
 C {madvlsi/vsource.sym} 290 -310 0 0 {name=VDD
 value=1.8}
 C {madvlsi/gnd.sym} 290 -280 0 0 {name=l20 lab=GND}
@@ -23,7 +25,7 @@ C {madvlsi/vsource.sym} 130 -310 0 0 {name=VDD7
 value=0.08}
 C {madvlsi/gnd.sym} 130 -280 0 0 {name=l13 lab=GND}
 C {devices/lab_pin.sym} 130 -340 1 0 {name=p17 sig_type=std_logic lab=VC}
-C {devices/lab_pin.sym} 370 -120 0 0 {name=p4 sig_type=std_logic lab=IEX}
+C {devices/lab_pin.sym} 340 -120 0 0 {name=p4 sig_type=std_logic lab=IEX}
 C {devices/lab_pin.sym} 370 -140 0 0 {name=p5 sig_type=std_logic lab=VD}
 C {devices/lab_pin.sym} 370 -160 0 0 {name=p6 sig_type=std_logic lab=VC}
 C {/home/madvlsi/Documents/neuromorphic_computing_final/schematic/ronchini_neuron.sym} 270 -70 0 0 {name=X1}
@@ -38,3 +40,4 @@ value=".option wnflag=1
 .param MC_SWITCH=0.0
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
+C {madvlsi/ammeter1.sym} 360 -120 3 0 {name=VIEX}
