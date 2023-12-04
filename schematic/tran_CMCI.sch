@@ -11,6 +11,22 @@ N 60 -60 60 -30 {
 lab=Vbp}
 N 60 30 60 60 {
 lab=Vbn}
+N -470 -170 -430 -170 {
+lab=Vbn}
+N -400 -230 -400 -200 {
+lab=Vbp}
+N -450 -260 -430 -260 {
+lab=Vbp}
+N -450 -260 -450 -220 {
+lab=Vbp}
+N -450 -220 -400 -220 {
+lab=Vbp}
+N -500 -200 -450 -200 {
+lab=Vbn}
+N -450 -200 -450 -170 {
+lab=Vbn}
+N -430 -260 -320 -260 {
+lab=Vbp}
 C {madvlsi/vdd.sym} 50 -30 0 0 {name=l1 lab=VDD}
 C {madvlsi/gnd.sym} 50 30 0 0 {name=l2 lab=GND}
 C {devices/lab_pin.sym} 90 -30 1 0 {name=p1 sig_type=std_logic lab=W3}
@@ -92,14 +108,6 @@ C {madvlsi/gnd.sym} 570 -180 0 0 {name=l4 lab=GND}
 C {devices/lab_pin.sym} 570 -240 1 0 {name=p12 sig_type=std_logic lab=Spk_in}
 C {devices/lab_pin.sym} 60 -60 1 0 {name=p11 sig_type=std_logic lab=Vbp}
 C {devices/lab_pin.sym} 60 60 3 0 {name=p13 sig_type=std_logic lab=Vbn}
-C {madvlsi/vsource.sym} -100 -130 0 0 {name=VDD6
-value=0.65}
-C {madvlsi/gnd.sym} -100 -100 0 0 {name=l6 lab=GND}
-C {devices/lab_pin.sym} -100 -160 1 0 {name=p14 sig_type=std_logic lab=Vbp}
-C {madvlsi/vsource.sym} -240 -130 0 0 {name=VDD7
-value=0.75}
-C {madvlsi/gnd.sym} -240 -100 0 0 {name=l8 lab=GND}
-C {devices/lab_pin.sym} -240 -160 1 0 {name=p15 sig_type=std_logic lab=Vbn}
 C {/home/madvlsi/neuromorphic_computing_final/schematic/CMCI_synapse.sym} 40 0 0 0 {}
 C {madvlsi/vsource.sym} 230 130 0 0 {name=VDD8
 value=0}
@@ -123,3 +131,56 @@ C {devices/lab_pin.sym} 120 30 3 0 {name=p22 sig_type=std_logic lab=W0-}
 C {devices/lab_pin.sym} 100 30 3 0 {name=p23 sig_type=std_logic lab=W2-}
 C {devices/ammeter.sym} 180 0 3 0 {name=Vmeas}
 C {devices/gnd.sym} 210 0 0 0 {name=l14 lab=GND}
+C {madvlsi/pmos3.sym} -400 -260 0 0 {name=M1
+L=\{L\}
+W=\{W\}
+body=VDD
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {madvlsi/nmos3.sym} -400 -170 0 0 {name=M2
+L=\{L\}
+W=\{W\}
+body=GND
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {madvlsi/nmos3.sym} -500 -170 2 0 {name=M3
+L=\{L\}
+W=\{W\}
+body=GND
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {madvlsi/vdd.sym} -400 -290 0 0 {name=l15 lab=VDD}
+C {madvlsi/gnd.sym} -400 -140 0 0 {name=l16 lab=GND}
+C {madvlsi/gnd.sym} -500 -140 0 0 {name=l17 lab=GND}
+C {madvlsi/isource.sym} -500 -230 0 0 {name=I1
+value=1u}
+C {madvlsi/gnd.sym} -500 -260 2 0 {name=l18 lab=GND}
+C {devices/lab_pin.sym} -450 -170 3 0 {name=p6 sig_type=std_logic lab=Vbn}
+C {devices/lab_pin.sym} -320 -260 2 0 {name=p24 sig_type=std_logic lab=Vbp}

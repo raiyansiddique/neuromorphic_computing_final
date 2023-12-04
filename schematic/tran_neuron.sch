@@ -7,26 +7,6 @@ S {}
 E {}
 N -170 -0 -140 -0 {
 lab=Isyn}
-N 260 -50 260 -40 {
-lab=W3}
-N 280 -50 280 -40 {
-lab=W2}
-N 300 -50 300 -40 {
-lab=W1}
-N 320 -50 320 -40 {
-lab=W0}
-N 170 0 210 0 {
-lab=Vout}
-N 350 0 370 0 {
-lab=#net1}
-N 240 -60 240 -30 {
-lab=Vbp}
-N 240 30 240 60 {
-lab=Vbn}
-N 130 0 170 0 {
-lab=Vout}
-N 380 -0 400 0 {
-lab=GND}
 N -170 360 -140 360 {
 lab=Isyn1}
 N 260 310 260 320 {
@@ -40,7 +20,7 @@ lab=W1}
 N 170 360 210 360 {
 lab=Vout}
 N 350 360 370 360 {
-lab=#net2}
+lab=#net1}
 N 240 300 240 330 {
 lab=Vbp}
 N 240 390 240 420 {
@@ -73,11 +53,6 @@ C {madvlsi/gnd.sym} -210 60 0 0 {name=l3 lab=GND}
 C {devices/lab_pin.sym} -210 0 1 0 {name=p2 sig_type=std_logic lab=Isyn}
 C {devices/lab_pin.sym} -170 0 1 0 {name=p3 sig_type=std_logic lab=Isyn}
 C {madvlsi/ammeter1.sym} -130 0 1 0 {name=Vmeas}
-C {madvlsi/vdd.sym} 230 -30 0 0 {name=l4 lab=VDD}
-C {madvlsi/gnd.sym} 230 30 0 0 {name=l5 lab=GND}
-C {devices/lab_pin.sym} 260 -50 1 0 {name=p4 sig_type=std_logic lab=W3}
-C {devices/lab_pin.sym} 320 -50 1 0 {name=p5 sig_type=std_logic lab=W0}
-C {devices/lab_pin.sym} 300 -50 1 0 {name=p7 sig_type=std_logic lab=W1}
 C {madvlsi/vsource.sym} 110 -270 0 0 {name=VDD2
 value=0}
 C {madvlsi/gnd.sym} 110 -240 0 0 {name=l8 lab=GND}
@@ -94,8 +69,6 @@ C {devices/lab_pin.sym} -130 -300 1 0 {name=p10 sig_type=std_logic lab=W3}
 C {devices/lab_pin.sym} -50 -300 1 0 {name=p11 sig_type=std_logic lab=W2}
 C {devices/lab_pin.sym} 30 -300 1 0 {name=p12 sig_type=std_logic lab=W1}
 C {devices/lab_pin.sym} 110 -300 1 0 {name=p13 sig_type=std_logic lab=W0}
-C {devices/lab_pin.sym} 240 -60 1 0 {name=p14 sig_type=std_logic lab=Vbp}
-C {devices/lab_pin.sym} 240 60 3 0 {name=p15 sig_type=std_logic lab=Vbn}
 C {madvlsi/vsource.sym} -210 -270 0 0 {name=VDD6
 value=0.65}
 C {madvlsi/gnd.sym} -210 -240 0 0 {name=l12 lab=GND}
@@ -104,13 +77,9 @@ C {madvlsi/vsource.sym} -290 -270 0 0 {name=VDD7
 value=0.75}
 C {madvlsi/gnd.sym} -290 -240 0 0 {name=l13 lab=GND}
 C {devices/lab_pin.sym} -290 -300 1 0 {name=p17 sig_type=std_logic lab=Vbn}
-C {madvlsi/ammeter1.sym} 380 0 1 0 {name=Vmeas1}
-C {madvlsi/gnd.sym} 400 0 0 0 {name=l6 lab=GND}
-C {/home/madvlsi/neuromorphic_computing_final/schematic/BECI_asghar_synapse.sym} 200 0 0 0 {name=X1}
 C {/home/madvlsi/neuromorphic_computing_final/schematic/besrour_neuron.sym} 0 0 0 0 {name=X2}
-C {devices/lab_pin.sym} 280 -50 1 0 {name=p6 sig_type=std_logic lab=W2}
 C {madvlsi/vdd.sym} 0 240 0 0 {name=l7 lab=VDD}
-C {devices/lab_pin.sym} 130 360 3 0 {name=p8 sig_type=std_logic lab=Vout}
+C {devices/lab_pin.sym} 130 360 3 0 {name=p8 sig_type=std_logic lab=Vout1}
 C {madvlsi/isource.sym} -210 390 0 0 {name=I2
 value="PULSE(0 10u 0 1n 1n 50n 100n)"}
 C {madvlsi/gnd.sym} -210 420 0 0 {name=l14 lab=GND}
