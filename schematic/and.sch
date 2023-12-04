@@ -34,5 +34,5 @@ C {devices/ipin.sym} 85 10 0 0 {name=p2 lab=B}
 C {devices/iopin.sym} 150 -60 3 0 {name=p3 lab=VP}
 C {devices/iopin.sym} 150 55 1 0 {name=p4 lab=VN}
 C {devices/opin.sym} 340 0 0 0 {name=p5 lab=Y}
-C {/home/madvlsi/Documents/neuromorphic_computing_final/schematic/inverter.sym} 230 0 0 0 {name=X2}
-C {/home/madvlsi/Documents/neuromorphic_computing_final/schematic/nand.sym} 90 0 0 0 {name=X3}
+C {/home/madvlsi/neuromorphic_computing_final/schematic/nand.sym} 90 0 0 0 {name=X1}
+C {/home/madvlsi/neuromorphic_computing_final/schematic/inverter.sym} 230 0 0 0 {name=X2}

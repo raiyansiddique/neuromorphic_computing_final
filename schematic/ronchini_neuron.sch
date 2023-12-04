@@ -48,6 +48,7 @@ lab=IEX}
 N 420 -160 740 -160 {
 lab=IEX}
 N 770 -120 780 -120 {
+<<<<<<< HEAD
 lab=comp_out}
 N 780 -160 780 -120 {
 lab=comp_out}
@@ -55,6 +56,15 @@ N 780 -160 1010 -160 {
 lab=comp_out}
 N 1050 -160 1050 -150 {
 lab=comp_out}
+=======
+lab=xxx}
+N 780 -160 780 -120 {
+lab=xxx}
+N 780 -160 1010 -160 {
+lab=xxx}
+N 1050 -160 1050 -150 {
+lab=xxx}
+>>>>>>> 47587a505013885f339b7666e78b94f11724e9ec
 N 1080 -280 1090 -280 {
 lab=#net3}
 N 1090 -280 1090 -120 {
@@ -62,7 +72,11 @@ lab=#net3}
 N 1080 -120 1090 -120 {
 lab=#net3}
 N 1050 -250 1050 -160 {
+<<<<<<< HEAD
 lab=comp_out}
+=======
+lab=xxx}
+>>>>>>> 47587a505013885f339b7666e78b94f11724e9ec
 N 740 -180 740 -160 {
 lab=IEX}
 N 810 -120 820 -120 {
@@ -110,7 +124,11 @@ lab=VN}
 N 1010 -320 1050 -320 {
 lab=VP}
 N 1010 -160 1050 -160 {
+<<<<<<< HEAD
 lab=comp_out}
+=======
+lab=xxx}
+>>>>>>> 47587a505013885f339b7666e78b94f11724e9ec
 N 1010 -40 1050 -40 {
 lab=VN}
 N 620 -280 620 -270 {
@@ -198,7 +216,10 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
+<<<<<<< HEAD
 C {devices/lab_pin.sym} 960 -160 1 0 {name=p1 sig_type=std_logic lab=comp_out}
+=======
+>>>>>>> 47587a505013885f339b7666e78b94f11724e9ec
 C {madvlsi/nmos3.sym} 740 -120 2 0 {name=M5
 L=0.15
 W=1
@@ -319,3 +340,4 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
+C {devices/opin.sym} 950 -160 3 0 {name=p1 lab=out}

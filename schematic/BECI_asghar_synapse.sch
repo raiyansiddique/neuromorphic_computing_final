@@ -689,9 +689,9 @@ C {devices/iopin.sym} 40 -250 3 0 {name=p15 lab=VP}
 C {devices/iopin.sym} -140 -220 1 0 {name=p16 lab=VN}
 C {devices/iopin.sym} 360 -250 3 0 {name=p25 lab=Spk_in}
 C {devices/opin.sym} 1270 10 0 0 {name=p5 lab=Vmem}
-C {/home/madvlsi/Documents/neuromorphic_computing_final/schematic/inverter.sym} -90 -200 1 0 {name=X1}
-C {/home/madvlsi/Documents/neuromorphic_computing_final/schematic/inverter.sym} 10 -200 1 0 {name=X2}
-C {/home/madvlsi/Documents/neuromorphic_computing_final/schematic/inverter.sym} 100 -200 1 0 {name=X3}
-C {/home/madvlsi/Documents/neuromorphic_computing_final/schematic/inverter.sym} 190 -200 1 0 {name=X4}
-C {/home/madvlsi/Documents/neuromorphic_computing_final/schematic/and.sym} 395 -110 0 0 {name=X6}
-C {/home/madvlsi/Documents/neuromorphic_computing_final/schematic/nand.sym} 375 135 0 0 {name=X5}
+C {/home/madvlsi/neuromorphic_computing_final/schematic/and.sym} 395 -110 0 0 {name=X6}
+C {/home/madvlsi/neuromorphic_computing_final/schematic/nand.sym} 375 135 0 0 {name=X5}
+C {/home/madvlsi/neuromorphic_computing_final/schematic/inverter.sym} -90 -200 1 0 {name=X1}
+C {/home/madvlsi/neuromorphic_computing_final/schematic/inverter.sym} 10 -200 1 0 {name=X2}
+C {/home/madvlsi/neuromorphic_computing_final/schematic/inverter.sym} 100 -200 1 0 {name=X3}
+C {/home/madvlsi/neuromorphic_computing_final/schematic/inverter.sym} 190 -200 1 0 {name=X4}
