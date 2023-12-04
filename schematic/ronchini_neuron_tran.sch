@@ -5,6 +5,10 @@ K {}
 V {}
 S {}
 E {}
+<<<<<<< HEAD
+N 340 -120 360 -120 {
+lab=IEX}
+=======
 N 830 240 870 240 {
 lab=Vout}
 N 900 180 900 210 {
@@ -17,6 +21,7 @@ N 500 -140 500 240 {
 lab=Vout}
 N 490 -140 500 -140 {
 lab=Vout}
+>>>>>>> 47587a505013885f339b7666e78b94f11724e9ec
 C {madvlsi/vsource.sym} 290 -310 0 0 {name=VDD
 value=1.8}
 C {madvlsi/gnd.sym} 290 -280 0 0 {name=l20 lab=GND}
@@ -35,6 +40,10 @@ C {madvlsi/vsource.sym} 130 -310 0 0 {name=VDD7
 value=0.08}
 C {madvlsi/gnd.sym} 130 -280 0 0 {name=l13 lab=GND}
 C {devices/lab_pin.sym} 130 -340 1 0 {name=p17 sig_type=std_logic lab=VC}
+<<<<<<< HEAD
+C {devices/lab_pin.sym} 340 -120 0 0 {name=p4 sig_type=std_logic lab=IEX}
+=======
+>>>>>>> 47587a505013885f339b7666e78b94f11724e9ec
 C {devices/lab_pin.sym} 370 -140 0 0 {name=p5 sig_type=std_logic lab=VD}
 C {devices/lab_pin.sym} 370 -160 0 0 {name=p6 sig_type=std_logic lab=VC}
 C {devices/code.sym} 550 -340 0 0 {name=SPICE only_toplevel=false value=".param W=12
@@ -48,6 +57,9 @@ value=".option wnflag=1
 .param MC_SWITCH=0.0
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
+<<<<<<< HEAD
+C {madvlsi/ammeter1.sym} 360 -120 3 0 {name=VIEX}
+=======
 C {/home/madvlsi/neuromorphic_computing_final/schematic/ronchini_neuron.sym} 270 -70 0 0 {name=X1}
 C {madvlsi/vdd.sym} 890 210 0 0 {name=l4 lab=VDD}
 C {madvlsi/gnd.sym} 890 270 0 0 {name=l5 lab=GND}
@@ -110,3 +122,4 @@ C {madvlsi/gnd.sym} 0 60 0 0 {name=l7 lab=GND}
 C {devices/lab_pin.sym} 0 0 1 0 {name=p28 sig_type=std_logic lab=Isyn}
 C {devices/lab_pin.sym} 370 -120 0 0 {name=p29 sig_type=std_logic lab=Isyn}
 C {madvlsi/gnd.sym} 1050 240 0 0 {name=l6 lab=GND}
+>>>>>>> 47587a505013885f339b7666e78b94f11724e9ec
