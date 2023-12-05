@@ -33,27 +33,22 @@ N 130 0 160 -0 {
 lab=Vout}
 N 320 -0 340 0 {
 lab=#net1}
-N 340 0 380 0 {
-lab=#net1}
 N 290 360 320 360 {
 lab=#net2}
-N 320 360 350 360 {
-lab=#net2}
-N -270 -60 -270 -30 {
-lab=Vbp}
-N -270 30 -270 60 {
-lab=Vbn}
-N -180 0 -160 0 {
-lab=#net3}
-N -270 300 -270 330 {
-lab=Vbp}
-N -270 390 -270 420 {
-lab=Vbn}
-N -180 360 -160 360 {
-lab=#net4}
 N -160 360 -130 360 {
+lab=Isyn1}
+N -160 0 -130 0 {
+lab=Isyn}
+N -270 0 -240 0 {
+lab=Isyn}
+N -240 -0 -160 0 {
+lab=Isyn}
+N -190 360 -160 360 {
+lab=Isyn1}
+N 350 0 380 -0 {
+lab=#net3}
+N 330 360 350 360 {
 lab=#net4}
-N -160 0 -130 0 {}
 C {devices/code.sym} 340 -240 0 0 {name=SPICE only_toplevel=false value=".param W=1
 .param L=0.15
 .tran 0.1n 250n
@@ -90,7 +85,6 @@ C {devices/lab_pin.sym} 50 -240 1 0 {name=p13 sig_type=std_logic lab=W1}
 C {devices/lab_pin.sym} 140 -240 1 0 {name=p14 sig_type=std_logic lab=W0}
 C {devices/lab_pin.sym} 230 -60 1 0 {name=p15 sig_type=std_logic lab=Vbp}
 C {devices/lab_pin.sym} 230 60 3 0 {name=p16 sig_type=std_logic lab=Vbn}
-C {devices/ammeter.sym} 340 30 0 0 {name=Vmeas1}
 C {madvlsi/pmos3.sym} -520 -220 0 0 {name=M1
 L=\{L\}
 W=\{W\}
@@ -151,11 +145,10 @@ C {devices/lab_pin.sym} 200 330 1 0 {name=p19 sig_type=std_logic lab=Vbp}
 C {madvlsi/gnd.sym} 190 390 0 0 {name=l9 lab=GND}
 C {madvlsi/vdd.sym} 190 330 0 0 {name=l10 lab=VDD}
 C {devices/lab_pin.sym} 200 390 3 0 {name=p20 sig_type=std_logic lab=Vbn}
-C {devices/lab_pin.sym} 260 330 1 0 {name=p21 sig_type=std_logic lab=W0}
-C {devices/lab_pin.sym} 250 330 1 0 {name=p22 sig_type=std_logic lab=W0}
+C {devices/lab_pin.sym} 260 330 1 0 {name=p21 sig_type=std_logic lab=W1}
+C {devices/lab_pin.sym} 250 330 1 0 {name=p22 sig_type=std_logic lab=W1}
 C {devices/lab_pin.sym} 240 330 1 0 {name=p23 sig_type=std_logic lab=W0}
 C {devices/lab_pin.sym} 230 330 1 0 {name=p24 sig_type=std_logic lab=W0}
-C {devices/lab_pin.sym} 240 390 3 0 {name=p28 sig_type=std_logic lab=W0}
 C {devices/lab_pin.sym} 250 390 3 0 {name=p29 sig_type=std_logic lab=W0}
 C {madvlsi/vdd.sym} 510 -120 0 0 {name=l12 lab=VDD}
 C {madvlsi/gnd.sym} 510 120 0 0 {name=l13 lab=GND}
@@ -169,42 +162,20 @@ C {/home/madvlsi/neuromorphic_computing_final/schematic/CMCI_synapse.sym} 210 0 
 C {/home/madvlsi/neuromorphic_computing_final/schematic/CMCI_synapse.sym} 180 360 0 0 {name=X1}
 C {devices/lab_pin.sym} 260 390 3 0 {name=p33 sig_type=std_logic lab=W0}
 C {devices/lab_pin.sym} 230 390 3 0 {name=p25 sig_type=std_logic lab=W0}
-C {madvlsi/gnd.sym} 340 60 0 0 {name=l11 lab=GND}
-C {devices/ammeter.sym} 320 390 0 0 {name=Vmeas3}
-C {madvlsi/gnd.sym} 320 420 0 0 {name=l16 lab=GND}
 C {devices/lab_pin.sym} 280 -30 1 0 {name=p9 sig_type=std_logic lab=W0}
+C {madvlsi/isource.sym} -310 30 0 0 {name=I1
+value="PULSE(0 10u 0 1n 1n 50n 100n)"}
+C {madvlsi/gnd.sym} -310 60 0 0 {name=l3 lab=GND}
+C {devices/lab_pin.sym} -310 0 1 0 {name=p2 sig_type=std_logic lab=Isyn}
+C {devices/lab_pin.sym} -270 0 1 0 {name=p3 sig_type=std_logic lab=Isyn}
+C {madvlsi/isource.sym} -230 390 0 0 {name=I2
+value="PULSE(0 10u 0 1n 1n 50n 100n)"}
+C {madvlsi/gnd.sym} -230 420 0 0 {name=l14 lab=GND}
+C {devices/lab_pin.sym} -230 360 1 0 {name=p6 sig_type=std_logic lab=Isyn1}
+C {devices/lab_pin.sym} -190 360 1 0 {name=p17 sig_type=std_logic lab=Isyn1}
+C {madvlsi/ammeter1.sym} 350 0 1 0 {name=Vmeas}
+C {madvlsi/ammeter1.sym} 330 360 1 0 {name=Vmeas1}
+C {devices/lab_pin.sym} 260 30 3 0 {name=p11 sig_type=std_logic lab=W0}
+C {devices/lab_pin.sym} 240 390 3 0 {name=p28 sig_type=std_logic lab=W0}
 C {devices/lab_pin.sym} 270 -30 1 0 {name=p12 sig_type=std_logic lab=W0}
 C {devices/lab_pin.sym} 260 -30 1 0 {name=p18 sig_type=std_logic lab=W1}
-C {devices/lab_pin.sym} 260 30 3 0 {name=p11 sig_type=std_logic lab=W0}
-C {madvlsi/vdd.sym} -280 -30 0 0 {name=l25 lab=VDD}
-C {madvlsi/gnd.sym} -280 30 0 0 {name=l26 lab=GND}
-C {devices/lab_pin.sym} -210 -30 1 0 {name=p6 sig_type=std_logic lab=W0}
-C {devices/lab_pin.sym} -270 -60 1 0 {name=p17 sig_type=std_logic lab=Vbp}
-C {devices/lab_pin.sym} -270 60 3 0 {name=p30 sig_type=std_logic lab=Vbn}
-C {devices/ammeter.sym} -160 30 0 0 {name=Vmeas4}
-C {devices/lab_pin.sym} -210 30 3 0 {name=p34 sig_type=std_logic lab=W0}
-C {devices/lab_pin.sym} -220 30 3 0 {name=p35 sig_type=std_logic lab=W0}
-C {devices/lab_pin.sym} -230 30 3 0 {name=p36 sig_type=std_logic lab=W0}
-C {/home/madvlsi/neuromorphic_computing_final/schematic/CMCI_synapse.sym} -290 0 0 0 {name=X7}
-C {madvlsi/gnd.sym} -160 60 0 0 {name=l27 lab=GND}
-C {devices/lab_pin.sym} -220 -30 1 0 {name=p37 sig_type=std_logic lab=W0}
-C {devices/lab_pin.sym} -230 -30 1 0 {name=p38 sig_type=std_logic lab=W0}
-C {devices/lab_pin.sym} -240 -30 1 0 {name=p39 sig_type=std_logic lab=W1}
-C {devices/lab_pin.sym} -240 30 3 0 {name=p40 sig_type=std_logic lab=W0}
-C {madvlsi/vdd.sym} -300 0 0 0 {name=l3 lab=VDD}
-C {madvlsi/vdd.sym} -280 330 0 0 {name=l28 lab=VDD}
-C {madvlsi/gnd.sym} -280 390 0 0 {name=l29 lab=GND}
-C {devices/lab_pin.sym} -210 330 1 0 {name=p2 sig_type=std_logic lab=W0}
-C {devices/lab_pin.sym} -270 300 1 0 {name=p3 sig_type=std_logic lab=Vbp}
-C {devices/lab_pin.sym} -270 420 3 0 {name=p41 sig_type=std_logic lab=Vbn}
-C {devices/ammeter.sym} -160 390 0 0 {name=Vmeas5}
-C {devices/lab_pin.sym} -210 390 3 0 {name=p42 sig_type=std_logic lab=W0}
-C {devices/lab_pin.sym} -220 390 3 0 {name=p43 sig_type=std_logic lab=W0}
-C {devices/lab_pin.sym} -230 390 3 0 {name=p44 sig_type=std_logic lab=W0}
-C {/home/madvlsi/neuromorphic_computing_final/schematic/CMCI_synapse.sym} -290 360 0 0 {name=X8}
-C {madvlsi/gnd.sym} -160 420 0 0 {name=l30 lab=GND}
-C {devices/lab_pin.sym} -220 330 1 0 {name=p45 sig_type=std_logic lab=W0}
-C {devices/lab_pin.sym} -230 330 1 0 {name=p46 sig_type=std_logic lab=W0}
-C {devices/lab_pin.sym} -240 330 1 0 {name=p47 sig_type=std_logic lab=W1}
-C {devices/lab_pin.sym} -240 390 3 0 {name=p48 sig_type=std_logic lab=W0}
-C {madvlsi/gnd.sym} -300 360 0 0 {name=l14 lab=GND}

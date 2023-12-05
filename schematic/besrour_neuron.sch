@@ -216,10 +216,10 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/capacitor.sym} 150 140 0 0 {name=C1
-value=34f
+value=340f
 m=1}
 C {madvlsi/capacitor.sym} 360 180 0 0 {name=C2
-value=34f
+value=340f
 m=1}
 C {devices/opin.sym} 740 80 0 0 {name=p1 lab=Vout}
 C {devices/iopin.sym} 340 -50 3 0 {name=p2 lab=VP}
