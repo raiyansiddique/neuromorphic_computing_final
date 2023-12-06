@@ -36,26 +36,24 @@ lab=Vout}
 N 340 -0 380 0 {
 lab=#net2}
 N 260 360 280 360 {
-lab=#net1}
-N 280 360 280 390 {
-lab=#net1}
-N 280 400 280 440 {
 lab=#net4}
+N 280 360 280 390 {
+lab=#net4}
+N 280 400 280 440 {
+lab=#net5}
 N 250 360 260 360 {
-lab=#net1}
+lab=#net4}
 N 280 470 280 500 {
 lab=GND}
 N 280 360 320 360 {
-lab=#net1}
-N 320 360 330 360 {
-lab=#net1}
+lab=#net4}
 N 130 360 170 360 {
 lab=Vout1}
 C {devices/code.sym} 340 -240 0 0 {name=SPICE only_toplevel=false value=".param W=1
 .param L=0.15
 .tran 0.1n 250n
 .save all"}
-C {madvlsi/tt_models.sym} 550 -260 0 0 {
+C {madvlsi/tt_models.sym} 460 -240 0 0 {
 name=TT_MODELS
 only_toplevel=false
 value=".option wnflag=1
@@ -91,15 +89,16 @@ C {devices/lab_pin.sym} 610 360 2 0 {name=p32 sig_type=std_logic lab=Vout3}
 C {/home/madvlsi/neuromorphic_computing_final/schematic/besrour_neuron.sym} 510 0 0 0 {name=X3}
 C {/home/madvlsi/neuromorphic_computing_final/schematic/besrour_neuron.sym} 480 360 0 0 {name=X5}
 C {madvlsi/isource.sym} -310 30 0 0 {name=I1
-value="PULSE(0 10u 0 1n 1n 200n 200n)"}
+value="PULSE(0 10u 0 1n 1n 50n 100n)"}
 C {madvlsi/gnd.sym} -310 60 0 0 {name=l3 lab=GND}
 C {devices/lab_pin.sym} -310 0 1 0 {name=p2 sig_type=std_logic lab=Isyn}
 C {devices/lab_pin.sym} -270 0 1 0 {name=p3 sig_type=std_logic lab=Isyn}
 C {madvlsi/isource.sym} -230 390 0 0 {name=I2
-value="PULSE(0 10u 0 1n 1n 200n 200n)"}
+value="PULSE(0 10u 0 1n 1n 50n 100n)"}
 C {madvlsi/gnd.sym} -230 420 0 0 {name=l14 lab=GND}
 C {devices/lab_pin.sym} -230 360 1 0 {name=p6 sig_type=std_logic lab=Isyn1}
 C {devices/lab_pin.sym} -190 360 1 0 {name=p17 sig_type=std_logic lab=Isyn1}
+C {madvlsi/ammeter1.sym} 330 360 1 0 {name=Vmeas1}
 C {madvlsi/vdd.sym} 270 -10 0 0 {name=l4 lab=VDD}
 C {madvlsi/gnd.sym} 270 10 0 0 {name=l5 lab=GND}
 C {madvlsi/ammeter1.sym} 340 30 0 0 {name=Vmeas2}
