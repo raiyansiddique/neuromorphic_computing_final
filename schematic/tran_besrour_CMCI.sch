@@ -179,3 +179,55 @@ C {devices/lab_pin.sym} 260 30 3 0 {name=p11 sig_type=std_logic lab=W0}
 C {devices/lab_pin.sym} 240 390 3 0 {name=p28 sig_type=std_logic lab=W0}
 C {devices/lab_pin.sym} 270 -30 1 0 {name=p12 sig_type=std_logic lab=W0}
 C {devices/lab_pin.sym} 260 -30 1 0 {name=p18 sig_type=std_logic lab=W1}
+<<<<<<< HEAD
+C {devices/lab_pin.sym} 260 30 3 0 {name=p11 sig_type=std_logic lab=W0}
+C {madvlsi/vdd.sym} -280 -30 0 0 {name=l25 lab=VDD}
+C {madvlsi/gnd.sym} -280 30 0 0 {name=l26 lab=GND}
+C {devices/lab_pin.sym} -210 -30 1 0 {name=p6 sig_type=std_logic lab=W0}
+C {devices/lab_pin.sym} -270 -60 1 0 {name=p17 sig_type=std_logic lab=Vbp}
+C {devices/lab_pin.sym} -270 60 3 0 {name=p30 sig_type=std_logic lab=Vbn}
+C {devices/ammeter.sym} -160 30 0 0 {name=Vmeas4}
+C {devices/lab_pin.sym} -210 30 3 0 {name=p34 sig_type=std_logic lab=W0}
+C {devices/lab_pin.sym} -220 30 3 0 {name=p35 sig_type=std_logic lab=W0}
+C {devices/lab_pin.sym} -230 30 3 0 {name=p36 sig_type=std_logic lab=W0}
+C {/home/madvlsi/neuromorphic_computing_final/schematic/CMCI_synapse.sym} -290 0 0 0 {name=X7}
+C {madvlsi/gnd.sym} -160 60 0 0 {name=l27 lab=GND}
+C {devices/lab_pin.sym} -220 -30 1 0 {name=p37 sig_type=std_logic lab=W0}
+C {devices/lab_pin.sym} -230 -30 1 0 {name=p38 sig_type=std_logic lab=W0}
+C {devices/lab_pin.sym} -240 -30 1 0 {name=p39 sig_type=std_logic lab=W1}
+C {devices/lab_pin.sym} -240 30 3 0 {name=p40 sig_type=std_logic lab=W0}
+C {madvlsi/vdd.sym} -300 0 0 0 {name=l3 lab=VDD}
+C {madvlsi/vdd.sym} -280 330 0 0 {name=l28 lab=VDD}
+C {madvlsi/gnd.sym} -280 390 0 0 {name=l29 lab=GND}
+C {devices/lab_pin.sym} -210 330 1 0 {name=p2 sig_type=std_logic lab=W0}
+C {devices/lab_pin.sym} -270 300 1 0 {name=p3 sig_type=std_logic lab=Vbp}
+C {devices/lab_pin.sym} -270 420 3 0 {name=p41 sig_type=std_logic lab=Vbn}
+C {devices/ammeter.sym} -160 390 0 0 {name=Vmeas5}
+C {devices/lab_pin.sym} -210 390 3 0 {name=p42 sig_type=std_logic lab=W0}
+C {devices/lab_pin.sym} -220 390 3 0 {name=p43 sig_type=std_logic lab=W0}
+C {devices/lab_pin.sym} -230 390 3 0 {name=p44 sig_type=std_logic lab=W0}
+C {/home/madvlsi/neuromorphic_computing_final/schematic/CMCI_synapse.sym} -290 360 0 0 {name=X8}
+C {madvlsi/gnd.sym} -160 420 0 0 {name=l30 lab=GND}
+C {devices/lab_pin.sym} -220 330 1 0 {name=p45 sig_type=std_logic lab=W0}
+C {devices/lab_pin.sym} -230 330 1 0 {name=p46 sig_type=std_logic lab=W0}
+C {devices/lab_pin.sym} -240 330 1 0 {name=p47 sig_type=std_logic lab=W1}
+C {devices/lab_pin.sym} -240 390 3 0 {name=p48 sig_type=std_logic lab=W0}
+C {madvlsi/gnd.sym} -300 360 0 0 {name=l14 lab=GND}
+C {madvlsi/vsource.sym} 230 130 0 0 {name=VDD8
+value=0}
+C {madvlsi/gnd.sym} 230 160 0 0 {name=l31 lab=GND}
+C {madvlsi/vsource.sym} 140 130 0 0 {name=VDD9
+value=0}
+C {madvlsi/gnd.sym} 140 160 0 0 {name=l32 lab=GND}
+C {madvlsi/vsource.sym} 30 130 0 0 {name=VDD10
+value=0}
+C {madvlsi/gnd.sym} 30 160 0 0 {name=l33 lab=GND}
+C {madvlsi/vsource.sym} -90 120 0 0 {name=VDD11
+value=0}
+C {madvlsi/gnd.sym} -90 150 0 0 {name=l34 lab=GND}
+C {devices/lab_pin.sym} -90 90 1 0 {name=p49 sig_type=std_logic lab=W3-}
+C {devices/lab_pin.sym} 30 100 1 0 {name=p50 sig_type=std_logic lab=W2-}
+C {devices/lab_pin.sym} 140 100 1 0 {name=p51 sig_type=std_logic lab=W1-}
+C {devices/lab_pin.sym} 230 100 1 0 {name=p52 sig_type=std_logic lab=W0-}
+=======
+>>>>>>> 4e47e1216e839e37f1ff55e621017201b517b6e1

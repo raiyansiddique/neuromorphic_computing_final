@@ -18,7 +18,7 @@ lab=W1}
 N 320 310 320 320 {
 lab=W1}
 N 170 360 210 360 {
-lab=Vout}
+lab=Vout1}
 N 350 360 370 360 {
 lab=#net1}
 N 240 300 240 330 {
@@ -26,7 +26,7 @@ lab=Vbp}
 N 240 390 240 420 {
 lab=Vbn}
 N 130 360 170 360 {
-lab=Vout}
+lab=Vout1}
 N 380 360 400 360 {
 lab=GND}
 C {madvlsi/vsource.sym} 190 -270 0 0 {name=VDD
@@ -77,7 +77,6 @@ C {madvlsi/vsource.sym} -290 -270 0 0 {name=VDD7
 value=0.75}
 C {madvlsi/gnd.sym} -290 -240 0 0 {name=l13 lab=GND}
 C {devices/lab_pin.sym} -290 -300 1 0 {name=p17 sig_type=std_logic lab=Vbn}
-C {/home/madvlsi/neuromorphic_computing_final/schematic/besrour_neuron.sym} 0 0 0 0 {name=X2}
 C {madvlsi/vdd.sym} 0 240 0 0 {name=l7 lab=VDD}
 C {devices/lab_pin.sym} 130 360 3 0 {name=p8 sig_type=std_logic lab=Vout1}
 C {madvlsi/isource.sym} -210 390 0 0 {name=I2
@@ -99,3 +98,4 @@ C {madvlsi/gnd.sym} 0 480 0 0 {name=l18 lab=GND}
 C {devices/lab_pin.sym} 300 310 1 0 {name=p25 sig_type=std_logic lab=W1}
 C {devices/lab_pin.sym} 280 310 1 0 {name=p21 sig_type=std_logic lab=W1}
 C {devices/lab_pin.sym} 320 310 1 0 {name=p20 sig_type=std_logic lab=W1}
+C {/home/madvlsi/Documents/second/neuromorphic_computing_final/schematic/besrour_neuron.sym} 0 0 0 0 {name=X1}
