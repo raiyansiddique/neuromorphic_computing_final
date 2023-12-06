@@ -208,3 +208,19 @@ C {devices/lab_pin.sym} -230 330 1 0 {name=p46 sig_type=std_logic lab=W0}
 C {devices/lab_pin.sym} -240 330 1 0 {name=p47 sig_type=std_logic lab=W1}
 C {devices/lab_pin.sym} -240 390 3 0 {name=p48 sig_type=std_logic lab=W0}
 C {madvlsi/gnd.sym} -300 360 0 0 {name=l14 lab=GND}
+C {madvlsi/vsource.sym} 230 130 0 0 {name=VDD8
+value=0}
+C {madvlsi/gnd.sym} 230 160 0 0 {name=l31 lab=GND}
+C {madvlsi/vsource.sym} 140 130 0 0 {name=VDD9
+value=0}
+C {madvlsi/gnd.sym} 140 160 0 0 {name=l32 lab=GND}
+C {madvlsi/vsource.sym} 30 130 0 0 {name=VDD10
+value=0}
+C {madvlsi/gnd.sym} 30 160 0 0 {name=l33 lab=GND}
+C {madvlsi/vsource.sym} -90 120 0 0 {name=VDD11
+value=0}
+C {madvlsi/gnd.sym} -90 150 0 0 {name=l34 lab=GND}
+C {devices/lab_pin.sym} -90 90 1 0 {name=p49 sig_type=std_logic lab=W3-}
+C {devices/lab_pin.sym} 30 100 1 0 {name=p50 sig_type=std_logic lab=W2-}
+C {devices/lab_pin.sym} 140 100 1 0 {name=p51 sig_type=std_logic lab=W1-}
+C {devices/lab_pin.sym} 230 100 1 0 {name=p52 sig_type=std_logic lab=W0-}
