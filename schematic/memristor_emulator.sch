@@ -8,11 +8,11 @@ E {}
 N -110 10 -110 60 {
 lab=#net1}
 N -110 -40 -110 -20 {
-lab=xxx}
+lab=B}
 N -110 -40 -80 -40 {
-lab=xxx}
+lab=B}
 N -80 -40 -80 -20 {
-lab=xxx}
+lab=B}
 N -80 90 -50 90 {
 lab=#net1}
 N -170 90 -140 90 {
@@ -30,11 +30,11 @@ lab=A}
 N -200 -20 -140 -20 {
 lab=A}
 N -20 -20 -20 60 {
-lab=xxx}
+lab=B}
 N -80 -20 -20 -20 {
-lab=xxx}
+lab=B}
 N -20 -20 20 -20 {
-lab=xxx}
+lab=B}
 N -240 -20 -200 -20 {
 lab=A}
 N -110 60 -110 90 {
@@ -46,8 +46,8 @@ lab=VN}
 N -20 90 10 90 {
 lab=VN}
 C {madvlsi/pmos4.sym} -110 -20 3 0 {name=M1
-L=0.35
-W=30
+L=0.15
+W=12
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -74,8 +74,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos4.sym} -110 120 1 0 {name=M3
-L=60
-W=80
+L=4
+W=3
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 

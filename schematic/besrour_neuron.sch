@@ -28,7 +28,7 @@ lab=VP}
 N 610 -50 610 -40 {
 lab=VP}
 N 340 150 360 150 {
-lab=#net1}
+lab=VPREOUT2}
 N 310 180 310 210 {
 lab=VN}
 N 310 210 360 210 {
@@ -46,13 +46,13 @@ lab=Isyn}
 N 40 20 40 30 {
 lab=Isyn}
 N 570 -10 580 -10 {
-lab=#net2}
-N 570 -10 570 150 {
-lab=#net2}
-N 570 150 580 150 {
-lab=#net2}
-N 610 20 610 120 {
 lab=#net1}
+N 570 -10 570 150 {
+lab=#net1}
+N 570 150 580 150 {
+lab=#net1}
+N 610 20 610 120 {
+lab=VPREOUT2}
 N 360 210 470 210 {
 lab=VN}
 N 470 180 470 210 {
@@ -68,57 +68,57 @@ lab=VMEMINT}
 N 430 -10 440 -10 {
 lab=VMEMINT}
 N 470 20 470 120 {
-lab=#net2}
+lab=#net1}
 N 360 150 410 150 {
-lab=#net1}
+lab=VPREOUT2}
 N 410 150 410 250 {
-lab=#net1}
+lab=VPREOUT2}
 N 470 70 570 70 {
-lab=#net2}
+lab=#net1}
 N 310 70 430 70 {
 lab=VMEMINT}
 N 150 70 310 70 {
 lab=VMEMINT}
 N 340 -10 400 -10 {
-lab=#net2}
+lab=#net1}
 N 400 -80 400 -10 {
-lab=#net2}
+lab=#net1}
 N 400 -80 520 -80 {
-lab=#net2}
+lab=#net1}
 N 520 -80 520 70 {
-lab=#net2}
+lab=#net1}
 N 40 30 40 80 {
 lab=Isyn}
 N 410 250 630 250 {
-lab=#net1}
+lab=VPREOUT2}
 N 630 80 630 250 {
-lab=#net1}
+lab=VPREOUT2}
 N 610 80 630 80 {
-lab=#net1}
+lab=VPREOUT2}
 N 730 -40 730 -30 {
 lab=VP}
 N 690 0 700 0 {
-lab=#net1}
+lab=VPREOUT2}
 N 690 0 690 160 {
-lab=#net1}
+lab=VPREOUT2}
 N 690 160 700 160 {
-lab=#net1}
+lab=VPREOUT2}
 N 730 30 730 130 {
-lab=#net3}
+lab=VPREOUT}
 N 730 90 750 90 {
-lab=#net3}
+lab=VPREOUT}
 N 850 -40 850 -30 {
 lab=VP}
 N 810 0 820 0 {
-lab=#net3}
+lab=VPREOUT}
 N 810 0 810 160 {
-lab=#net3}
+lab=VPREOUT}
 N 810 160 820 160 {
-lab=#net3}
+lab=VPREOUT}
 N 850 30 850 130 {
-lab=xxx}
+lab=Vout}
 N 850 90 870 90 {
-lab=xxx}
+lab=Vout}
 N 610 -50 850 -50 {
 lab=VP}
 N 850 -50 850 -40 {
@@ -134,9 +134,9 @@ lab=VN}
 N 850 190 850 210 {
 lab=VN}
 N 630 80 690 80 {
-lab=#net1}
+lab=VPREOUT2}
 N 750 90 810 90 {
-lab=#net3}
+lab=VPREOUT}
 C {madvlsi/pmos3.sym} 40 -10 2 0 {name=M1
 L=\{L\}
 W=\{W\}
@@ -328,3 +328,5 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {devices/opin.sym} 870 90 0 0 {name=p1 lab=Vout}
+C {devices/lab_pin.sym} 810 60 0 0 {name=p6 sig_type=std_logic lab=VPREOUT}
+C {devices/lab_pin.sym} 690 50 0 0 {name=p7 sig_type=std_logic lab=VPREOUT2}
