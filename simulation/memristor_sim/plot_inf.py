@@ -7,7 +7,7 @@ file_path = 'inf.txt'  # Replace with your file path
 data = pd.read_csv(file_path, delim_whitespace=True)
 
 # Convert pandas Series to NumPy arrays
-v_Vin = data['v(vin)'].to_numpy()
+v_Vin = data['v(Vin)'].to_numpy()
 i_Vmeas1 = data['i(Vmeas1)'].to_numpy()
 
 # Plotting i(Vmeas1) as a function of v(Vin)

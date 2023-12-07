@@ -46,7 +46,7 @@ lab=VN}
 N -20 90 10 90 {
 lab=VN}
 C {madvlsi/pmos4.sym} -110 -20 3 0 {name=M1
-L=0.15
+L=0.3
 W=12
 nf=1
 mult=1
@@ -74,8 +74,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos4.sym} -110 120 1 0 {name=M3
-L=4
-W=3
+L=20
+W=20
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 

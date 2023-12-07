@@ -73,10 +73,10 @@ value=1.8}
 C {madvlsi/gnd.sym} 250 -170 0 0 {name=l20 lab=GND}
 C {madvlsi/vdd.sym} 250 -230 0 0 {name=l21 lab=VDD}
 C {madvlsi/vsource.sym} 140 -210 0 0 {name=VDD1
-value=1}
+value=0}
 C {madvlsi/gnd.sym} 140 -180 0 0 {name=l6 lab=GND}
 C {madvlsi/vsource.sym} 50 -210 0 0 {name=VDD2
-value=1.8}
+value=0.8}
 C {madvlsi/gnd.sym} 50 -180 0 0 {name=l8 lab=GND}
 C {devices/lab_pin.sym} 50 -240 1 0 {name=p13 sig_type=std_logic lab=W1}
 C {devices/lab_pin.sym} 140 -240 1 0 {name=p14 sig_type=std_logic lab=W0}
@@ -134,9 +134,9 @@ spiceprefix=X
 }
 C {madvlsi/gnd.sym} 280 500 0 0 {name=l16 lab=GND}
 C {devices/lab_pin.sym} 310 470 2 0 {name=p4 sig_type=std_logic lab=W1}
-C {/home/madvlsi/Documents/second/neuromorphic_computing_final/schematic/besrour_neuron.sym} 0 0 0 0 {name=X2}
-C {/home/madvlsi/Documents/second/neuromorphic_computing_final/schematic/besrour_neuron.sym} 510 0 0 0 {name=X3}
-C {/home/madvlsi/Documents/second/neuromorphic_computing_final/schematic/besrour_neuron.sym} 480 360 0 0 {name=X4}
-C {/home/madvlsi/Documents/second/neuromorphic_computing_final/schematic/besrour_neuron.sym} 0 360 0 0 {name=X5}
-C {/home/madvlsi/Documents/second/neuromorphic_computing_final/schematic/memristor_emulator.sym} 230 0 0 0 {name=X1}
-C {/home/madvlsi/Documents/second/neuromorphic_computing_final/schematic/memristor_emulator.sym} 170 360 0 0 {name=X6}
+C {/home/madvlsi/neuromorphic_computing_final/schematic/besrour_neuron.sym} 0 0 0 0 {name=X1}
+C {/home/madvlsi/neuromorphic_computing_final/schematic/besrour_neuron.sym} 510 0 0 0 {name=X2}
+C {/home/madvlsi/neuromorphic_computing_final/schematic/besrour_neuron.sym} 480 360 0 0 {name=X3}
+C {/home/madvlsi/neuromorphic_computing_final/schematic/besrour_neuron.sym} 0 360 0 0 {name=X4}
+C {/home/madvlsi/neuromorphic_computing_final/schematic/memristor_emulator.sym} 230 0 0 0 {name=X5}
+C {/home/madvlsi/neuromorphic_computing_final/schematic/memristor_emulator.sym} 170 360 0 0 {name=X6}
