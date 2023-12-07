@@ -39,7 +39,6 @@ N 90 30 130 30 {
 lab=GND}
 C {madvlsi/vsource.sym} -40 -10 0 0 {name=V1
 value="SIN(0 1.8 2Meg)"}
-C {/home/madvlsi/neuromorphic_computing_final/schematic/memristor_emulator.sym} 0 -90 0 0 {name=X1}
 C {madvlsi/resistor.sym} 130 -30 0 0 {name=R1
 value=1k
 m=1}
@@ -58,7 +57,7 @@ set wr_vecnames
 set wr_singlescale
 save all
 tran 0.01n 1u
-wrdata ~/neuromorphic_computing_final/simulation/memristor_sim/inf.txt i(Vmeas1) v(Vin)
+wrdata ~/Documents/second/neuromorphic_computing_final/simulation/memristor_sim/inf.txt i(Vmeas1) v(Vin)
 set appendwrite
 .endc
 "}
@@ -76,3 +75,4 @@ value=-1.8}
 C {madvlsi/gnd.sym} -230 -160 0 0 {name=l3 lab=GND}
 C {devices/lab_pin.sym} -230 -220 1 0 {name=p2 sig_type=std_logic lab=Vss}
 C {devices/lab_pin.sym} 40 -80 3 0 {name=p3 sig_type=std_logic lab=Vss}
+C {/home/madvlsi/Documents/second/neuromorphic_computing_final/schematic/memristor_emulator.sym} 0 -90 0 0 {name=X1}
