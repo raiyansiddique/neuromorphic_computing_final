@@ -75,10 +75,10 @@ value=1.8}
 C {madvlsi/gnd.sym} 250 -170 0 0 {name=l20 lab=GND}
 C {madvlsi/vdd.sym} 250 -230 0 0 {name=l21 lab=VDD}
 C {madvlsi/vsource.sym} 140 -210 0 0 {name=VDD1
-value=0}
+value=1}
 C {madvlsi/gnd.sym} 140 -180 0 0 {name=l6 lab=GND}
 C {madvlsi/vsource.sym} 50 -210 0 0 {name=VDD2
-value=1}
+value=1.8}
 C {madvlsi/gnd.sym} 50 -180 0 0 {name=l8 lab=GND}
 C {devices/lab_pin.sym} 50 -240 1 0 {name=p13 sig_type=std_logic lab=W1}
 C {devices/lab_pin.sym} 140 -240 1 0 {name=p14 sig_type=std_logic lab=W0}
