@@ -63,7 +63,6 @@ value=".option wnflag=1
 C {madvlsi/vdd.sym} 0 -120 0 0 {name=l1 lab=VDD}
 C {madvlsi/gnd.sym} 0 120 0 0 {name=l2 lab=GND}
 C {devices/lab_pin.sym} 130 0 3 0 {name=p1 sig_type=std_logic lab=Vout}
-C {/home/madvlsi/neuromorphic_computing_final/schematic/besrour_neuron.sym} 0 0 0 0 {name=X2}
 C {madvlsi/vdd.sym} 0 240 0 0 {name=l7 lab=VDD}
 C {devices/lab_pin.sym} 130 360 3 0 {name=p8 sig_type=std_logic lab=Vout1}
 C {/home/madvlsi/neuromorphic_computing_final/schematic/besrour_neuron.sym} 0 360 0 0 {name=X4}
@@ -179,7 +178,6 @@ C {devices/lab_pin.sym} 260 30 3 0 {name=p11 sig_type=std_logic lab=W0}
 C {devices/lab_pin.sym} 240 390 3 0 {name=p28 sig_type=std_logic lab=W0}
 C {devices/lab_pin.sym} 270 -30 1 0 {name=p12 sig_type=std_logic lab=W0}
 C {devices/lab_pin.sym} 260 -30 1 0 {name=p18 sig_type=std_logic lab=W1}
-<<<<<<< HEAD
 C {devices/lab_pin.sym} 260 30 3 0 {name=p11 sig_type=std_logic lab=W0}
 C {madvlsi/vdd.sym} -280 -30 0 0 {name=l25 lab=VDD}
 C {madvlsi/gnd.sym} -280 30 0 0 {name=l26 lab=GND}
@@ -229,5 +227,3 @@ C {devices/lab_pin.sym} -90 90 1 0 {name=p49 sig_type=std_logic lab=W3-}
 C {devices/lab_pin.sym} 30 100 1 0 {name=p50 sig_type=std_logic lab=W2-}
 C {devices/lab_pin.sym} 140 100 1 0 {name=p51 sig_type=std_logic lab=W1-}
 C {devices/lab_pin.sym} 230 100 1 0 {name=p52 sig_type=std_logic lab=W0-}
-=======
->>>>>>> 4e47e1216e839e37f1ff55e621017201b517b6e1
