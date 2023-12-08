@@ -7,6 +7,24 @@ S {}
 E {}
 N -170 360 -140 360 {
 lab=Isyn1}
+N -130 360 -60 360 {
+lab=#net1}
+N -0 240 0 310 {
+lab=VDD}
+N 60 360 130 360 {
+lab=Vout1}
+N 0 410 0 480 {
+lab=GND}
+N 410 360 440 360 {
+lab=Isyn2}
+N 450 360 520 360 {
+lab=#net2}
+N 580 240 580 310 {
+lab=VDD}
+N 640 360 710 360 {
+lab=Vout2}
+N 580 410 580 480 {
+lab=GND}
 C {madvlsi/vsource.sym} 190 -270 0 0 {name=VDD
 value=1.8}
 C {madvlsi/gnd.sym} 190 -240 0 0 {name=l20 lab=GND}
@@ -48,11 +66,21 @@ C {madvlsi/gnd.sym} -290 -240 0 0 {name=l13 lab=GND}
 C {devices/lab_pin.sym} -290 -300 1 0 {name=p17 sig_type=std_logic lab=Vbn}
 C {madvlsi/vdd.sym} 0 240 0 0 {name=l7 lab=VDD}
 C {devices/lab_pin.sym} 130 360 3 0 {name=p8 sig_type=std_logic lab=Vout1}
-C {madvlsi/isource.sym} -210 390 0 0 {name=I2
+C {madvlsi/isource.sym} -210 390 2 0 {name=I2
 value="PULSE(0 10u 0 1n 1n 50n 100n)"}
 C {madvlsi/gnd.sym} -210 420 0 0 {name=l14 lab=GND}
 C {devices/lab_pin.sym} -210 360 1 0 {name=p9 sig_type=std_logic lab=Isyn1}
 C {devices/lab_pin.sym} -170 360 1 0 {name=p18 sig_type=std_logic lab=Isyn1}
 C {madvlsi/ammeter1.sym} -130 360 1 0 {name=Vmeas2}
-C {/home/madvlsi/neuromorphic_computing_final/schematic/besrour_neuron.sym} 0 360 0 0 {name=X4}
 C {madvlsi/gnd.sym} 0 480 0 0 {name=l18 lab=GND}
+C {/home/madvlsi/neuromorphic_computing_final/schematic/besrour_neuron_cm.sym} 0 360 0 0 {name=X1}
+C {madvlsi/vdd.sym} 580 240 0 0 {name=l1 lab=VDD}
+C {devices/lab_pin.sym} 710 360 3 0 {name=p1 sig_type=std_logic lab=Vout2}
+C {madvlsi/isource.sym} 370 390 0 0 {name=I1
+value="PULSE(0 10u 0 1n 1n 50n 100n)"}
+C {madvlsi/gnd.sym} 370 420 0 0 {name=l2 lab=GND}
+C {devices/lab_pin.sym} 370 360 1 0 {name=p2 sig_type=std_logic lab=Isyn2}
+C {devices/lab_pin.sym} 410 360 1 0 {name=p3 sig_type=std_logic lab=Isyn2}
+C {madvlsi/ammeter1.sym} 450 360 1 0 {name=Vmeas1}
+C {madvlsi/gnd.sym} 580 480 0 0 {name=l3 lab=GND}
+C {/home/madvlsi/neuromorphic_computing_final/schematic/besrour_neuron.sym} 580 360 0 0 {name=X2}
