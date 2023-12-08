@@ -73,7 +73,6 @@ C {devices/lab_pin.sym} -210 360 1 0 {name=p9 sig_type=std_logic lab=Isyn1}
 C {devices/lab_pin.sym} -170 360 1 0 {name=p18 sig_type=std_logic lab=Isyn1}
 C {madvlsi/ammeter1.sym} -130 360 1 0 {name=Vmeas2}
 C {madvlsi/gnd.sym} 0 480 0 0 {name=l18 lab=GND}
-C {/home/madvlsi/neuromorphic_computing_final/schematic/besrour_neuron_cm.sym} 0 360 0 0 {name=X1}
 C {madvlsi/vdd.sym} 580 240 0 0 {name=l1 lab=VDD}
 C {devices/lab_pin.sym} 710 360 3 0 {name=p1 sig_type=std_logic lab=Vout2}
 C {madvlsi/isource.sym} 370 390 0 0 {name=I1
@@ -83,4 +82,5 @@ C {devices/lab_pin.sym} 370 360 1 0 {name=p2 sig_type=std_logic lab=Isyn2}
 C {devices/lab_pin.sym} 410 360 1 0 {name=p3 sig_type=std_logic lab=Isyn2}
 C {madvlsi/ammeter1.sym} 450 360 1 0 {name=Vmeas1}
 C {madvlsi/gnd.sym} 580 480 0 0 {name=l3 lab=GND}
-C {/home/madvlsi/neuromorphic_computing_final/schematic/besrour_neuron.sym} 580 360 0 0 {name=X2}
+C {/home/madvlsi/Documents/second/neuromorphic_computing_final/schematic/besrour_neuron.sym} 0 360 0 0 {name=X1}
+C {/home/madvlsi/Documents/second/neuromorphic_computing_final/schematic/besrour_neuron.sym} 580 360 0 0 {name=X2}
