@@ -5,58 +5,53 @@ K {}
 V {}
 S {}
 E {}
-N -110 10 -110 60 {
-<<<<<<< HEAD
-lab=W}
-N -110 -40 -110 -20 {
+N 0 -20 0 30 {
+lab=xxx}
+N 0 -70 0 -50 {
 lab=B}
-N -110 -40 -80 -40 {
+N 0 -70 30 -70 {
 lab=B}
-N -80 -40 -80 -20 {
+N 30 -70 30 -50 {
 lab=B}
-N -80 90 -50 90 {
-<<<<<<< HEAD
-lab=W}
-N -170 90 -140 90 {
-lab=W}
-N -140 90 -80 90 {
-lab=W}
-N -170 90 -140 90 {
-lab=W}
-N -140 90 -80 90 {
-lab=W}
-N -140 120 -80 120 {
+N 30 60 60 60 {
+lab=xxx}
+N -60 60 -30 60 {
+lab=xxx}
+N -30 60 30 60 {
+lab=xxx}
+N -30 90 30 90 {
 lab=VN}
-N -110 120 -110 130 {
+N 0 90 0 100 {
 lab=VN}
-N -200 -20 -200 60 {
-lab=A}
-N -200 -20 -140 -20 {
-lab=A}
-N -80 -20 -20 -20 {
-lab=B}
-N -20 -20 20 -20 {
-lab=B}
-N -240 -20 -200 -20 {
-lab=A}
-N -110 60 -110 90 {
-<<<<<<< HEAD
-lab=W}
-N -80 120 -20 120 {
-lab=VN}
-N -20 90 -20 120 {
-lab=VN}
-N -20 90 10 90 {
-lab=VN}
-N -20 40 -20 60 {
-lab=B}
-N -20 -20 -20 40 {
-lab=B}
-N -230 90 -200 90 {
+N -130 60 -90 60 {
 lab=VP}
-C {madvlsi/pmos4.sym} -110 -20 3 0 {name=M1
-L=0.35
-W=30
+N -90 -50 -90 30 {
+lab=A}
+N -90 -50 -30 -50 {
+lab=A}
+N 30 -50 90 -50 {
+lab=B}
+N 90 -50 130 -50 {
+lab=B}
+N -130 -50 -90 -50 {
+lab=A}
+N 0 30 0 60 {
+lab=xxx}
+N 30 90 90 90 {
+lab=VN}
+N 90 60 90 90 {
+lab=VN}
+N 90 60 120 60 {
+lab=VN}
+N 90 10 90 30 {
+lab=B}
+N 90 -50 90 10 {
+lab=B}
+N 130 -50 220 -50 {
+lab=B}
+C {madvlsi/pmos4.sym} 0 -50 3 0 {name=M1
+L=0.5
+W=12
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -68,7 +63,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {madvlsi/pmos4.sym} -200 90 1 0 {name=M2
+C {madvlsi/pmos4.sym} -90 60 1 0 {name=M2
 L=2
 W=3
 nf=1
@@ -82,9 +77,9 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {madvlsi/nmos4.sym} -110 120 1 0 {name=M3
-L=60
-W=80
+C {madvlsi/nmos4.sym} 0 90 1 0 {name=M3
+L=20
+W=20
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -96,7 +91,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {madvlsi/nmos4.sym} -20 90 1 0 {name=M4
+C {madvlsi/nmos4.sym} 90 60 1 0 {name=M4
 L=3
 W=2
 nf=1 
@@ -110,8 +105,8 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/ipin.sym} -240 -20 0 0 {name=p3 lab=A}
-C {devices/iopin.sym} -110 130 1 0 {name=p1 lab=VN}
-C {devices/iopin.sym} -200 90 1 0 {name=p2 lab=VP}
-C {devices/opin.sym} 20 -20 0 0 {name=p4 lab=B}
-C {devices/opin.sym} -110 70 0 0 {name=p5 lab=W}
+C {devices/ipin.sym} -130 -50 0 0 {name=p3 lab=A}
+C {devices/iopin.sym} 0 100 1 0 {name=p1 lab=VN}
+C {devices/iopin.sym} -90 60 1 0 {name=p2 lab=VP}
+C {devices/opin.sym} 220 -50 0 0 {name=p4 lab=B}
+C {devices/opin.sym} 0 0 0 0 {name=p5 lab=W}

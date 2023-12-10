@@ -77,3 +77,7 @@ C {devices/lab_pin.sym} -230 -220 1 0 {name=p2 sig_type=std_logic lab=Vss}
 C {devices/lab_pin.sym} 40 -80 3 0 {name=p3 sig_type=std_logic lab=Vss}
 C {/home/madvlsi/neuromorphic_computing_final/schematic/memristor_emulator.sym} 0 -90 0 0 {name=X1}
 C {devices/lab_pin.sym} 20 -110 1 0 {name=p4 sig_type=std_logic lab=W}
+C {madvlsi/vsource.sym} -70 -180 0 0 {name=Vdd2
+value=0.1}
+C {madvlsi/gnd.sym} -70 -150 0 0 {name=l4 lab=GND}
+C {devices/lab_pin.sym} -70 -210 1 0 {name=p5 sig_type=std_logic lab=W}
