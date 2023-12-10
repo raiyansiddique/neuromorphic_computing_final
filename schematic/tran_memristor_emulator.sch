@@ -24,7 +24,7 @@ value=0.8}
 C {madvlsi/gnd.sym} 220 -130 0 0 {name=l8 lab=GND}
 C {devices/lab_pin.sym} 220 -190 1 0 {name=p13 sig_type=std_logic lab=W}
 C {madvlsi/vsource.sym} 320 -140 0 0 {name=VPre
-value="PULSE(0 1.8 100n 1n 1n 1n 250n)"}
+value=0.2}
 C {madvlsi/gnd.sym} 320 -110 0 0 {name=l3 lab=GND}
 C {devices/lab_pin.sym} 320 -170 1 0 {name=p2 sig_type=std_logic lab=A}
 C {devices/lab_pin.sym} 40 0 0 0 {name=p3 sig_type=std_logic lab=A}
@@ -34,7 +34,6 @@ value=-1.8}
 C {madvlsi/gnd.sym} 310 100 0 0 {name=l5 lab=GND}
 C {devices/lab_pin.sym} 310 40 1 0 {name=p4 sig_type=std_logic lab=Vss}
 C {devices/lab_pin.sym} 80 10 3 0 {name=p5 sig_type=std_logic lab=Vss}
-C {madvlsi/ammeter1.sym} 150 0 3 1 {name=Vmeas}
 C {madvlsi/tt_models.sym} 0 -170 0 0 {
 name=TT_MODELS
 only_toplevel=false
@@ -42,8 +41,5 @@ value=".option wnflag=1
 .param MC_SWITCH=1.0
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
-C {madvlsi/isource.sym} 410 -40 0 0 {name=I1
-value="PULSE(0 10u 150n 1n 1n 1n 250n)"}
-C {madvlsi/gnd.sym} 410 -10 0 0 {name=l4 lab=GND}
-C {devices/lab_pin.sym} 410 -70 1 0 {name=p7 sig_type=std_logic lab=Isyn}
-C {devices/lab_pin.sym} 160 0 1 0 {name=p1 sig_type=std_logic lab=Isyn}
+C {madvlsi/ammeter1.sym} 150 0 3 0 {name=Vmeas}
+C {madvlsi/gnd.sym} 160 0 0 0 {name=l2 lab=GND}
