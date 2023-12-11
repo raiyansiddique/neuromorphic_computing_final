@@ -1,0 +1,22 @@
+magic
+tech sky130A
+timestamp 1702324041
+<< locali >>
+rect 25 440 45 460
+rect 900 275 920 295
+rect 25 145 45 165
+rect 175 0 195 20
+rect 265 0 285 20
+rect 310 0 330 20
+use neuron  neuron_0
+timestamp 1702323777
+transform 1 0 95 0 1 355
+box -95 -355 825 250
+<< labels >>
+rlabel locali 25 450 25 450 7 VP
+rlabel locali 25 155 25 155 7 VN
+rlabel locali 185 0 185 0 5 ISYN
+rlabel locali 275 0 275 0 5 CMEM
+rlabel locali 320 0 320 0 5 CRST
+rlabel locali 920 285 920 285 3 VSYN
+<< end >>

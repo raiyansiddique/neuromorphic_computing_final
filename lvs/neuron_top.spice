@@ -1,0 +1,25 @@
+* NGSPICE file created from neuron_top.ext - technology: sky130A
+
+.subckt neuron VP VN ISYN VSYN CMEM CRST a_n150_n600#
+X0 VN a_270_n40# CRST VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=2.5 as=1 ps=5 w=2 l=0.3
+X1 VP a_270_n40# CMEM VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=2.5 as=0.5 ps=2.5 w=2 l=0.3
+X2 a_970_n10# CRST VP VP sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=0.5 ps=2.5 w=2 l=0.3
+X3 CMEM a_n150_n600# VP VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=2.5 as=0.5 ps=2.5 w=2 l=0.3
+X4 VSYN a_970_n10# VN VN sky130_fd_pr__nfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.3
+X5 VP a_270_n40# CRST VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=2.5 as=1 ps=5 w=2 l=0.3
+X6 VSYN a_970_n10# VP VP sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.3
+X7 VP a_n150_n600# a_n150_n600# VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=2.5 as=1 ps=5 w=2 l=0.3
+X8 a_270_n40# CMEM VN VN sky130_fd_pr__nfet_01v8 ad=1 pd=5 as=0.5 ps=2.5 w=2 l=0.3
+X9 VN CRST CMEM VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=2.5 as=1 ps=5 w=2 l=0.3
+X10 VN ISYN a_n150_n600# VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=2.5 as=1 ps=5 w=2 l=0.3
+X11 a_270_n40# CMEM VP VP sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=0.5 ps=2.5 w=2 l=0.3
+X12 ISYN ISYN VN VN sky130_fd_pr__nfet_01v8 ad=1 pd=5 as=0.5 ps=2.5 w=2 l=0.3
+X13 a_970_n10# CRST VN VN sky130_fd_pr__nfet_01v8 ad=1 pd=5 as=0.5 ps=2.5 w=2 l=0.3
+.ends
+
+
+* Top level circuit neuron_top
+
+Xneuron_0 neuron_0/VP VSUBS ISYN VSYN CMEM CRST VP neuron
+.end
+
