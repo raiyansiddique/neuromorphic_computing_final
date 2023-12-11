@@ -235,6 +235,22 @@ N 250 -370 400 -370 {
 lab=W1}
 N 150 -370 250 -370 {
 lab=W1}
+N 1290 -300 1310 -300 {
+lab=Vor}
+N 1310 -300 1310 -220 {
+lab=Vor}
+N 1300 -220 1310 -220 {
+lab=Vor}
+N 1290 -220 1300 -220 {
+lab=Vor}
+N 1280 -390 1300 -390 {
+lab=Vand}
+N 1300 -450 1300 -390 {
+lab=Vand}
+N 1280 -450 1300 -450 {
+lab=Vand}
+N 1300 -420 1320 -420 {
+lab=Vand}
 C {madvlsi/vdd.sym} 90 -80 3 0 {name=l1 lab=VDD}
 C {madvlsi/vdd.sym} 190 -80 3 0 {name=l2 lab=VDD}
 C {madvlsi/vdd.sym} 330 -80 2 0 {name=l3 lab=VDD}
@@ -470,6 +486,28 @@ C {devices/lab_pin.sym} 350 -890 1 0 {name=p22 sig_type=std_logic lab=W1}
 C {madvlsi/gnd.sym} 350 -830 0 0 {name=l31 lab=GND}
 C {devices/lab_pin.sym} 400 -370 2 0 {name=p23 sig_type=std_logic lab=W1}
 C {madvlsi/vsource.sym} -80 200 0 0 {name=VPre6
-value="PULSE(0 0.4 0s 1ns 1ns 100ns 200ns)"}
-C {devices/lab_pin.sym} 260 -700 1 0 {name=p7 sig_type=std_logic lab=A}
-C {devices/lab_pin.sym} 390 -700 1 0 {name=p8 sig_type=std_logic lab=A}
+value="PULSE(0 0.2 0s 1ns 1ns 100ns 200ns)"}
+C {madvlsi/gnd.sym} 100 -810 0 0 {name=l18 lab=GND}
+C {devices/lab_pin.sym} 100 -870 1 0 {name=p7 sig_type=std_logic lab=A1}
+C {madvlsi/vsource.sym} 100 -840 0 0 {name=VPre2
+value=0.6}
+C {devices/lab_pin.sym} 260 -700 1 0 {name=p8 sig_type=std_logic lab=A1}
+C {devices/lab_pin.sym} 390 -700 1 0 {name=p11 sig_type=std_logic lab=A1}
+C {/home/madvlsi/neuromorphic_computing_final/schematic/memristor_emulator.sym} 1210 -300 0 0 {name=X26}
+C {/home/madvlsi/neuromorphic_computing_final/schematic/memristor_emulator.sym} 1210 -220 0 0 {name=X27}
+C {devices/lab_pin.sym} 1250 -210 3 0 {name=p24 sig_type=std_logic lab=Vss}
+C {devices/lab_pin.sym} 1250 -290 3 0 {name=p25 sig_type=std_logic lab=Vss}
+C {madvlsi/vdd.sym} 1250 -230 0 0 {name=l32 lab=VDD}
+C {madvlsi/vdd.sym} 1250 -310 0 0 {name=l33 lab=VDD}
+C {madvlsi/vdd.sym} 1210 -300 0 0 {name=l34 lab=VDD}
+C {devices/lab_pin.sym} 1310 -270 2 0 {name=p26 sig_type=std_logic lab=Vor}
+C {/home/madvlsi/neuromorphic_computing_final/schematic/memristor_emulator.sym} 1280 -450 2 0 {name=X28}
+C {/home/madvlsi/neuromorphic_computing_final/schematic/memristor_emulator.sym} 1280 -390 2 0 {name=X29}
+C {madvlsi/vdd.sym} 1240 -380 2 0 {name=l36 lab=VDD}
+C {madvlsi/vdd.sym} 1240 -440 2 0 {name=l37 lab=VDD}
+C {devices/lab_pin.sym} 1240 -460 1 0 {name=p27 sig_type=std_logic lab=Vss}
+C {devices/lab_pin.sym} 1240 -400 1 0 {name=p28 sig_type=std_logic lab=Vss}
+C {devices/lab_pin.sym} 1320 -420 2 0 {name=p29 sig_type=std_logic lab=Vand}
+C {madvlsi/vdd.sym} 1200 -450 0 0 {name=l38 lab=VDD}
+C {madvlsi/gnd.sym} 1200 -390 0 0 {name=l35 lab=GND}
+C {madvlsi/gnd.sym} 1210 -220 0 0 {name=l39 lab=GND}

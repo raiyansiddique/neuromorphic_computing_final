@@ -1,0 +1,11 @@
+* NGSPICE file created from memristor_emulator.ext - technology: sky130A
+
+
+* Top level circuit memristor_emulator
+
+X0 VN B a_0_n30# VN sky130_fd_pr__nfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=3
+X1 VN a_0_n30# VN VN sky130_fd_pr__nfet_01v8 ad=10 pd=41 as=21 ps=87 w=20 l=20
+X2 B a_0_n30# B B sky130_fd_pr__pfet_01v8 ad=6 pd=25 as=12 ps=50 w=12 l=0.5
+X3 a_0_n30# B VP VP sky130_fd_pr__pfet_01v8 ad=1.5 pd=7 as=1.5 ps=7 w=3 l=2
+.end
+

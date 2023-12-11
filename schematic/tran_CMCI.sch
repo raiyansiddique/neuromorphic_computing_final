@@ -108,7 +108,6 @@ C {madvlsi/gnd.sym} 570 -180 0 0 {name=l4 lab=GND}
 C {devices/lab_pin.sym} 570 -240 1 0 {name=p12 sig_type=std_logic lab=Spk_in}
 C {devices/lab_pin.sym} 60 -60 1 0 {name=p11 sig_type=std_logic lab=Vbp}
 C {devices/lab_pin.sym} 60 60 3 0 {name=p13 sig_type=std_logic lab=Vbn}
-C {/home/madvlsi/neuromorphic_computing_final/schematic/CMCI_synapse.sym} 40 0 0 0 {}
 C {madvlsi/vsource.sym} 230 130 0 0 {name=VDD8
 value=0}
 C {madvlsi/gnd.sym} 230 160 0 0 {name=l10 lab=GND}
@@ -130,7 +129,6 @@ C {devices/lab_pin.sym} 110 30 3 0 {name=p21 sig_type=std_logic lab=W1-}
 C {devices/lab_pin.sym} 120 30 3 0 {name=p22 sig_type=std_logic lab=W0-}
 C {devices/lab_pin.sym} 100 30 3 0 {name=p23 sig_type=std_logic lab=W2-}
 C {devices/ammeter.sym} 180 0 3 0 {name=Vmeas}
-C {devices/gnd.sym} 210 0 0 0 {name=l14 lab=GND}
 C {madvlsi/pmos3.sym} -400 -260 0 0 {name=M1
 L=\{L\}
 W=\{W\}
@@ -184,3 +182,7 @@ value=1u}
 C {madvlsi/gnd.sym} -500 -260 2 0 {name=l18 lab=GND}
 C {devices/lab_pin.sym} -450 -170 3 0 {name=p6 sig_type=std_logic lab=Vbn}
 C {devices/lab_pin.sym} -320 -260 2 0 {name=p24 sig_type=std_logic lab=Vbp}
+C {/home/madvlsi/neuromorphic_computing_final/schematic/besrour_neuron_cm.sym} 270 0 0 0 {name=X1}
+C {madvlsi/gnd.sym} 270 50 0 0 {name=l6 lab=GND}
+C {madvlsi/vdd.sym} 270 -50 0 0 {name=l8 lab=VDD}
+C {/home/madvlsi/neuromorphic_computing_final/schematic/CMCI_synapse.sym} 40 0 0 0 {name=X2}

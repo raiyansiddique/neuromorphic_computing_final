@@ -61,6 +61,14 @@ N 400 0 450 0 {
 lab=#net5}
 N 290 370 290 410 {
 lab=#net6}
+N 340 110 340 130 {
+lab=GND}
+N 340 130 340 140 {
+lab=GND}
+N 290 440 290 450 {
+lab=GND}
+N 290 450 290 470 {
+lab=GND}
 C {devices/code.sym} 340 -240 0 0 {name=SPICE only_toplevel=false value=".param W=1
 .param L=0.15
 .tran 0.1n 500n
@@ -82,7 +90,7 @@ value=1.8}
 C {madvlsi/gnd.sym} 250 -170 0 0 {name=l20 lab=GND}
 C {madvlsi/vdd.sym} 250 -230 0 0 {name=l21 lab=VDD}
 C {madvlsi/vsource.sym} 140 -210 0 0 {name=VDD1
-value=1}
+value=0.9}
 C {madvlsi/gnd.sym} 140 -180 0 0 {name=l6 lab=GND}
 C {madvlsi/vsource.sym} 50 -210 0 0 {name=VDD2
 value=0.2}
@@ -150,11 +158,9 @@ spiceprefix=X
 }
 C {madvlsi/gnd.sym} 290 470 0 0 {name=l16 lab=GND}
 C {devices/lab_pin.sym} 320 440 2 0 {name=p4 sig_type=std_logic lab=W1}
-C {madvlsi/vsource.sym} 200 210 0 0 {name=VDD3
+C {madvlsi/vsource.sym} 830 140 0 0 {name=VDD3
 value=-1.8}
-C {madvlsi/gnd.sym} 200 240 0 0 {name=l5 lab=GND}
-C {devices/lab_pin.sym} 200 180 1 0 {name=p7 sig_type=std_logic lab=Vss}
-C {devices/lab_pin.sym} 270 10 3 0 {name=p9 sig_type=std_logic lab=Vss}
-C {devices/lab_pin.sym} 210 370 3 0 {name=p10 sig_type=std_logic lab=Vss}
-C {devices/lab_pin.sym} 290 440 0 0 {name=p11 sig_type=std_logic lab=Vss}
-C {devices/lab_pin.sym} 340 110 0 0 {name=p12 sig_type=std_logic lab=Vss}
+C {madvlsi/gnd.sym} 830 170 0 0 {name=l5 lab=GND}
+C {devices/lab_pin.sym} 830 110 1 0 {name=p7 sig_type=std_logic lab=Vss}
+C {madvlsi/gnd.sym} 270 10 0 0 {name=l10 lab=GND}
+C {madvlsi/gnd.sym} 210 370 0 0 {name=l18 lab=GND}
