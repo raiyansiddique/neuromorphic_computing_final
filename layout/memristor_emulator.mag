@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1702280534
+timestamp 1702324856
 << nwell >>
 rect -48 2035 338 2371
 rect 514 2160 1774 2400
@@ -220,5 +220,5 @@ rect -50 -15 2100 13
 rlabel metal1 2100 2010 2100 2010 3 VN
 rlabel poly 2100 2085 2100 2085 3 B
 rlabel metal1 63 2360 63 2360 1 VP
-rlabel poly 226 2376 226 2376 1 IN
+rlabel poly 245 2385 245 2385 7 A
 << end >>
