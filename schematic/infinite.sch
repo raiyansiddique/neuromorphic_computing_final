@@ -38,7 +38,7 @@ lab=#net2}
 N 90 30 130 30 {
 lab=GND}
 C {madvlsi/vsource.sym} -40 -10 0 0 {name=V1
-value="SIN(0 1.8 5Meg)"}
+value="SIN(0 0.9 4Meg)"}
 C {madvlsi/resistor.sym} 130 -30 0 0 {name=R1
 value=1k
 m=1}

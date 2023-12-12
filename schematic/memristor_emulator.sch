@@ -6,7 +6,7 @@ V {}
 S {}
 E {}
 N 0 -20 0 30 {
-lab=W}
+lab=#net1}
 N 0 -70 0 -50 {
 lab=B}
 N 0 -70 30 -70 {
@@ -14,11 +14,11 @@ lab=B}
 N 30 -70 30 -50 {
 lab=B}
 N 30 60 60 60 {
-lab=W}
+lab=#net1}
 N -60 60 -30 60 {
-lab=W}
+lab=#net1}
 N -30 60 30 60 {
-lab=W}
+lab=#net1}
 N -30 90 30 90 {
 lab=VN}
 N 0 90 0 100 {
@@ -36,7 +36,7 @@ lab=B}
 N -130 -50 -90 -50 {
 lab=A}
 N 0 30 0 60 {
-lab=W}
+lab=#net1}
 N 30 90 90 90 {
 lab=VN}
 N 90 60 90 90 {
@@ -107,6 +107,5 @@ spiceprefix=X
 }
 C {devices/iopin.sym} 0 100 1 0 {name=p1 lab=VN}
 C {devices/iopin.sym} -90 60 1 0 {name=p2 lab=VP}
-C {devices/opin.sym} 0 0 0 0 {name=p5 lab=W}
 C {devices/iopin.sym} 220 -50 0 0 {name=p4 lab=B}
 C {devices/iopin.sym} -130 -50 2 0 {name=p6 lab=A}

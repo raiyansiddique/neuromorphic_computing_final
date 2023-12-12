@@ -40,11 +40,11 @@ lab=ISYN}
 N -720 -740 -720 -670 {
 lab=#net1}
 N -580 -820 -560 -820 {
-lab=CMEM}
+lab=#net2}
 N -500 -820 -480 -820 {
 lab=VP}
 N -570 -820 -570 -740 {
-lab=CMEM}
+lab=#net2}
 N -690 -660 -690 -600 {
 lab=ISYN}
 N -610 -660 -610 -600 {
@@ -54,27 +54,27 @@ lab=#net1}
 N -610 -850 -610 -790 {
 lab=#net1}
 N -570 -630 -560 -630 {
-lab=CMEM}
+lab=#net2}
 N -570 -740 -570 -630 {
-lab=CMEM}
+lab=#net2}
 N -500 -630 -480 -630 {
 lab=VN}
 N -570 -720 -450 -720 {
-lab=CMEM}
+lab=#net2}
 N -450 -790 -450 -720 {
-lab=CMEM}
+lab=#net2}
 N -450 -720 -450 -660 {
-lab=CMEM}
+lab=#net2}
 N -420 -630 -410 -630 {
-lab=#net2}
+lab=#net3}
 N -410 -820 -410 -630 {
-lab=#net2}
+lab=#net3}
 N -420 -820 -410 -820 {
-lab=#net2}
+lab=#net3}
 N -400 -820 -400 -630 {
 lab=CRST}
 N -370 -790 -370 -660 {
-lab=#net2}
+lab=#net3}
 N -340 -820 -320 -820 {
 lab=VP}
 N -340 -630 -320 -630 {
@@ -88,25 +88,25 @@ lab=CRST}
 N -290 -660 -290 -590 {
 lab=CRST}
 N -530 -860 -530 -790 {
-lab=#net2}
+lab=#net3}
 N -530 -860 -410 -860 {
-lab=#net2}
+lab=#net3}
 N -410 -860 -410 -820 {
-lab=#net2}
+lab=#net3}
 N -410 -860 -370 -860 {
-lab=#net2}
+lab=#net3}
 N -370 -860 -370 -790 {
-lab=#net2}
+lab=#net3}
 N -400 -630 -400 -590 {
 lab=CRST}
 N -260 -820 -260 -630 {
-lab=#net3}
+lab=#net4}
 N -180 -820 -180 -630 {
 lab=VSYN}
 N -210 -790 -210 -660 {
-lab=#net3}
+lab=#net4}
 N -260 -720 -210 -720 {
-lab=#net3}
+lab=#net4}
 N -650 -630 -650 -550 {
 lab=VN}
 N -650 -550 -240 -550 {
@@ -128,11 +128,11 @@ lab=VP}
 N -330 -900 -330 -820 {
 lab=VP}
 N -570 -630 -570 -610 {
-lab=CMEM}
+lab=#net2}
 N -530 -590 -530 -520 {
 lab=CRST}
 N -570 -610 -570 -520 {
-lab=CMEM}
+lab=#net2}
 C {madvlsi/pmos3.sym} -690 -820 3 0 {name=M15
 L=0.3
 W=2
@@ -167,8 +167,6 @@ C {devices/iopin.sym} -420 -900 3 0 {name=p6 lab=VP}
 C {devices/iopin.sym} -430 -550 1 0 {name=p7 lab=VN}
 C {devices/iopin.sym} -690 -590 1 0 {name=p8 lab=ISYN}
 C {devices/opin.sym} -180 -720 0 0 {name=p9 lab=VSYN}
-C {devices/opin.sym} -570 -520 1 0 {name=p1 lab=CMEM}
-C {devices/opin.sym} -530 -520 1 0 {name=p2 lab=CRST}
 C {madvlsi/nmos3.sym} -610 -630 1 0 {name=M7
 L=0.3
 W=2
@@ -349,3 +347,5 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
+C {devices/iopin.sym} -530 -520 1 0 {name=p2 lab=CRST}
+C {devices/iopin.sym} -570 -520 1 0 {name=p1 lab=CMEM}
