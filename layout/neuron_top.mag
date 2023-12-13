@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1702362242
+timestamp 1702393175
 << locali >>
 rect 148 601 208 608
 rect 148 578 157 601
@@ -121,7 +121,11 @@ transform 1 0 95 0 1 355
 box -95 -355 825 250
 << labels >>
 rlabel locali 25 450 25 450 7 VP
+port 3 w
 rlabel locali 25 155 25 155 7 VN
+port 2 w
 rlabel locali 185 0 185 0 5 ISYN
+port 4 s
 rlabel locali 920 285 920 285 3 VSYN
+port 1 e
 << end >>

@@ -20,7 +20,7 @@ L 4 50 -50 50 -20 {}
 B 5 47.5 -52.5 52.5 -47.5 {name=S
 dir=in}
 B 5 -42.5 -2.5 -37.5 2.5 {name=A
-dir=in}
+dir=inout}
 B 5 127.5 -2.5 132.5 2.5 {name=B
-dir=out}
+dir=inout}
 T {@name} 80 50 0 0 0.2 0.2 {}

@@ -16,14 +16,12 @@ lab=S}
 N -70 -120 40 -120 {
 lab=S}
 C {/home/madvlsi/neuromorphic_computing_final/schematic/inverter.sym} -100 50 0 0 {name=X1}
-C {devices/opin.sym} 70 -30 0 0 {name=p1 lab=B}
 C {devices/ipin.sym} -70 -70 0 0 {name=p2 lab=S}
-C {devices/ipin.sym} 10 -30 0 0 {name=p3 lab=A}
 C {madvlsi/vdd.sym} -40 20 0 0 {name=l1 lab=VDD}
 C {madvlsi/gnd.sym} -40 80 0 0 {name=l2 lab=GND}
 C {madvlsi/pmos3.sym} 40 20 3 0 {name=M1
-L=5
-W=2
+L=0.3
+W=6
 body=VDD
 nf=1
 mult=1
@@ -37,8 +35,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 40 -90 1 0 {name=M2
-L=5
-W=2
+L=0.3
+W=6
 body=GND
 nf=1
 mult=1
@@ -51,3 +49,5 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
+C {devices/iopin.sym} 70 -40 0 0 {name=p1 lab=B}
+C {devices/iopin.sym} 10 -30 2 0 {name=p3 lab=A}
