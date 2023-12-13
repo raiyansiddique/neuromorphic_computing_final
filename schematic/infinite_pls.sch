@@ -38,7 +38,7 @@ lab=#net2}
 N 90 30 130 30 {
 lab=GND}
 C {madvlsi/vsource.sym} -40 -10 0 0 {name=V1
-value="SIN(0 1.8 4Meg)"}
+value="SIN(0 1.8 9Meg)"}
 C {madvlsi/resistor.sym} 130 -30 0 0 {name=R1
 value=1k
 m=1}
@@ -51,7 +51,7 @@ C {madvlsi/vsource.sym} -160 -190 0 0 {name=Vdd
 value=1.8}
 C {madvlsi/gnd.sym} -160 -160 0 0 {name=l6 lab=GND}
 C {madvlsi/vdd.sym} -160 -220 0 0 {name=l7 lab=VDD}
-C {devices/code_shown.sym} -430 -20 0 0 {name=SPICE only_toplevel=false value="
+C {devices/code_shown.sym} -440 90 0 0 {name=SPICE only_toplevel=false value="
 .include ~/neuromorphic_computing_final/schematic/memristor_emulator_pls.spice
 .control
 set wr_vecnames

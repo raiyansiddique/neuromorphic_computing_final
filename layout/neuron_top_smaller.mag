@@ -1,0 +1,130 @@
+magic
+tech sky130A
+timestamp 1702479056
+<< locali >>
+rect 148 601 208 608
+rect 148 578 157 601
+rect 199 578 208 601
+rect 148 573 208 578
+rect 186 535 208 573
+rect 25 440 45 460
+rect 900 275 920 295
+rect 25 145 45 165
+rect 175 0 195 20
+rect 265 0 285 20
+rect 310 10 319 20
+rect 310 0 330 10
+<< viali >>
+rect 157 578 199 601
+rect 319 10 341 31
+<< metal1 >>
+rect 148 604 208 608
+rect 148 578 157 604
+rect 199 578 208 604
+rect 148 573 208 578
+rect 725 49 841 58
+rect 310 33 350 40
+rect 310 7 315 33
+rect 342 7 350 33
+rect 310 0 350 7
+rect 725 -9 740 49
+rect 818 -9 841 49
+rect 725 -17 841 -9
+<< via1 >>
+rect 157 601 199 604
+rect 157 578 199 601
+rect 315 31 342 33
+rect 315 10 319 31
+rect 319 10 341 31
+rect 341 10 342 31
+rect 315 7 342 10
+rect 740 -9 818 49
+<< metal2 >>
+rect 148 604 208 608
+rect 148 602 157 604
+rect 199 602 208 604
+rect 148 573 154 602
+rect 201 573 208 602
+rect 725 49 841 58
+rect 310 36 350 40
+rect 310 7 315 36
+rect 344 7 350 36
+rect 310 0 350 7
+rect 725 -9 740 49
+rect 818 -9 841 49
+rect 725 -17 841 -9
+<< via2 >>
+rect 154 578 157 602
+rect 157 578 199 602
+rect 199 578 201 602
+rect 154 573 201 578
+rect 315 33 344 36
+rect 315 7 342 33
+rect 342 7 344 33
+rect 740 -9 818 49
+<< metal3 >>
+rect -17 645 945 2073
+rect 141 602 213 605
+rect 141 566 154 602
+rect 202 566 213 602
+rect 141 556 213 566
+rect 725 49 841 645
+rect 301 36 357 40
+rect 301 2 313 36
+rect 346 2 357 36
+rect 301 -10 357 2
+rect 725 -9 740 49
+rect 818 -9 841 49
+rect 725 -51 841 -9
+rect -16 -1479 944 -51
+<< via3 >>
+rect 154 573 201 602
+rect 201 573 202 602
+rect 154 566 202 573
+rect 313 7 315 36
+rect 315 7 344 36
+rect 344 7 346 36
+rect 313 2 346 7
+<< mimcap >>
+rect 0 783 930 2059
+rect 0 714 140 783
+rect 240 714 930 783
+rect 0 659 930 714
+rect 0 -88 930 -65
+rect 0 -130 304 -88
+rect 354 -130 930 -88
+rect 0 -1465 930 -130
+<< mimcapcontact >>
+rect 140 714 240 783
+rect 304 -130 354 -88
+<< metal4 >>
+rect 131 783 243 790
+rect 131 714 140 783
+rect 240 714 243 783
+rect 131 697 243 714
+rect 141 621 208 697
+rect 140 620 209 621
+rect 140 602 211 620
+rect 140 566 154 602
+rect 202 566 211 602
+rect 142 565 211 566
+rect 301 36 357 40
+rect 301 2 313 36
+rect 346 2 357 36
+rect 301 -88 357 2
+rect 301 -130 304 -88
+rect 354 -130 357 -88
+rect 301 -131 357 -130
+use neuron  neuron_0
+timestamp 1702323777
+transform 1 0 95 0 1 355
+box -95 -355 825 250
+<< labels >>
+rlabel locali 25 155 25 155 7 VN
+port 3 w
+rlabel locali 920 285 920 285 3 VSYN
+port 1 e
+rlabel locali 185 0 185 0 5 ISYN
+port 2 s
+rlabel locali 25 450 25 450 7 VP
+<< end >>

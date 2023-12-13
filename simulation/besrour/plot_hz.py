@@ -2,7 +2,6 @@ import matplotlib.pyplot as plt
 
 def calculate_and_plot_spike_frequency(file_path, threshold=1.5):
     spike_counts = {}
-    above_threshold = False
 
     with open(file_path, 'r') as file:
         next(file)  # Skip the header line
@@ -37,19 +36,18 @@ def calculate_and_plot_spike_frequency(file_path, threshold=1.5):
     frequencies.sort()
 
     # Extracting current levels and frequencies
-    current_levels = [freq[0] for freq in frequencies]
-    spike_freqs = [freq[1] for freq in frequencies]
+    current_levels = [freq[0] * 1e6 for freq in frequencies]  # Convert A to μA
+    spike_freqs = [freq[1] / 1e6 for freq in frequencies]  # Convert Hz to MHz
 
     # Plotting
     plt.figure(figsize=(10, 6))
     plt.plot(current_levels, spike_freqs, marker='o')
-    plt.xlabel('Current (A)')
-    plt.ylabel('Frequency (Hz)')
+    plt.xlabel('Current (μA)')  # Change label to μA
+    plt.ylabel('Frequency (MHz)')  # Change label to MHz
     plt.title('Spike Frequency vs Current')
     plt.grid(True)
     plt.show()
 
-# To use this script, simply call the function with the path to your data file.
+# To use this updated script, simply call the function with the path to your data file.
 calculate_and_plot_spike_frequency('mem.txt')
-
 

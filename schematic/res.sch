@@ -21,26 +21,22 @@ N 20 60 50 60 {
 lab=A}
 N 160 60 200 60 {
 lab=#net1}
-N 160 170 160 190 {
-lab=VN}
 N 160 190 160 200 {
-lab=VN}
+lab=GND}
 N 0 -30 220 -30 {
-lab=A}
-N 0 -30 0 60 {
-lab=A}
+lab=VSS}
 N 200 60 260 60 {
 lab=#net1}
 N 260 60 270 60 {
 lab=#net1}
 N 160 90 160 100 {
 lab=#net1}
-N 80 200 160 200 {
-lab=VN}
-N 80 200 80 210 {
-lab=VN}
+N 90 200 90 210 {
+lab=VSS}
 N 90 70 90 200 {
-lab=VN}
+lab=VSS}
+N 90 170 160 170 {
+lab=VSS}
 C {madvlsi/nmos4.sym} 160 170 2 0 {name=M1
 L=0.15
 W=4.5
@@ -61,4 +57,6 @@ C {devices/iopin.sym} -50 60 2 0 {name=p6 lab=A}
 C {devices/iopin.sym} 270 -110 3 0 {name=p4 lab=B}
 C {devices/iopin.sym} 190 170 0 0 {name=p3 lab=W}
 C {devices/iopin.sym} 90 50 3 0 {name=p1 lab=VP}
-C {devices/iopin.sym} 80 210 1 0 {name=p2 lab=VN}
+C {devices/iopin.sym} 90 210 1 0 {name=p2 lab=VSS}
+C {devices/iopin.sym} 160 200 1 0 {name=p5 lab=GND}
+C {devices/iopin.sym} 0 -30 2 0 {name=p7 lab=S}

@@ -257,12 +257,6 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {madvlsi/capacitor.sym} 150 140 0 0 {name=C1
-value=340f
-m=1}
-C {madvlsi/capacitor.sym} 360 180 0 0 {name=C2
-value=340f
-m=1}
 C {devices/iopin.sym} 340 -50 3 0 {name=p2 lab=VP}
 C {devices/iopin.sym} 340 210 1 0 {name=p3 lab=VN}
 C {devices/iopin.sym} 40 80 1 0 {name=p4 lab=Isyn}
@@ -330,3 +324,5 @@ spiceprefix=X
 C {devices/opin.sym} 870 90 0 0 {name=p1 lab=Vout}
 C {devices/lab_pin.sym} 810 60 0 0 {name=p6 sig_type=std_logic lab=VPREOUT}
 C {devices/lab_pin.sym} 690 50 0 0 {name=p7 sig_type=std_logic lab=VPREOUT2}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 150 140 0 0 {name=C1 model=cap_mim_m3_1 W=9.3 L=17=4 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 360 180 0 0 {name=C2 model=cap_mim_m3_1 W=9.3 L=17=4 MF=1 spiceprefix=X}

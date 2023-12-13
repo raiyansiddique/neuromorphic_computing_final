@@ -128,6 +128,7 @@ lab=#net3}
 C {devices/code.sym} 260 -360 0 0 {name=SPICE only_toplevel=false value=".param W=2
 .param L=0.3
 .include ~/neuromorphic_computing_final/schematic/memristor_emulator_res.spice
+.include ~/neuromorphic_computing_final/schematic/neuron_top.spice
 .tran 0.5ns 2us
 .save all"}
 C {madvlsi/tt_models.sym} 470 -380 0 0 {
@@ -152,12 +153,10 @@ value=10u}
 C {madvlsi/gnd.sym} -110 840 0 0 {name=l19 lab=GND}
 C {devices/lab_pin.sym} -110 780 1 0 {name=p10 sig_type=std_logic lab=Isyn3}
 C {devices/lab_pin.sym} -70 780 1 0 {name=p11 sig_type=std_logic lab=Isyn3}
-C {/home/madvlsi/neuromorphic_computing_final/schematic/besrour_neuron_cm.sym} 200 780 0 0 {name=X9}
 C {madvlsi/ammeter1.sym} 70 780 3 0 {name=Vmeas8}
 C {madvlsi/vdd.sym} 330 770 0 0 {name=l22 lab=VDD}
 C {madvlsi/gnd.sym} 330 790 0 0 {name=l23 lab=GND}
 C {devices/lab_pin.sym} 310 770 1 0 {name=p12 sig_type=std_logic lab=W1}
-C {/home/madvlsi/neuromorphic_computing_final/schematic/besrour_neuron_cm.sym} 470 780 0 0 {name=X10}
 C {madvlsi/vdd.sym} 470 730 0 0 {name=l24 lab=VDD}
 C {madvlsi/gnd.sym} 470 830 0 0 {name=l25 lab=GND}
 C {devices/lab_pin.sym} 530 780 2 0 {name=p13 sig_type=std_logic lab=Vout1}
@@ -234,7 +233,6 @@ C {/home/madvlsi/neuromorphic_computing_final/schematic/memristor_emulator_res.s
 C {madvlsi/vdd.sym} 210 950 0 0 {name=l8 lab=VDD}
 C {madvlsi/gnd.sym} 210 1050 0 0 {name=l16 lab=GND}
 C {devices/lab_pin.sym} -60 1000 1 0 {name=p8 sig_type=std_logic lab=Isyn4}
-C {/home/madvlsi/neuromorphic_computing_final/schematic/besrour_neuron_cm.sym} 210 1000 0 0 {name=X11}
 C {madvlsi/ammeter1.sym} 80 1000 3 0 {name=Vmeas9}
 C {madvlsi/vdd.sym} 340 990 0 0 {name=l26 lab=VDD}
 C {madvlsi/gnd.sym} 340 1010 0 0 {name=l27 lab=GND}
@@ -244,3 +242,13 @@ value=10u}
 C {madvlsi/gnd.sym} -180 1060 0 0 {name=l28 lab=GND}
 C {devices/lab_pin.sym} -180 1000 1 0 {name=p15 sig_type=std_logic lab=Isyn4}
 C {devices/lab_pin.sym} 320 990 1 0 {name=p16 sig_type=std_logic lab=W0}
+C {/home/madvlsi/neuromorphic_computing_final/schematic/neuron_top.sym} 200 780 0 0 {name=X9}
+C {/home/madvlsi/neuromorphic_computing_final/schematic/neuron_top.sym} 210 1000 0 0 {name=X11}
+C {/home/madvlsi/neuromorphic_computing_final/schematic/neuron_top.sym} 470 780 0 0 {name=X10}
+C {/home/madvlsi/neuromorphic_computing_final/schematic/neuron_top.sym} 650 600 0 0 {name=X13}
+C {madvlsi/vdd.sym} 650 550 0 0 {name=l29 lab=VDD}
+C {madvlsi/gnd.sym} 650 650 0 0 {name=l30 lab=GND}
+C {devices/lab_pin.sym} 710 600 2 0 {name=p9 sig_type=std_logic lab=Vout2}
+C {madvlsi/isource.sym} 590 630 2 0 {name=I5
+value=10u}
+C {madvlsi/gnd.sym} 590 660 0 0 {name=l31 lab=GND}

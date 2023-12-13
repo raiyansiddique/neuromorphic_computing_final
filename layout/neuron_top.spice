@@ -1,4 +1,4 @@
-* NGSPICE file created from neuron_top.ext - technology: sky130A
+* SPICE3 file created from neuron_top.ext - technology: sky130A
 
 .subckt neuron VP VN ISYN VSYN CMEM CRST a_n150_n600#
 X0 VN a_270_n40# CRST VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=2.5 as=1 ps=5 w=2 l=0.3
@@ -15,11 +15,14 @@ X10 VN ISYN a_n150_n600# VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=2.5 as=1 ps=5 w=2 
 X11 a_270_n40# CMEM VP VP sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=0.5 ps=2.5 w=2 l=0.3
 X12 ISYN ISYN VN VN sky130_fd_pr__nfet_01v8 ad=1 pd=5 as=0.5 ps=2.5 w=2 l=0.3
 X13 a_970_n10# CRST VN VN sky130_fd_pr__nfet_01v8 ad=1 pd=5 as=0.5 ps=2.5 w=2 l=0.3
+C0 VP VN 3.25f
 .ends
 
-.subckt neuron_top VSYN VN ISYN
-Xneuron_0 neuron_0/VP VSUBS ISYN VSYN neuron_0/CMEM neuron_0/CRST VN neuron
-X0 neuron_0/CMEM VSUBS sky130_fd_pr__cap_mim_m3_1 l=14 w=9.3
-X1 neuron_0/CRST VSUBS sky130_fd_pr__cap_mim_m3_1 l=14 w=9.3
+.subckt neuron_top VSYN ISYN VP VN
+Xneuron_0 VP VN ISYN VSYN neuron_0/CMEM neuron_0/CRST li_50_880# neuron
+X0 neuron_0/CMEM VN sky130_fd_pr__cap_mim_m3_1 l=14 w=9.3
+X1 neuron_0/CRST VN sky130_fd_pr__cap_mim_m3_1 l=14 w=9.3
+C0 VN 0 6.69f
+C1 VP 0 3.23f
 .ends
 

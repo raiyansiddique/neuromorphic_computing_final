@@ -41,12 +41,12 @@ def plot_spike_frequencies(files):
 
     for file in files:
         frequencies = calculate_frequencies(file)
-        current_levels = [freq[0] for freq in frequencies]
-        spike_freqs = [freq[1] for freq in frequencies]
+        current_levels = [freq[0] * 1e6 for freq in frequencies]  # Convert A to μA
+        spike_freqs = [freq[1] / 1e6 for freq in frequencies]  # Convert Hz to MHz
         plt.plot(current_levels, spike_freqs, marker='o', label=file)
 
-    plt.xlabel('Current (A)')
-    plt.ylabel('Frequency (Hz)')
+    plt.xlabel('Current (μA)')  # Change label to μA
+    plt.ylabel('Frequency (MHz)')
     plt.title('Spike Frequency vs Current for Monte Carlo Simulation')
     plt.grid(True)
     plt.show()
@@ -56,24 +56,22 @@ def plot_zoomed_spike_frequencies(files, lower_bound=0, upper_bound=1):
 
     for file in files:
         frequencies = calculate_frequencies(file)
-        current_levels = [freq[0] for freq in frequencies if lower_bound <= freq[0] <= upper_bound]
-        spike_freqs = [freq[1] for freq in frequencies if lower_bound <= freq[0] <= upper_bound]
+        current_levels = [freq[0] * 1e6 for freq in frequencies if lower_bound <= freq[0] <= upper_bound]  # Convert A to μA
+        spike_freqs = [freq[1] / 1e6 for freq in frequencies if lower_bound <= freq[0] <= upper_bound]  # Convert Hz to MHz
         plt.plot(current_levels, spike_freqs, marker='o', label=file)
 
-    plt.xlabel('Current (A)')
-    plt.ylabel('Frequency (Hz)')
+    plt.xlabel('Current (μA)')  # Change label to μA
+    plt.ylabel('Frequency (MHz)')
     plt.title('Spike Frequency vs Current (0-1 uA) for Multiple Files')
     plt.grid(True)
     plt.show()
 
 # File paths
-files = ['mem1.txt', 'mem2.txt', 'mem3.txt', 'mem4.txt']
+files = ['mem1.txt', 'mem2.txt', 'mem3.txt', 'mem4.txt', 'mem5.txt']
 
 # Plotting for all files
 plot_spike_frequencies(files)
 
 # Zoomed in plot for the 0 to 1 uA region
 plot_zoomed_spike_frequencies(files)
-
-
 

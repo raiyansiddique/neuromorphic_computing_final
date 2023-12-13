@@ -1,4 +1,4 @@
-timestamp 1702449629
+timestamp 1702479056
 version 8.3
 tech sky130A
 style ngspice()
@@ -6,79 +6,90 @@ scale 1000 1 500000
 resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
 use neuron neuron_0 1 0 190 0 1 710
 parameters sky130_fd_pr__cap_mim_m3_1 w=w l=l
-port "ISYN" 4 370 0 370 0 li
-port "VN" 2 50 310 50 310 li
+port "VN" 6 50 310 50 310 m1
+port "VP" 5 50 896 50 896 m1
+port "ISYN" 2 370 0 370 0 li
 port "VSYN" 1 1840 570 1840 570 li
-port "VP" 3 50 900 50 900 li
 node "m1_1450_n34#" 1 7900.09 1450 -34 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34800 764 34800 764 11301408 21432 0 0 0 0 0 0
+node "VN" 0 14.3065 50 310 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 280 76 0 0 0 0 0 0 0 0 0 0
+node "VP" 0 31.5362 50 896 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1600 160 0 0 0 0 0 0 0 0 0 0
 node "li_620_0#" 36 335.514 620 0 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3008 248 6400 320 6400 320 11200 424 38304 908 0 0 0 0
 node "li_530_0#" 13 21.1834 530 0 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1600 160 0 0 0 0 0 0 0 0 0 0 0 0
 node "ISYN" 13 27.0936 370 0 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1600 160 0 0 0 0 0 0 0 0 0 0 0 0
-node "VN" 13 31.672 50 310 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1600 160 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_50_290#" 13 31.672 50 290 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1600 160 0 0 0 0 0 0 0 0 0 0 0 0
 node "VSYN" 13 34.0396 1840 570 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1600 160 0 0 0 0 0 0 0 0 0 0 0 0
-node "VP" 13 31.672 50 900 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1600 160 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_50_880#" 13 31.672 50 880 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1600 160 0 0 0 0 0 0 0 0 0 0 0 0
 node "li_296_1146#" 49 499.144 296 1146 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11744 532 8400 380 8400 380 14112 484 77920 1364 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "li_530_0#" "ISYN" 6.07143
-cap "ISYN" "li_620_0#" 1.47191
-cap "VN" "VP" 1.76471
-cap "VP" "m1_1450_n34#" 1.73031
-cap "li_296_1146#" "m1_1450_n34#" 513.34
-cap "li_530_0#" "li_620_0#" 16.8222
-cap "VSYN" "m1_1450_n34#" 2.77778
-cap "ISYN" "li_296_1146#" 1.13006
-cap "VN" "m1_1450_n34#" 1.66662
-cap "ISYN" "m1_1450_n34#" 2.51849
+cap "m1_1450_n34#" "VSYN" 2.77778
+cap "li_50_880#" "li_50_290#" 1.76471
+cap "m1_1450_n34#" "li_50_290#" 1.59099
+cap "li_620_0#" "ISYN" 1.47191
+cap "VN" "m1_1450_n34#" 0.516349
 cap "li_530_0#" "m1_1450_n34#" 2.72512
+cap "li_296_1146#" "ISYN" 1.13006
+cap "li_50_880#" "m1_1450_n34#" 1.28563
+cap "VP" "li_50_290#" 0.060975
+cap "li_530_0#" "li_620_0#" 16.8222
+cap "VN" "VP" 0.730897
 cap "m1_1450_n34#" "li_620_0#" 284.44
+cap "li_50_880#" "VP" 4.568
+cap "m1_1450_n34#" "VP" 2.48096
+cap "m1_1450_n34#" "li_296_1146#" 513.34
+cap "li_530_0#" "ISYN" 6.07143
+cap "VN" "li_50_290#" 2.8083
+cap "m1_1450_n34#" "ISYN" 2.51849
 device csubckt sky130_fd_pr__cap_mim_m3_1 0 -2930 1 -2929 w=1860 l=2800 "None" "li_620_0#" 368 0 "m1_1450_n34#" 0 11301408,21432
 device csubckt sky130_fd_pr__cap_mim_m3_1 0 1318 1 1319 w=1860 l=2800 "None" "li_296_1146#" 676 0 "m1_1450_n34#" 0 11301408,21432
-cap "neuron_0/VN" "neuron_0/VP" 119.449
-cap "neuron_0/a_270_n40#" "neuron_0/CMEM" 62.5378
-cap "neuron_0/VN" "neuron_0/a_970_n10#" 7.92105
-cap "neuron_0/a_270_n40#" "neuron_0/CRST" 0.687375
-cap "neuron_0/VN" "neuron_0/a_270_n40#" 42.7536
 cap "neuron_0/a_n150_n600#" "neuron_0/CMEM" 23.0628
-cap "neuron_0/VN" "neuron_0/a_n150_n600#" 12.6634
+cap "neuron_0/VP" "neuron_0/VN" 116.621
 cap "neuron_0/VP" "neuron_0/a_270_n40#" -2.55121
-cap "neuron_0/CMEM" "neuron_0/ISYN" -3.64895
-cap "neuron_0/VN" "neuron_0/ISYN" 15.2889
-cap "neuron_0/ISYN" "neuron_0/CRST" 6.84519
-cap "neuron_0/CMEM" "neuron_0/CRST" -5.65072
-cap "neuron_0/VN" "neuron_0/CMEM" 21.7239
-cap "neuron_0/VN" "neuron_0/CRST" 137.599
+cap "neuron_0/ISYN" "neuron_0/VN" 15.2889
+cap "neuron_0/CRST" "neuron_0/VN" 137.599
+cap "neuron_0/CMEM" "neuron_0/VN" 21.7239
+cap "neuron_0/a_n150_n600#" "neuron_0/VN" 9.99729
+cap "neuron_0/a_270_n40#" "neuron_0/CRST" 0.687375
+cap "neuron_0/a_270_n40#" "neuron_0/CMEM" 62.5378
+cap "neuron_0/a_n150_n600#" "neuron_0/a_270_n40#" -0.515358
 cap "neuron_0/VP" "neuron_0/ISYN" -0.00417135
-cap "neuron_0/a_270_n40#" "neuron_0/a_n150_n600#" -0.515358
-cap "neuron_0/VP" "neuron_0/CMEM" 123.292
 cap "neuron_0/VP" "neuron_0/CRST" 8.15249
-cap "neuron_0/a_970_n10#" "neuron_0/VN" 40.3845
-cap "neuron_0/VSYN" "neuron_0/VN" 21.2819
-cap "neuron_0/a_n150_n600#" "neuron_0/VN" 0.75079
-cap "neuron_0/ISYN" "neuron_0/VN" 0.768386
-cap "neuron_0/VN" "neuron_0/VP" 248.659
-cap "neuron_0/CMEM" "neuron_0/VN" 2.76803
-cap "neuron_0/CRST" "neuron_0/VN" 23.3255
+cap "neuron_0/VP" "neuron_0/CMEM" 123.292
+cap "neuron_0/a_n150_n600#" "neuron_0/VP" -4.62897
+cap "neuron_0/a_970_n10#" "neuron_0/VN" 7.92105
+cap "neuron_0/a_270_n40#" "neuron_0/VN" 42.7536
+cap "neuron_0/ISYN" "neuron_0/CMEM" -3.64895
+cap "neuron_0/CRST" "neuron_0/ISYN" 6.84519
+cap "neuron_0/CRST" "neuron_0/CMEM" -5.65072
+cap "neuron_0/VN" "neuron_0/a_n150_n600#" 0.81357
+cap "neuron_0/VN" "neuron_0/CRST" 23.3255
+cap "neuron_0/VN" "neuron_0/a_970_n10#" 40.3845
+cap "neuron_0/VN" "neuron_0/VSYN" 21.2819
+cap "neuron_0/VN" "neuron_0/VP" 248.618
+cap "neuron_0/VN" "neuron_0/CMEM" 2.76803
 cap "neuron_0/VN" "neuron_0/a_270_n40#" 7.40695
+cap "neuron_0/ISYN" "neuron_0/VN" 0.768386
+cap "neuron_0/VN" "neuron_0/VP" 119.529
+cap "neuron_0/ISYN" "neuron_0/CMEM" 0.0239033
+cap "neuron_0/a_270_n40#" "neuron_0/VN" 11.6061
+cap "neuron_0/a_970_n10#" "neuron_0/VN" 1.25334
 cap "neuron_0/VN" "neuron_0/ISYN" 0.414222
 cap "neuron_0/a_n150_n600#" "neuron_0/CMEM" 0.0427868
-cap "neuron_0/VN" "neuron_0/CRST" 4.41035
 cap "neuron_0/VN" "neuron_0/CMEM" 5.06335
-cap "neuron_0/VN" "neuron_0/a_270_n40#" 11.6061
-cap "neuron_0/VN" "neuron_0/VP" 119.871
-cap "neuron_0/ISYN" "neuron_0/CMEM" 0.0239033
-cap "neuron_0/VN" "neuron_0/a_970_n10#" 1.25334
-cap "neuron_0/a_270_n40#" "neuron_0/CMEM" 0.437883
 cap "neuron_0/VP" "neuron_0/CMEM" 4.58323
-cap "neuron_0/VN" "neuron_0/a_n150_n600#" 1.64635
-cap "neuron_0/VN" "neuron_0/a_970_n10#" 0.852209
-cap "neuron_0/VN" "neuron_0/VSYN" 0.777768
-cap "neuron_0/VP" "neuron_0/VN" 11.0566
-merge "neuron_0/VN" "m1_1450_n34#" -1209.21 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1392 -476 0 0 -325156 -2262 0 0 0 0 0 0
-merge "m1_1450_n34#" "VSUBS"
+cap "neuron_0/VN" "neuron_0/CRST" 4.41035
+cap "neuron_0/a_n150_n600#" "neuron_0/VN" 1.96172
+cap "neuron_0/a_270_n40#" "neuron_0/CMEM" 0.437883
+cap "neuron_0/VN" "neuron_0/VP" 11.0566
+cap "neuron_0/a_970_n10#" "neuron_0/VN" 0.852209
+cap "neuron_0/VSYN" "neuron_0/VN" 0.777768
+merge "neuron_0/VN" "m1_1450_n34#" -1223.51 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1672 -552 0 0 -325156 -2262 0 0 0 0 0 0
+merge "m1_1450_n34#" "VN"
+merge "VN" "VSUBS"
+merge "neuron_0/a_n150_n600#" "li_50_290#" -63.344 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3200 -320 0 0 0 0 0 0 0 0 0 0 0 0
+merge "li_50_290#" "li_50_880#"
 merge "neuron_0/VSYN" "VSYN" -34.0396 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1600 -160 0 0 0 0 0 0 0 0 0 0 0 0
 merge "neuron_0/CMEM" "li_296_1146#" -175.844 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2480 -288 0 0 0 0 0 0 0 0 0 0 0 0
 merge "li_296_1146#" "li_530_0#"
 merge "neuron_0/ISYN" "ISYN" -28.3809 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1600 -160 0 0 0 0 0 0 0 0 0 0 0 0
 merge "neuron_0/CRST" "li_620_0#" -128.61 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3008 -248 0 0 0 0 0 0 0 0 0 0 0 0
-merge "neuron_0/a_n150_n600#" "VN" -63.344 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3200 -320 0 0 0 0 0 0 0 0 0 0 0 0
-merge "VN" "VP"
+merge "neuron_0/VP" "VP" -54.7198 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1600 -160 0 0 0 0 0 0 0 0 0 0
