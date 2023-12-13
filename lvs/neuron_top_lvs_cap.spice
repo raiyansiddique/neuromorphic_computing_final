@@ -5,8 +5,8 @@
 *.opin Vsyn
 *.iopin Isyn
 X1 Isyn Vsyn VP VN net1 net2 besrour_neuron_cm_lds_lvs
-XC1 net2 VN sky130_fd_pr__cap_mim_m3_1 W=17 L=10 MF=1 m=1
-XC2 net1 VN sky130_fd_pr__cap_mim_m3_1 W=17 L=10 MF=1 m=1
+XC1 net2 VN sky130_fd_pr__cap_mim_m3_1 W=9.3 L=14 MF=1 m=1
+XC2 net1 VN sky130_fd_pr__cap_mim_m3_1 W=9.3 L=14 MF=1 m=1
 **.ends
 
 * expanding   symbol:

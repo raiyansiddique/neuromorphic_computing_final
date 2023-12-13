@@ -17,11 +17,8 @@ X12 ISYN ISYN VN VN sky130_fd_pr__nfet_01v8 ad=1 pd=5 as=0.5 ps=2.5 w=2 l=0.3
 X13 a_970_n10# CRST VN VN sky130_fd_pr__nfet_01v8 ad=1 pd=5 as=0.5 ps=2.5 w=2 l=0.3
 .ends
 
-
-* Top level circuit neuron_top
-
-Xneuron_0 neuron_0/VP VSUBS ISYN VSYN neuron_0/CMEM neuron_0/CRST VP neuron
-X0 neuron_0/CMEM VSUBS sky130_fd_pr__cap_mim_m3_1 l=17 w=10
-X1 neuron_0/CRST VSUBS sky130_fd_pr__cap_mim_m3_1 l=17 w=10
-.end
+Xneuron_0 neuron_0/VP VSUBS ISYN VSYN neuron_0/CMEM neuron_0/CRST VN neuron
+X0 neuron_0/CMEM VSUBS sky130_fd_pr__cap_mim_m3_1 l=14 w=9.3
+X1 neuron_0/CRST VSUBS sky130_fd_pr__cap_mim_m3_1 l=14 w=9.3
+.ends
 

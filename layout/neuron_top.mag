@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1702393175
+timestamp 1702450433
 << locali >>
 rect 148 601 208 608
 rect 148 578 157 601
@@ -63,7 +63,7 @@ rect 315 7 342 33
 rect 342 7 344 33
 rect 740 -9 818 49
 << metal3 >>
-rect -17 645 1016 2375
+rect -17 645 945 2073
 rect 141 602 213 605
 rect 141 566 154 602
 rect 202 566 213 602
@@ -76,7 +76,7 @@ rect 301 -10 357 2
 rect 725 -9 740 49
 rect 818 -9 841 49
 rect 725 -51 841 -9
-rect -16 -1781 1017 -51
+rect -16 -1479 944 -51
 << via3 >>
 rect 154 573 201 602
 rect 201 573 202 602
@@ -86,14 +86,14 @@ rect 315 7 344 36
 rect 344 7 346 36
 rect 313 2 346 7
 << mimcap >>
-rect 0 783 1000 2359
+rect 0 783 930 2059
 rect 0 714 140 783
-rect 240 714 1000 783
-rect 0 659 1000 714
-rect 0 -88 1000 -65
+rect 240 714 930 783
+rect 0 659 930 714
+rect 0 -88 930 -65
 rect 0 -130 304 -88
-rect 354 -130 1000 -88
-rect 0 -1765 1000 -130
+rect 354 -130 930 -88
+rect 0 -1465 930 -130
 << mimcapcontact >>
 rect 140 714 240 783
 rect 304 -130 354 -88
@@ -120,12 +120,8 @@ timestamp 1702323777
 transform 1 0 95 0 1 355
 box -95 -355 825 250
 << labels >>
-rlabel locali 25 450 25 450 7 VP
-port 3 w
 rlabel locali 25 155 25 155 7 VN
-port 2 w
-rlabel locali 185 0 185 0 5 ISYN
-port 4 s
+rlabel locali 25 450 25 450 7 VP
 rlabel locali 920 285 920 285 3 VSYN
-port 1 e
+rlabel locali 185 0 185 0 5 ISYN
 << end >>
