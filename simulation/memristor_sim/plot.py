@@ -15,11 +15,14 @@ data.columns = column_names
 # Convert the data to numeric values, if not already
 data = data.apply(pd.to_numeric, errors='coerce')
 
+# Convert i(Vmeas1) from A to μA
+data['i(Vmeas1)'] *= 1e6
+
 # Plotting i(Vmeas1) as a function of v(W)
 plt.figure(figsize=(10, 6))
 plt.scatter(data['v(W)'], data['i(Vmeas1)'], marker='o')
 plt.xlabel('Voltage Weight')
-plt.ylabel('Output Current (A)')
+plt.ylabel('Output Current (μA)')  # Update label to μA
 plt.title('Output Current at 1.8V for Varying Weights')
 plt.grid(True)
 plt.show()

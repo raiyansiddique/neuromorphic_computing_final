@@ -324,5 +324,5 @@ spiceprefix=X
 C {devices/opin.sym} 870 90 0 0 {name=p1 lab=Vout}
 C {devices/lab_pin.sym} 810 60 0 0 {name=p6 sig_type=std_logic lab=VPREOUT}
 C {devices/lab_pin.sym} 690 50 0 0 {name=p7 sig_type=std_logic lab=VPREOUT2}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 150 140 0 0 {name=C1 model=cap_mim_m3_1 W=9.3 L=17=4 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 360 180 0 0 {name=C2 model=cap_mim_m3_1 W=9.3 L=17=4 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 150 140 0 0 {name=C1 model=cap_mim_m3_1 W=9.3 L=14 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 360 180 0 0 {name=C2 model=cap_mim_m3_1 W=9.3 L=14 MF=1 spiceprefix=X}

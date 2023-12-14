@@ -1,0 +1,204 @@
+timestamp 1702529013
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use neuron_top neuron_top_1 1 0 6334 0 1 2954
+use neuron_top neuron_top_0 1 0 34 0 1 2958
+use memristor_emulator_res memristor_emulator_res_0 1 0 2042 0 1 24
+node "VN" 0 6.32722 82 3262 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72 36 0 0 0 0 0 0 0 0 0 0
+node "m1_1102_3072#" 2 3931.13 1102 3072 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2379864 12996 0 0 0 0 0 0 0 0 0 0
+node "VP" 0 6.43743 82 3856 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72 36 0 0 0 0 0 0 0 0 0 0
+node "m1_1360_4058#" 4 5089.27 1360 4058 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2534728 18212 0 0 0 0 0 0 0 0 0 0
+node "ISYN" 26 4.91359 398 2958 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32 24 0 0 0 0 0 0 0 0 0 0 0 0
+node "VSYN" 49 19.8874 8164 3506 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 380 96 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_6226_4182#" 1936 1186.16 6226 4182 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 75432 3568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_1820_3508#" 1846 937.217 1820 3508 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 45436 2696 0 0 8160 364 0 0 0 0 0 0 0 0 0 0 0 0
+node "W" 145 22.904 4742 4888 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 300 80 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "W" "m1_1360_4058#" 1.12451
+cap "m1_1102_3072#" "a_6226_4182#" 120.271
+cap "m1_1102_3072#" "a_1820_3508#" 27.4303
+cap "m1_1360_4058#" "VP" 0.396992
+cap "a_6226_4182#" "m1_1360_4058#" 3.67819
+cap "VN" "VP" 0.417722
+cap "m1_1102_3072#" "m1_1360_4058#" 193.009
+cap "a_1820_3508#" "m1_1360_4058#" 23.5874
+cap "m1_1102_3072#" "W" 0.0312884
+cap "m1_1102_3072#" "VN" 0.496241
+cap "memristor_emulator_res_0/a_n80_4020#" "neuron_top_0/m1_1450_n34#" 0.707786
+cap "memristor_emulator_res_0/VN" "neuron_top_0/m1_1450_n34#" 557.713
+cap "memristor_emulator_res_0/a_n80_4020#" "neuron_top_1/m1_1450_n34#" 0.657891
+cap "neuron_top_1/m1_1450_n34#" "memristor_emulator_res_0/VN" 504.628
+cap "neuron_top_0/VN" "neuron_top_0/neuron_0/CRST" 1.5174
+cap "neuron_top_1/neuron_0/CRST" "neuron_top_1/VN" 5.11579
+cap "neuron_top_0/neuron_0/a_270_n40#" "memristor_emulator_res_0/a_218_4108#" 0.218202
+cap "neuron_top_0/VN" "neuron_top_0/neuron_0/a_270_n40#" -0.658802
+cap "neuron_top_0/neuron_0/a_970_n10#" "neuron_top_0/VP" 0.0646001
+cap "neuron_top_0/VP" "neuron_top_0/neuron_0/CRST" 1.27858
+cap "neuron_top_0/neuron_0/CMEM" "neuron_top_0/VP" 4.98741
+cap "neuron_top_0/neuron_0/CMEM" "memristor_emulator_res_0/a_n80_4020#" 0.490621
+cap "neuron_top_0/VP" "neuron_top_0/neuron_0/a_n150_n600#" 0.100507
+cap "neuron_top_0/neuron_0/CMEM" "neuron_top_0/VSYN" 0.20652
+cap "neuron_top_0/VN" "neuron_top_0/VP" -10.7062
+cap "neuron_top_0/VN" "neuron_top_0/neuron_0/a_970_n10#" -0.070614
+cap "neuron_top_0/neuron_0/a_270_n40#" "neuron_top_0/VP" 4.08453
+cap "neuron_top_0/VN" "neuron_top_0/neuron_0/CRST" 6.9143
+cap "neuron_top_0/VN" "neuron_top_0/neuron_0/CMEM" -0.295758
+cap "neuron_top_0/neuron_0/a_270_n40#" "memristor_emulator_res_0/a_n80_4020#" 1.12019
+cap "neuron_top_0/neuron_0/a_270_n40#" "neuron_top_0/VSYN" 0.871366
+cap "neuron_top_0/VN" "neuron_top_0/ISYN" 0.0204903
+cap "neuron_top_0/VSYN" "neuron_top_0/neuron_0/a_270_n40#" 1.0073
+cap "neuron_top_0/VN" "memristor_emulator_res_0/B" 0.480118
+cap "neuron_top_0/VP" "memristor_emulator_res_0/a_n80_4020#" 4.70264
+cap "neuron_top_0/VSYN" "neuron_top_0/VN" 257.437
+cap "neuron_top_0/VSYN" "memristor_emulator_res_0/a_218_4108#" 0.0974751
+cap "neuron_top_0/VN" "neuron_top_0/neuron_0/CMEM" 0.336534
+cap "neuron_top_0/neuron_0/a_270_n40#" "memristor_emulator_res_0/a_n80_4020#" 1.0295
+cap "neuron_top_0/VN" "memristor_emulator_res_0/a_n80_4020#" 7.09988
+cap "neuron_top_0/VSYN" "neuron_top_0/neuron_0/CMEM" 0.155594
+cap "neuron_top_0/VP" "neuron_top_0/neuron_0/a_970_n10#" 5.71914
+cap "neuron_top_0/VN" "neuron_top_0/neuron_0/CRST" 3.55993
+cap "memristor_emulator_res_0/a_218_4108#" "neuron_top_0/neuron_0/CRST" 0.0200976
+cap "neuron_top_0/VSYN" "memristor_emulator_res_0/a_n80_4020#" 37.1561
+cap "neuron_top_0/VN" "neuron_top_0/VP" 35.9241
+cap "neuron_top_0/VP" "memristor_emulator_res_0/a_218_4108#" 1.34321
+cap "neuron_top_0/VSYN" "neuron_top_0/neuron_0/CRST" 0.301672
+cap "neuron_top_0/neuron_0/CMEM" "memristor_emulator_res_0/a_n80_4020#" 0.0636615
+cap "memristor_emulator_res_0/a_218_4108#" "neuron_top_0/neuron_0/a_970_n10#" 0.0510073
+cap "neuron_top_0/VN" "neuron_top_0/neuron_0/a_970_n10#" 6.08168
+cap "neuron_top_0/VSYN" "neuron_top_0/VP" 66.2591
+cap "neuron_top_0/neuron_0/a_270_n40#" "neuron_top_0/VN" 0.673043
+cap "neuron_top_0/neuron_0/a_270_n40#" "memristor_emulator_res_0/a_218_4108#" 0.233606
+cap "neuron_top_0/VN" "neuron_top_0/neuron_0/a_n150_n600#" 0.0341506
+cap "neuron_top_0/VN" "memristor_emulator_res_0/a_218_4108#" 2.13149
+cap "neuron_top_0/VSYN" "neuron_top_0/neuron_0/a_970_n10#" 15.8651
+cap "neuron_top_0/neuron_0/VN" "neuron_top_0/neuron_0/VP" -19.3334
+cap "memristor_emulator_res_0/a_n80_4020#" "neuron_top_0/neuron_0/VP" 0.324703
+cap "memristor_emulator_res_0/A" "neuron_top_1/VP" 0.0126487
+cap "memristor_emulator_res_0/W" "neuron_top_1/VN" -0.00474652
+cap "memristor_emulator_res_0/A" "neuron_top_1/ISYN" 0.0371173
+cap "neuron_top_1/VP" "memristor_emulator_res_0/a_n80_4020#" 3.69743
+cap "neuron_top_1/VP" "neuron_top_1/VN" -19.2741
+cap "memristor_emulator_res_0/A" "neuron_top_1/neuron_0/CMEM" 0.040041
+cap "memristor_emulator_res_0/a_n80_4020#" "neuron_top_1/VN" 2.27374e-13
+cap "neuron_top_1/ISYN" "neuron_top_1/VP" 123.402
+cap "neuron_top_1/ISYN" "neuron_top_1/neuron_0/a_270_n40#" 3.4406
+cap "neuron_top_1/ISYN" "neuron_top_1/neuron_0/CMEM" 11.3366
+cap "memristor_emulator_res_0/a_n80_4020#" "neuron_top_1/VP" 1.25582
+cap "neuron_top_1/ISYN" "neuron_top_1/neuron_0/CRST" 14.0266
+cap "neuron_top_1/VP" "neuron_top_1/VN" 98.8012
+cap "memristor_emulator_res_0/a_n80_4020#" "neuron_top_1/neuron_0/CMEM" 6.38996
+cap "neuron_top_1/VN" "neuron_top_1/neuron_0/CMEM" 19.7903
+cap "neuron_top_1/neuron_0/a_270_n40#" "neuron_top_1/VN" -0.477935
+cap "neuron_top_1/neuron_0/CRST" "neuron_top_1/VN" 22.8045
+cap "neuron_top_1/ISYN" "neuron_top_1/neuron_0/a_n150_n600#" 82.9686
+cap "neuron_top_1/ISYN" "memristor_emulator_res_0/A" 0.1208
+cap "neuron_top_1/VP" "neuron_top_1/neuron_0/CMEM" 23.3655
+cap "neuron_top_1/VP" "neuron_top_1/neuron_0/a_270_n40#" 3.14311
+cap "neuron_top_1/neuron_0/a_270_n40#" "neuron_top_1/neuron_0/CMEM" -7.22192
+cap "memristor_emulator_res_0/a_n80_4020#" "neuron_top_1/neuron_0/a_n150_n600#" 1.16259
+cap "neuron_top_1/neuron_0/a_n150_n600#" "neuron_top_1/VN" 184.026
+cap "neuron_top_1/ISYN" "neuron_top_1/neuron_0/a_970_n10#" 0.304812
+cap "neuron_top_1/ISYN" "memristor_emulator_res_0/a_n80_4020#" 10.9185
+cap "neuron_top_1/neuron_0/a_970_n10#" "neuron_top_1/VN" 0.1692
+cap "neuron_top_1/neuron_0/a_n150_n600#" "neuron_top_1/VP" 0.750513
+cap "neuron_top_1/ISYN" "neuron_top_1/VN" 155.837
+cap "neuron_top_1/ISYN" "neuron_top_1/VN" 0.885084
+cap "neuron_top_1/neuron_0/CMEM" "neuron_top_1/VN" -1.66706
+cap "neuron_top_1/ISYN" "neuron_top_1/VP" -0.418181
+cap "neuron_top_1/VN" "neuron_top_1/neuron_0/CRST" -0.510395
+cap "neuron_top_1/neuron_0/CMEM" "neuron_top_1/VP" 10.2911
+cap "neuron_top_1/VP" "neuron_top_1/neuron_0/CRST" 5.3594
+cap "neuron_top_1/VN" "neuron_top_1/neuron_0/a_n150_n600#" -0.000552744
+cap "neuron_top_1/VN" "neuron_top_1/neuron_0/a_970_n10#" -0.389847
+cap "neuron_top_1/VN" "neuron_top_1/VP" -35.0665
+cap "neuron_top_1/VP" "neuron_top_1/neuron_0/a_n150_n600#" 0.521
+cap "neuron_top_1/VP" "neuron_top_1/neuron_0/a_970_n10#" 0.406921
+cap "neuron_top_1/neuron_0/a_270_n40#" "neuron_top_1/neuron_0/CRST" -0.211172
+cap "neuron_top_1/neuron_0/a_270_n40#" "neuron_top_1/VN" -20.4529
+cap "neuron_top_1/neuron_0/CMEM" "neuron_top_1/ISYN" 0.497512
+cap "neuron_top_1/neuron_0/a_270_n40#" "neuron_top_1/VP" 123.878
+cap "neuron_top_0/neuron_0/CMEM" "memristor_emulator_res_0/a_n80_4020#" 0.475569
+cap "neuron_top_0/neuron_0/CMEM" "neuron_top_0/VSYN" 0.429621
+cap "neuron_top_0/VP" "neuron_top_0/VN" 168.374
+cap "neuron_top_0/neuron_0/CMEM" "neuron_top_0/VP" 1.21074
+cap "neuron_top_0/neuron_0/CMEM" "neuron_top_0/VN" -5.68434e-14
+cap "neuron_top_0/VSYN" "memristor_emulator_res_0/a_218_4108#" 0.477612
+cap "neuron_top_0/neuron_0/CMEM" "memristor_emulator_res_0/a_n80_4020#" 0.0273041
+cap "neuron_top_0/VN" "memristor_emulator_res_0/a_742_5144#" 0.175901
+cap "neuron_top_0/neuron_0/CMEM" "neuron_top_0/VSYN" 0.0466843
+cap "neuron_top_0/VP" "memristor_emulator_res_0/a_218_4108#" 1.03027
+cap "neuron_top_0/neuron_0/a_970_n10#" "neuron_top_0/VP" 0.0459144
+cap "neuron_top_0/VN" "memristor_emulator_res_0/a_n80_4020#" 16.2353
+cap "neuron_top_0/VN" "neuron_top_0/VSYN" 35.9369
+cap "neuron_top_0/VN" "memristor_emulator_res_0/B" 4.69081
+cap "memristor_emulator_res_0/a_n80_4020#" "neuron_top_0/VSYN" 25.3096
+cap "neuron_top_0/VN" "neuron_top_0/VP" 621.051
+cap "neuron_top_0/VN" "memristor_emulator_res_0/a_218_4108#" 4.31118
+cap "memristor_emulator_res_0/a_n80_4020#" "neuron_top_0/VP" 3.9952
+cap "neuron_top_0/VSYN" "neuron_top_0/VP" 51.1856
+cap "neuron_top_0/neuron_0/VP" "memristor_emulator_res_0/a_742_5144#" 118.946
+cap "neuron_top_0/neuron_0/VP" "neuron_top_0/VSYN" 3.40806
+cap "neuron_top_0/neuron_0/VP" "neuron_top_0/neuron_0/VN" -19.3334
+cap "memristor_emulator_res_0/B" "memristor_emulator_res_0/a_742_5144#" -0.889611
+cap "memristor_emulator_res_0/a_218_4108#" "neuron_top_0/VSYN" 0.110129
+cap "memristor_emulator_res_0/B" "neuron_top_0/neuron_0/VN" 0.57857
+cap "memristor_emulator_res_0/a_218_4108#" "neuron_top_0/neuron_0/VN" 3.229
+cap "memristor_emulator_res_0/a_742_5144#" "neuron_top_0/neuron_0/VN" 0.100559
+cap "memristor_emulator_res_0/B" "neuron_top_0/neuron_0/VP" 20.3791
+cap "neuron_top_0/neuron_0/VP" "memristor_emulator_res_0/a_218_4108#" 4.10154
+cap "neuron_top_1/m1_1450_n34#" "neuron_top_1/ISYN" 2.75469
+cap "memristor_emulator_res_0/W" "neuron_top_1/VP" 2.22248
+cap "memristor_emulator_res_0/A" "neuron_top_1/ISYN" 0.0667235
+cap "neuron_top_1/VP" "neuron_top_1/ISYN" 61.7878
+cap "neuron_top_1/neuron_0/CMEM" "memristor_emulator_res_0/A" 0.0531247
+cap "neuron_top_1/VN" "neuron_top_1/VP" 209.646
+cap "memristor_emulator_res_0/A" "neuron_top_1/VP" 9.9029
+cap "memristor_emulator_res_0/W" "neuron_top_1/m1_1450_n34#" 0.0536434
+cap "memristor_emulator_res_0/a_742_5144#" "neuron_top_1/VP" 44.8817
+cap "memristor_emulator_res_0/a_n80_4020#" "neuron_top_1/VP" 0.0693121
+cap "neuron_top_1/VN" "memristor_emulator_res_0/W" -0.0265418
+cap "neuron_top_1/VN" "neuron_top_1/neuron_0/a_n150_n600#" -0.0013651
+cap "neuron_top_1/neuron_0/CMEM" "memristor_emulator_res_0/a_n80_4020#" 0.155039
+cap "neuron_top_1/neuron_0/a_n150_n600#" "neuron_top_1/VP" 0.0638838
+cap "neuron_top_1/neuron_0/CMEM" "neuron_top_1/ISYN" 10.6728
+cap "neuron_top_1/VN" "memristor_emulator_res_0/a_n80_4020#" 0.224556
+cap "memristor_emulator_res_0/a_n80_4020#" "neuron_top_1/VP" 0.0594104
+cap "neuron_top_1/VN" "neuron_top_1/ISYN" 38.1507
+cap "neuron_top_1/VN" "memristor_emulator_res_0/W" 0.163207
+cap "neuron_top_1/neuron_0/CMEM" "neuron_top_1/VN" 19.0116
+cap "neuron_top_1/ISYN" "neuron_top_1/VP" 6.5391
+cap "memristor_emulator_res_0/W" "neuron_top_1/VP" 0.499454
+cap "neuron_top_1/neuron_0/CMEM" "neuron_top_1/VP" 6.02846
+cap "neuron_top_1/VN" "neuron_top_1/VP" 580.067
+cap "neuron_top_1/neuron_0/a_270_n40#" "neuron_top_1/VP" 0.298983
+cap "neuron_top_1/neuron_0/CMEM" "neuron_top_1/VP" 0.432033
+cap "neuron_top_1/VN" "neuron_top_1/VP" 738.887
+cap "neuron_top_1/neuron_0/a_270_n40#" "neuron_top_1/VP" 0.0192252
+cap "neuron_top_1/VN" "neuron_top_1/neuron_0/a_270_n40#" -5.17861
+cap "neuron_top_1/neuron_0/CRST" "neuron_top_1/VP" 0.0638838
+cap "neuron_top_1/ISYN" "neuron_top_1/VP" 0.490108
+cap "neuron_top_1/ISYN" "neuron_top_1/VN" 0.11091
+merge "neuron_top_1/VN" "neuron_top_0/neuron_0/VN" -5850.23 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2300236 -14212 0 0 0 0 0 0 0 0 0 0
+merge "neuron_top_0/neuron_0/VN" "neuron_top_1/VSUBS"
+merge "neuron_top_1/VSUBS" "neuron_top_0/VN"
+merge "neuron_top_0/VN" "VN"
+merge "VN" "m1_1102_3072#"
+merge "m1_1102_3072#" "memristor_emulator_res_0/VN"
+merge "memristor_emulator_res_0/VN" "neuron_top_0/VSUBS"
+merge "neuron_top_0/VSUBS" "VSUBS"
+merge "neuron_top_0/ISYN" "ISYN" -4.91359 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 -24 0 0 0 0 0 0 0 0 0 0 0 0
+merge "neuron_top_1/VSYN" "VSYN" -19.8874 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -380 -96 0 0 0 0 0 0 0 0 0 0 0 0
+merge "memristor_emulator_res_0/A" "neuron_top_0/VSYN" -465.947 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3580 -312 0 0 -5280 -344 0 0 0 0 0 0 0 0 0 0 0 0
+merge "neuron_top_0/VSYN" "a_1820_3508#"
+merge "neuron_top_1/neuron_0/VP" "memristor_emulator_res_0/VP" -2537.78 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -739968 -6968 0 0 0 0 0 0 0 0 0 0
+merge "memristor_emulator_res_0/VP" "neuron_top_1/VP"
+merge "neuron_top_1/VP" "neuron_top_0/neuron_0/VP"
+merge "neuron_top_0/neuron_0/VP" "neuron_top_0/VP"
+merge "neuron_top_0/VP" "VP"
+merge "VP" "m1_1360_4058#"
+merge "memristor_emulator_res_0/B" "neuron_top_1/ISYN" -452.878 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6596 -828 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "neuron_top_1/ISYN" "a_6226_4182#"
+merge "memristor_emulator_res_0/W" "W" -22.904 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -300 -80 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

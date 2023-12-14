@@ -1,6 +1,6 @@
 * NGSPICE file created from memristor_emulator_res.ext - technology: sky130A
 
-.subckt memristor_emulator_res B VN VP A W
+.subckt memristor_emulator_res W VN B A VP
 X0 VN B a_n80_4020# VN sky130_fd_pr__nfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=3
 X1 VN a_n80_4020# VN VN sky130_fd_pr__nfet_01v8 ad=10 pd=41 as=23.8 ps=100 w=20 l=20
 X2 VP A a_n80_4020# VP sky130_fd_pr__pfet_01v8 ad=1.5 pd=7 as=1.5 ps=7 w=3 l=2

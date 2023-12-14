@@ -14,7 +14,7 @@ lab=VP}
 N 70 -10 120 -10 {
 lab=#net1}
 N 310 20 310 120 {
-lab=VMEMINT}
+lab=#net2}
 N 150 -50 310 -50 {
 lab=VP}
 N 310 -50 310 -40 {
@@ -28,7 +28,7 @@ lab=VP}
 N 610 -50 610 -40 {
 lab=VP}
 N 340 150 360 150 {
-lab=#net2}
+lab=#net3}
 N 310 180 310 210 {
 lab=VN}
 N 310 210 360 210 {
@@ -38,7 +38,7 @@ lab=VN}
 N 150 170 150 210 {
 lab=VN}
 N 150 20 150 110 {
-lab=VMEMINT}
+lab=#net2}
 N 90 -10 90 30 {
 lab=#net1}
 N 40 30 90 30 {
@@ -46,13 +46,13 @@ lab=#net1}
 N 40 20 40 30 {
 lab=#net1}
 N 570 -10 580 -10 {
-lab=#net3}
+lab=#net4}
 N 570 -10 570 150 {
-lab=#net3}
+lab=#net4}
 N 570 150 580 150 {
-lab=#net3}
+lab=#net4}
 N 610 20 610 120 {
-lab=#net2}
+lab=#net3}
 N 360 210 470 210 {
 lab=VN}
 N 470 180 470 210 {
@@ -62,59 +62,59 @@ lab=VN}
 N 610 180 610 210 {
 lab=VN}
 N 430 150 440 150 {
-lab=VMEMINT}
+lab=#net2}
 N 430 -10 430 150 {
-lab=VMEMINT}
+lab=#net2}
 N 430 -10 440 -10 {
-lab=VMEMINT}
+lab=#net2}
 N 470 20 470 120 {
-lab=#net3}
+lab=#net4}
 N 360 150 410 150 {
-lab=#net2}
+lab=#net3}
 N 410 150 410 250 {
-lab=#net2}
+lab=#net3}
 N 470 70 570 70 {
-lab=#net3}
+lab=#net4}
 N 310 70 430 70 {
-lab=VMEMINT}
+lab=#net2}
 N 150 70 310 70 {
-lab=VMEMINT}
+lab=#net2}
 N 340 -10 400 -10 {
-lab=#net3}
+lab=#net4}
 N 400 -80 400 -10 {
-lab=#net3}
+lab=#net4}
 N 400 -80 520 -80 {
-lab=#net3}
+lab=#net4}
 N 520 -80 520 70 {
-lab=#net3}
+lab=#net4}
 N 40 30 40 80 {
 lab=#net1}
 N 410 250 630 250 {
-lab=#net2}
+lab=#net3}
 N 630 80 630 250 {
-lab=#net2}
+lab=#net3}
 N 610 80 630 80 {
-lab=#net2}
+lab=#net3}
 N 730 -40 730 -30 {
 lab=VP}
 N 690 0 700 0 {
-lab=#net2}
+lab=#net3}
 N 690 0 690 160 {
-lab=#net2}
+lab=#net3}
 N 690 160 700 160 {
-lab=#net2}
+lab=#net3}
 N 730 30 730 130 {
-lab=#net4}
+lab=#net5}
 N 730 90 750 90 {
-lab=#net4}
+lab=#net5}
 N 850 -40 850 -30 {
 lab=VP}
 N 810 0 820 0 {
-lab=#net4}
+lab=#net5}
 N 810 0 810 160 {
-lab=#net4}
+lab=#net5}
 N 810 160 820 160 {
-lab=#net4}
+lab=#net5}
 N 850 30 850 130 {
 lab=Vout}
 N 850 90 870 90 {
@@ -134,9 +134,9 @@ lab=VN}
 N 850 190 850 210 {
 lab=VN}
 N 630 80 690 80 {
-lab=#net2}
+lab=#net3}
 N 750 90 810 90 {
-lab=#net4}
+lab=#net5}
 N -30 110 10 110 {
 lab=Isyn}
 N -10 80 -10 110 {
@@ -244,7 +244,6 @@ spiceprefix=X
 C {devices/iopin.sym} 340 -50 3 0 {name=p2 lab=VP}
 C {devices/iopin.sym} 340 210 1 0 {name=p3 lab=VN}
 C {devices/iopin.sym} -60 80 3 0 {name=p4 lab=Isyn}
-C {devices/lab_pin.sym} 150 90 0 0 {name=p5 sig_type=std_logic lab=VMEMINT}
 C {madvlsi/pmos3.sym} 730 0 0 0 {name=M9
 L=\{L\}
 W=\{W\}
