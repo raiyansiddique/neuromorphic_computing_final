@@ -110,13 +110,13 @@ lab=VN}
 N 520 -10 520 300 {
 lab=#net5}
 N 560 220 570 220 {
-lab=#net14}
+lab=#net5}
 N 560 80 560 220 {
-lab=#net14}
+lab=#net5}
 N 560 80 570 80 {
-lab=#net14}
+lab=#net5}
 N 430 120 430 200 {
-lab=#net15}
+lab=#net14}
 N 390 90 400 90 {
 lab=Spk_in}
 N 390 90 390 220 {
@@ -132,11 +132,11 @@ lab=Spk_in}
 N 390 220 390 270 {
 lab=Spk_in}
 N 430 150 530 150 {
-lab=#net15}
+lab=#net14}
 N 530 50 530 150 {
-lab=#net15}
+lab=#net14}
 N 530 50 600 50 {
-lab=#net15}
+lab=#net14}
 N 630 80 640 80 {
 lab=Iout}
 N 640 80 640 220 {
@@ -203,7 +203,8 @@ N 280 -70 280 60 {
 lab=VP}
 N 10 230 130 230 {
 lab=Vbp}
-N 520 170 560 170 {}
+N 520 170 560 170 {
+lab=#net5}
 C {madvlsi/nmos3.sym} 40 -40 0 0 {name=M1
 L=\{L\}
 W=\{W\}

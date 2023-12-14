@@ -152,8 +152,8 @@ lab=VN}
 N 40 140 40 210 {
 lab=VN}
 C {madvlsi/pmos3.sym} 150 -10 0 0 {name=M2
-L=\{L\}
-W=\{W\}
+L=0.3
+W=2
 body=VDD
 nf=1
 mult=1
@@ -167,8 +167,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 310 -10 2 0 {name=M3
-L=\{L\}
-W=\{W\}
+L=0.3
+W=2
 body=VDD
 nf=1
 mult=1
@@ -182,8 +182,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 470 -10 0 0 {name=M4
-L=\{L\}
-W=\{W\}
+L=0.3
+W=2
 body=VDD
 nf=1
 mult=1
@@ -197,8 +197,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 610 -10 0 0 {name=M5
-L=\{L\}
-W=\{W\}
+L=0.3
+W=2
 body=VDD
 nf=1
 mult=1
@@ -212,8 +212,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 470 150 0 0 {name=M6
-L=\{L\}
-W=\{W\}
+L=0.3
+W=2
 body=GND
 nf=1
 mult=1
@@ -227,8 +227,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 610 150 0 0 {name=M8
-L=\{L\}
-W=\{W\}
+L=0.3
+W=2
 body=GND
 nf=1
 mult=1
@@ -245,8 +245,8 @@ C {devices/iopin.sym} 340 -50 3 0 {name=p2 lab=VP}
 C {devices/iopin.sym} 340 210 1 0 {name=p3 lab=VN}
 C {devices/iopin.sym} -60 80 3 0 {name=p4 lab=Isyn}
 C {madvlsi/pmos3.sym} 730 0 0 0 {name=M9
-L=\{L\}
-W=\{W\}
+L=0.3
+W=2
 body=VDD
 nf=1
 mult=1
@@ -260,8 +260,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 730 160 0 0 {name=M10
-L=\{L\}
-W=\{W\}
+L=0.3
+W=2
 body=GND
 nf=1
 mult=1
@@ -275,8 +275,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 850 0 0 0 {name=M11
-L=\{L\}
-W=\{W\}
+L=0.3
+W=2
 body=VDD
 nf=1
 mult=1
@@ -290,8 +290,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 850 160 0 0 {name=M12
-L=\{L\}
-W=\{W\}
+L=0.3
+W=2
 body=GND
 nf=1
 mult=1
@@ -306,8 +306,8 @@ spiceprefix=X
 }
 C {devices/opin.sym} 870 90 0 0 {name=p1 lab=Vout}
 C {madvlsi/nmos3.sym} 40 110 0 0 {name=M13
-L=\{L\}
-W=\{W\}
+L=0.3
+W=2
 body=GND
 nf=1
 mult=1
@@ -321,8 +321,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -60 110 2 0 {name=M14
-L=\{L\}
-W=\{W\}
+L=0.3
+W=2
 body=GND
 nf=1
 mult=1
@@ -336,8 +336,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 40 -10 2 0 {name=M1
-L=\{L\}
-W=\{W\}
+L=0.3
+W=2
 body=VDD
 nf=1
 mult=1
@@ -351,8 +351,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 310 150 2 0 {name=M7
-L=\{L\}
-W=\{W\}
+L=0.3
+W=2
 body=GND
 nf=1
 mult=1

@@ -31,11 +31,15 @@ for col in ['v(W3)', 'v(W2)', 'v(W1)', 'v(W0)']:
 # Creating the step size column
 split_data['step_size'] = split_data.apply(lambda row: row['v(W3)']*8 + row['v(W2)']*4 + row['v(W1)']*2 + row['v(W0)']*1, axis=1)
 
+# Convert i(Vmeas) from A to μA
+split_data['i(Vmeas)'] *= 1e6
+
 # Plotting i(Vmeas) over the step size
 plt.figure(figsize=(10, 6))
 plt.scatter(split_data['step_size'], split_data['i(Vmeas)'], marker='o')
-plt.xlabel('Step Size')
-plt.ylabel('i(Vmeas)')
-plt.title('Plot of i(Vmeas) over Step Size from 0 to 16')
+plt.xlabel('Multiplicity Value in Bits')
+plt.ylabel('Output Current (μA)')  # Update label to μA
+plt.title('Current Output Weight Sweep of CMCI Circuit')
 plt.grid(True)
 plt.show()
+
