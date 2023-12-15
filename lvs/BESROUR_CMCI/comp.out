@@ -1,0 +1,38 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+Flattening unmatched subcell besrour_neuron_cm_lds in circuit besrour_CMCI_lds_lvs.spice (0)(2 instances)
+Flattening unmatched subcell CMCI_synapse_lds in circuit besrour_CMCI_lds_lvs.spice (0)(1 instance)
+Flattening unmatched subcell bias_gen_lds in circuit besrour_CMCI_lds_lvs.spice (0)(1 instance)
+Flattening unmatched subcell bias_gen in circuit CMCI_besrour_top.spice (1)(1 instance)
+Flattening unmatched subcell CMCI_synapse in circuit CMCI_besrour_top.spice (1)(1 instance)
+Flattening unmatched subcell neuron_top in circuit CMCI_besrour_top.spice (1)(2 instances)
+Flattening unmatched subcell neuron in circuit CMCI_besrour_top.spice (1)(2 instances)
+
+Class besrour_CMCI_lds_lvs.spice (0):  Merged 10 parallel devices.
+Class CMCI_besrour_top.spice (1):  Merged 10 parallel devices.
+Subcircuit summary:
+Circuit 1: besrour_CMCI_lds_lvs.spice      |Circuit 2: CMCI_besrour_top.spice          
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (34->29)           |sky130_fd_pr__pfet_01v8 (34->29)           
+sky130_fd_pr__nfet_01v8 (37->32)           |sky130_fd_pr__nfet_01v8 (37->32)           
+sky130_fd_pr__cap_mim_m3_1 (4)             |sky130_fd_pr__cap_mim_m3_1 (4)             
+Number of devices: 65                      |Number of devices: 65                      
+Number of nets: 40                         |Number of nets: 40                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes besrour_CMCI_lds_lvs.spice and CMCI_besrour_top.spice are equivalent.
+
+Final result: Circuits match uniquely.
+.

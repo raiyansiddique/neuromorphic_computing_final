@@ -1,0 +1,74 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1702613197
+<< error_s >>
+rect 1764 2248 1862 2274
+rect 1760 2220 1834 2246
+<< poly >>
+rect 1480 -20 1560 0
+rect 1480 -60 1500 -20
+rect 1540 -50 1560 -20
+rect 1900 -20 1980 0
+rect 1900 -50 1920 -20
+rect 1540 -60 1920 -50
+rect 1960 -60 1980 -20
+rect 1480 -80 1980 -60
+<< polycont >>
+rect 1500 -60 1540 -20
+rect 1920 -60 1960 -20
+<< locali >>
+rect -280 1890 1110 1930
+rect -280 590 -240 1890
+rect 1070 1850 1110 1890
+rect 2350 1850 2390 2090
+rect 2350 1810 2400 1850
+rect -480 -40 -440 110
+rect 1480 -20 1560 0
+rect 1480 -40 1500 -20
+rect -480 -60 1500 -40
+rect 1540 -60 1560 -20
+rect -480 -80 1560 -60
+rect 1810 -530 1850 10
+rect 1900 -20 1980 0
+rect 1900 -60 1920 -20
+rect 1960 -40 1980 -20
+rect 3650 -40 3690 0
+rect 1960 -60 3690 -40
+rect 1900 -80 3690 -60
+<< metal1 >>
+rect 1760 2000 1834 2246
+rect -850 1950 1834 2000
+rect -850 1930 1830 1950
+rect -850 410 -780 1930
+rect 2500 1740 2900 2250
+rect -480 1150 50 1220
+rect -480 810 -400 1150
+rect 4720 1140 4890 1230
+rect -40 330 40 400
+rect 2070 -240 2160 110
+rect 4800 -80 4890 1140
+rect 2810 -160 4890 -80
+rect 2810 -310 2900 -160
+use bias_gen  bias_gen_0
+timestamp 1702612896
+transform 1 0 -530 0 1 330
+box -320 -228 500 531
+use CMCI_synapse  CMCI_synapse_0
+timestamp 1702611732
+transform 1 0 250 0 1 1230
+box -250 -1230 4510 620
+use neuron_top  neuron_top_0
+timestamp 1702524960
+transform 0 1 1798 -1 0 -200
+box -34 -2958 1890 4146
+use neuron_top  neuron_top_1
+timestamp 1702524960
+transform 0 1 1798 -1 0 3930
+box -34 -2958 1890 4146
+<< labels >>
+rlabel space -720 720 -720 720 7 VP
+rlabel space -840 310 -840 310 7 VN
+rlabel space 1800 3560 1800 3560 7 ISYN
+rlabel space 2370 -2040 2370 -2040 5 VSYN
+<< end >>

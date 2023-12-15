@@ -15,7 +15,6 @@ N -70 -120 -70 50 {
 lab=S}
 N -70 -120 40 -120 {
 lab=S}
-C {/home/madvlsi/neuromorphic_computing_final/schematic/inverter.sym} -100 50 0 0 {name=X1}
 C {devices/ipin.sym} -70 -70 0 0 {name=p2 lab=S}
 C {madvlsi/vdd.sym} -40 20 0 0 {name=l1 lab=VDD}
 C {madvlsi/gnd.sym} -40 80 0 0 {name=l2 lab=GND}
@@ -51,3 +50,4 @@ spiceprefix=X
 }
 C {devices/iopin.sym} 70 -40 0 0 {name=p1 lab=B}
 C {devices/iopin.sym} 10 -30 2 0 {name=p3 lab=A}
+C {/home/madvlsi/Documents/second/neuromorphic_computing_final/schematic/inverter.sym} -100 50 0 0 {name=X1}

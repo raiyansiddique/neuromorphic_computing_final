@@ -22,7 +22,7 @@ lab=A}
 N 160 60 200 60 {
 lab=#net1}
 N 160 190 160 200 {
-lab=VP}
+lab=VN}
 N 0 -30 220 -30 {
 lab=A}
 N 200 60 260 60 {
@@ -32,13 +32,13 @@ lab=#net1}
 N 160 90 160 100 {
 lab=#net1}
 N 90 170 160 170 {
-lab=VP}
+lab=VN}
 N -0 -30 -0 60 {
 lab=A}
 N 90 70 90 170 {
-lab=VP}
+lab=VN}
 N 160 170 160 200 {
-lab=VP}
+lab=VN}
 N -60 60 -50 60 {
 lab=A}
 N -80 60 -60 60 {
@@ -59,10 +59,10 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {/home/madvlsi/neuromorphic_computing_final/schematic/memristor_emulator.sym} 50 60 0 0 {name=X2}
-C {/home/madvlsi/neuromorphic_computing_final/schematic/tg.sym} 270 20 3 0 {name=X4}
 C {devices/iopin.sym} -80 60 2 0 {name=p6 lab=A}
 C {devices/iopin.sym} 190 170 0 0 {name=p3 lab=W}
 C {devices/iopin.sym} 270 -130 3 0 {name=p1 lab=B}
 C {devices/iopin.sym} 90 50 3 0 {name=p2 lab=VP}
 C {devices/iopin.sym} 160 200 1 0 {name=p4 lab=VN}
+C {/home/madvlsi/Documents/second/neuromorphic_computing_final/schematic/memristor_emulator.sym} 50 60 0 0 {name=X1}
+C {/home/madvlsi/Documents/second/neuromorphic_computing_final/schematic/tg.sym} 270 20 3 0 {name=X2}

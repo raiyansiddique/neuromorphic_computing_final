@@ -13,38 +13,188 @@ Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equ
 Flattening unmatched subcell memristor_emulator_res in circuit nsn.spice (0)(1 instance)
 Flattening unmatched subcell neuron_top in circuit nsn.spice (0)(2 instances)
 Flattening unmatched subcell neuron in circuit nsn.spice (0)(2 instances)
-Flattening unmatched subcell res in circuit nsn_schematic.spice (1)(1 instance)
-Flattening unmatched subcell memristor_emulator in circuit nsn_schematic.spice (1)(1 instance)
-Flattening unmatched subcell tg in circuit nsn_schematic.spice (1)(1 instance)
-Flattening unmatched subcell inverter in circuit nsn_schematic.spice (1)(1 instance)
-Flattening unmatched subcell besrour_neuron_cm_lds in circuit nsn_schematic.spice (1)(2 instances)
+Flattening unmatched subcell besrour_neuron_cm_lds in circuit nsn1.spice (1)(2 instances)
+Flattening unmatched subcell res in circuit nsn1.spice (1)(1 instance)
 
 Subcircuit summary:
-Circuit 1: nsn.spice                       |Circuit 2: nsn_schematic.spice             
+Circuit 1: nsn.spice                       |Circuit 2: nsn1.spice                      
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__nfet_01v8 (19)               |sky130_fd_pr__nfet_01v8 (19)               
-sky130_fd_pr__pfet_01v8 (18)               |sky130_fd_pr__pfet_01v8 (18)               
+sky130_fd_pr__nfet_01v8 (19)               |sky130_fd_pr__nfet_01v8 (15) **Mismatch**  
+sky130_fd_pr__pfet_01v8 (18)               |sky130_fd_pr__pfet_01v8 (14) **Mismatch**  
 sky130_fd_pr__cap_mim_m3_1 (4)             |sky130_fd_pr__cap_mim_m3_1 (4)             
-Number of devices: 41                      |Number of devices: 41                      
-Number of nets: 20                         |Number of nets: 20                         
+Number of devices: 41 **Mismatch**         |Number of devices: 33 **Mismatch**         
+Number of nets: 20 **Mismatch**            |Number of nets: 18 **Mismatch**            
 ---------------------------------------------------------------------------------------
 NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: nsn.spice                       |Circuit 2: nsn_schematic.spice             
+Circuit 1: nsn.spice                       |Circuit 2: nsn1.spice                      
 
 ---------------------------------------------------------------------------------------
-Net: neuron_top_1/ISYN                     |Net: res:2/net1                            
-  sky130_fd_pr__nfet_01v8/2 = 3            |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
-  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-  sky130_fd_pr__pfet_01v8/4 = 1            |  sky130_fd_pr__pfet_01v8/4 = 1            
-  sky130_fd_pr__nfet_01v8/(1|3) = 3        |  sky130_fd_pr__nfet_01v8/2 = 1            
+Net: VN                                    |Net: res:4/net1                            
+  sky130_fd_pr__nfet_01v8/(1|3) = 19       |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__nfet_01v8/4 = 19           |                                           
+  sky130_fd_pr__cap_mim_m3_1/2 = 4         |                                           
                                            |                                           
-Net: /memristor_emulator_res_0/a_742_5144# |Net: net1                                  
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
-                                           |  sky130_fd_pr__nfet_01v8/2 = 2            
+Net: neuron_top_1/ISYN                     |Net: besrour_neuron_cm_lds:3/net1          
+  sky130_fd_pr__nfet_01v8/2 = 3            |  sky130_fd_pr__pfet_01v8/2 = 2            
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8/4 = 1            |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__nfet_01v8/(1|3) = 3        |                                           
+                                           |                                           
+Net: neuron_top_0/VSYN                     |Net: besrour_neuron_cm_lds:1/net1          
+  sky130_fd_pr__pfet_01v8/2 = 2            |  sky130_fd_pr__pfet_01v8/2 = 2            
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  sky130_fd_pr__nfet_01v8/2 = 2            |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: VP                                    |Net: besrour_neuron_cm_lds:3/net5          
+  sky130_fd_pr__pfet_01v8/(1|3) = 16       |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8/4 = 17           |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |                                           
+Net: /memristor_emulator_res_0/a_n80_4020# |Net: besrour_neuron_cm_lds:1/net5          
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |                                           
+Net: /neuron_top_0/li_50_880#              |Net: VDD                                   
+  sky130_fd_pr__pfet_01v8/2 = 2            |  sky130_fd_pr__pfet_01v8/(1|3) = 14       
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/4 = 14           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /neuron_top_1/li_50_880#              |Net: GND                                   
+  sky130_fd_pr__pfet_01v8/2 = 2            |  sky130_fd_pr__nfet_01v8/(1|3) = 15       
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/4 = 15           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__cap_mim_m3_1/2 = 4         
+                                           |                                           
+Net: /neuron_top_0//neuron_0/a_970_n10#    |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: /neuron_top_1//neuron_0/a_970_n10#    |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: VSYN                                  |Net: VSYN                                  
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: /memristor_emulator_res_0/a_742_5144# |Net: net2                                  
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: /memristor_emulator_res_0/a_218_4108# |Net: net1                                  
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/2 = 2            
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: ISYN                                  |Net: ISYN                                  
+  sky130_fd_pr__nfet_01v8/2 = 2            |  sky130_fd_pr__nfet_01v8/2 = 2            
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: nsn.spice                       |Circuit 2: nsn1.spice                      
+
+---------------------------------------------------------------------------------------
+Instance: memristor_emulator_res_0/sky130_ |Instance: besrour_neuron_cm_lds:3/sky130_f 
+  (1,3) = (42,4)                           |  (1,3) = (34,4)                           
+  2 = 9                                    |  2 = 3                                    
+  4 = 42                                   |  4 = 34                                   
+                                           |                                           
+Instance: memristor_emulator_res_0/sky130_ |Instance: besrour_neuron_cm_lds:1/sky130_f 
+  (1,3) = (42,42)                          |  (1,3) = (34,4)                           
+  2 = 4                                    |  2 = 3                                    
+  4 = 42                                   |  4 = 34                                   
+                                           |                                           
+Instance: neuron_top_0//neuron_0/sky130_fd |Instance: besrour_neuron_cm_lds:3/sky130_f 
+  (1,3) = (42,7)                           |  (1,3) = (34,3)                           
+  2 = 4                                    |  2 = 3                                    
+  4 = 42                                   |  4 = 34                                   
+                                           |                                           
+Instance: neuron_top_1//neuron_0/sky130_fd |Instance: besrour_neuron_cm_lds:1/sky130_f 
+  (1,3) = (42,4)                           |  (1,3) = (34,3)                           
+  2 = 9                                    |  2 = 3                                    
+  4 = 42                                   |  4 = 34                                   
+                                           |                                           
+Instance: neuron_top_1//neuron_0/sky130_fd |Instance: besrour_neuron_cm_lds:3/sky130_f 
+  (1,3) = (42,9)                           |  (1,3) = (28,4)                           
+  2 = 9                                    |  2 = 4                                    
+  4 = 42                                   |  4 = 28                                   
+                                           |                                           
+Instance: memristor_emulator_res_0/sky130_ |Instance: besrour_neuron_cm_lds:1/sky130_f 
+  (1,3) = (42,3)                           |  (1,3) = (28,4)                           
+  2 = 7                                    |  2 = 4                                    
+  4 = 42                                   |  4 = 28                                   
+                                           |                                           
+Instance: neuron_top_0//neuron_0/sky130_fd |Instance: besrour_neuron_cm_lds:3/sky130_f 
+  (1,3) = (42,4)                           |  (1,3) = (28,2)                           
+  2 = 3                                    |  2 = 4                                    
+  4 = 42                                   |  4 = 28                                   
+                                           |                                           
+Instance: neuron_top_0//neuron_0/sky130_fd |Instance: besrour_neuron_cm_lds:1/sky130_f 
+  (1,3) = (42,3)                           |  (1,3) = (28,2)                           
+  2 = 3                                    |  2 = 4                                    
+  4 = 42                                   |  4 = 28                                   
+                                           |                                           
+Instance: memristor_emulator_res_0/sky130_ |(no matching instance)                     
+  (1,3) = (33,4)                           |                                           
+  2 = 7                                    |                                           
+  4 = 33                                   |                                           
+                                           |                                           
+                                           |                                           
+Instance: memristor_emulator_res_0/sky130_ |(no matching instance)                     
+  (1,3) = (9,7)                            |                                           
+  2 = 4                                    |                                           
+  4 = 9                                    |                                           
+                                           |                                           
+                                           |                                           
+Instance: neuron_top_0//neuron_0/sky130_fd |(no matching instance)                     
+  (1,3) = (33,7)                           |                                           
+  2 = 4                                    |                                           
+  4 = 33                                   |                                           
+                                           |                                           
+                                           |                                           
+Instance: neuron_top_0//neuron_0/sky130_fd |(no matching instance)                     
+  (1,3) = (33,4)                           |                                           
+  2 = 4                                    |                                           
+  4 = 33                                   |                                           
+                                           |                                           
+                                           |                                           
+Instance: neuron_top_1//neuron_0/sky130_fd |(no matching instance)                     
+  (1,3) = (33,4)                           |                                           
+  2 = 4                                    |                                           
+  4 = 33                                   |                                           
+                                           |                                           
+                                           |                                           
+Instance: memristor_emulator_res_0/sky130_ |(no matching instance)                     
+  (1,3) = (33,3)                           |                                           
+  2 = 7                                    |                                           
+  4 = 33                                   |                                           
+                                           |                                           
+                                           |                                           
+Instance: memristor_emulator_res_0/sky130_ |(no matching instance)                     
+  (1,3) = (9,2)                            |                                           
+  2 = 3                                    |                                           
+  4 = 33                                   |                                           
+                                           |                                           
+                                           |                                           
+Instance: neuron_top_1//neuron_0/sky130_fd |(no matching instance)                     
+  (1,3) = (33,2)                           |                                           
+  2 = 4                                    |                                           
+  4 = 33                                   |                                           
+                                           |                                           
 ---------------------------------------------------------------------------------------
 Netlists do not match.
 Cells have no pins;  pin matching not needed.
-Device classes nsn.spice and nsn_schematic.spice are equivalent.
+Device classes nsn.spice and nsn1.spice are equivalent.
 
 Final result: Netlists do not match.

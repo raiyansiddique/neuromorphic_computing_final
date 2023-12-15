@@ -1,0 +1,50 @@
+* NGSPICE file created from CMCI_AND_NEURON.ext - technology: sky130A
+
+.subckt CMCI_synapse W1m W0m VBP W2m W3m VP IOUT SPKIN W1p W0p VBN W2p W3p VN
+X0 a_450_n1180# W2m a_990_n90# VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X1 a_190_n1120# SPKIN IOUT VN sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=1.5 ps=7 w=3 l=0.5
+X2 VN VBN a_3970_n1120# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X3 a_3170_n1120# W0p a_2810_n90# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X4 a_190_n1120# a_n210_n1120# VN VN sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X5 VN a_n210_n1120# a_n210_n1120# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X6 VP VBP a_590_n90# VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X7 VP a_2810_n90# a_2810_n90# VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X8 VN a_450_n1180# a_190_n1120# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X9 a_3470_n120# a_3470_n120# VP VP sky130_fd_pr__pfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X10 a_1390_n90# VBP VP VP sky130_fd_pr__pfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X11 VP a_3470_n120# a_190_n1120# VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X12 a_n210_n90# VBP VP VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X13 a_190_n1120# a_2810_n90# VP VP sky130_fd_pr__pfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X14 a_190_n1120# a_450_n1180# VN VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X15 a_n210_n1120# W1m a_n210_n90# VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X16 a_190_n1120# a_2210_n1120# IOUT VP sky130_fd_pr__pfet_01v8 ad=1.5 pd=7 as=1.5 ps=7 w=3 l=0.5
+X17 a_2810_n90# W1p a_2370_n1120# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X18 a_3970_n1120# W3p a_3470_n120# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X19 a_450_n1180# a_450_n1180# VN VN sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X20 a_1390_n90# W3m a_450_n1180# VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X21 a_2210_n1120# SPKIN VN VN sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=1.5 ps=7 w=3 l=0.5
+X22 a_3470_n120# W2p a_3570_n1120# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X23 a_2210_n1120# SPKIN VP VP sky130_fd_pr__pfet_01v8 ad=1.5 pd=7 as=1.5 ps=7 w=3 l=0.5
+X24 a_2370_n1120# VBN VN VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X25 a_990_n90# VBP VP VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X26 VN a_450_n1180# a_190_n1120# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X27 VP VBP a_n210_n90# VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X28 a_190_n1120# a_3470_n120# VP VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X29 a_3570_n1120# VBN VN VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X30 VN VBN a_2370_n1120# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X31 a_590_n90# W0m a_n210_n1120# VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X32 VP a_3470_n120# a_190_n1120# VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X33 VP VBP a_1390_n90# VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X34 a_3970_n1120# VBN VN VN sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X35 a_190_n1120# a_3470_n120# VP VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X36 VN VBN a_3170_n1120# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X37 a_190_n1120# a_450_n1180# VN VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+.ends
+
+
+* Top level circuit CMCI_AND_NEURON
+
+XCMCI_synapse_0 W1m W0m VBP W2m W3m CMCI_synapse_0/VP IOUT SPKIN W1p W0p VBN W2p W3p
++ VN CMCI_synapse
+.end
+

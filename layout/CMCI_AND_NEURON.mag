@@ -1,0 +1,40 @@
+magic
+tech sky130A
+timestamp 1702611732
+<< error_s >>
+rect 1190 0 1210 20
+<< locali >>
+rect 290 905 310 925
+rect 390 905 410 925
+rect 535 905 555 925
+rect 680 905 700 925
+rect 780 905 800 925
+rect 905 0 925 20
+rect 1190 0 1210 20
+rect 1580 0 1600 20
+rect 1680 0 1700 20
+rect 1825 0 1845 20
+rect 1970 0 1990 20
+rect 2070 0 2090 20
+<< metal1 >>
+rect 20 710 40 730
+rect 20 195 40 215
+use CMCI_synapse  CMCI_synapse_0
+timestamp 1702611732
+transform 1 0 125 0 1 615
+box -125 -615 2255 310
+<< labels >>
+rlabel locali 300 925 300 925 1 W1m
+rlabel locali 400 925 400 925 1 W0m
+rlabel locali 690 925 690 925 1 W2m
+rlabel locali 790 925 790 925 1 W3m
+rlabel metal1 20 205 20 205 7 VN
+rlabel locali 915 0 915 0 5 IOUT
+rlabel locali 1200 0 1200 0 5 SPKIN
+rlabel locali 1590 0 1590 0 5 W1p
+rlabel locali 1690 0 1690 0 5 W0p
+rlabel locali 1835 0 1835 0 5 VBN
+rlabel locali 1980 0 1980 0 5 W2p
+rlabel locali 2080 0 2080 0 5 W3p
+rlabel locali 545 925 545 925 1 VBP
+<< end >>

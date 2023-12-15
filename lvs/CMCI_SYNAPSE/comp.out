@@ -1,0 +1,27 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+Flattening unmatched subcell CMCI_synapse in circuit CMCI_AND_NEURON.spice (1)(1 instance)
+
+Class CMCI_synapse_lds.spice (0):  Merged 10 parallel devices.
+Class CMCI_AND_NEURON.spice (1):  Merged 10 parallel devices.
+Subcircuit summary:
+Circuit 1: CMCI_synapse_lds.spice          |Circuit 2: CMCI_AND_NEURON.spice           
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (19->14)           |sky130_fd_pr__nfet_01v8 (19->14)           
+sky130_fd_pr__pfet_01v8 (19->14)           |sky130_fd_pr__pfet_01v8 (19->14)           
+Number of devices: 28                      |Number of devices: 28                      
+Number of nets: 28                         |Number of nets: 28                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes CMCI_synapse_lds.spice and CMCI_AND_NEURON.spice are equivalent.
+
+Final result: Circuits match uniquely.
+.
