@@ -1,10 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1702613197
-<< error_s >>
-rect 1764 2248 1862 2274
-rect 1760 2220 1834 2246
+timestamp 1702627813
 << poly >>
 rect 1480 -20 1560 0
 rect 1480 -60 1500 -20
@@ -18,26 +15,38 @@ rect 1480 -80 1980 -60
 rect 1500 -60 1540 -20
 rect 1920 -60 1960 -20
 << locali >>
+rect 1798 3550 1806 3568
 rect -280 1890 1110 1930
 rect -280 590 -240 1890
 rect 1070 1850 1110 1890
 rect 2350 1850 2390 2090
+rect 602 1844 618 1850
+rect 796 1844 812 1850
+rect 1380 1844 1390 1850
+rect 1576 1844 1598 1850
 rect 2350 1810 2400 1850
-rect -480 -40 -440 110
+rect -480 108 -440 110
+rect -482 98 -440 108
+rect -480 -40 -440 98
 rect 1480 -20 1560 0
 rect 1480 -40 1500 -20
 rect -480 -60 1500 -40
 rect 1540 -60 1560 -20
 rect -480 -80 1560 -60
 rect 1810 -530 1850 10
+rect 3176 0 3192 6
+rect 3380 0 3396 6
+rect 3960 0 3976 6
+rect 4156 0 4172 6
 rect 1900 -20 1980 0
 rect 1900 -60 1920 -20
 rect 1960 -40 1980 -20
 rect 3650 -40 3690 0
 rect 1960 -60 3690 -40
 rect 1900 -80 3690 -60
+rect 2366 -2040 2382 -2034
 << metal1 >>
-rect 1760 2000 1834 2246
+rect 1760 2000 1834 2278
 rect -850 1950 1834 2000
 rect -850 1930 1830 1950
 rect -850 410 -780 1930
@@ -45,7 +54,9 @@ rect 2500 1740 2900 2250
 rect -480 1150 50 1220
 rect -480 810 -400 1150
 rect 4720 1140 4890 1230
+rect -720 714 -710 728
 rect -40 330 40 400
+rect -844 304 -832 318
 rect 2070 -240 2160 110
 rect 4800 -80 4890 1140
 rect 2810 -160 4890 -80
@@ -67,8 +78,30 @@ timestamp 1702524960
 transform 0 1 1798 -1 0 3930
 box -34 -2958 1890 4146
 << labels >>
-rlabel space -720 720 -720 720 7 VP
-rlabel space -840 310 -840 310 7 VN
-rlabel space 1800 3560 1800 3560 7 ISYN
-rlabel space 2370 -2040 2370 -2040 5 VSYN
+rlabel metal1 -720 720 -720 720 7 VP
+port 2 w
+rlabel metal1 -840 310 -840 310 7 VN
+port 1 w
+rlabel locali 1800 3560 1800 3560 7 ISYN
+port 3 w
+rlabel locali 2370 -2040 2370 -2040 5 VSYN
+port 4 s
+rlabel locali 606 1850 606 1850 1 W1m
+port 5 n
+rlabel locali 800 1850 800 1850 1 W0m
+port 6 n
+rlabel locali 1384 1850 1384 1850 1 W2m
+port 7 n
+rlabel locali 1590 1850 1590 1850 1 W3m
+port 8 n
+rlabel locali 3184 0 3184 0 1 W1p
+port 9 n
+rlabel locali 3386 0 3386 0 1 W0p
+port 10 n
+rlabel locali 3968 0 3968 0 1 W2p
+port 11 n
+rlabel locali 4164 0 4164 0 1 W3p
+port 12 n
+rlabel locali -476 102 -476 102 1 VBN
+port 13 n
 << end >>

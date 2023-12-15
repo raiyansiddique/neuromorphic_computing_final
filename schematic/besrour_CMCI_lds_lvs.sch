@@ -26,9 +26,6 @@ lab=VBN}
 N -120 -370 -120 -350 {
 lab=VBN}
 C {madvlsi/vdd.sym} 160 -240 0 0 {name=l1 lab=VDD}
-C {/home/madvlsi/Documents/second/neuromorphic_computing_final/schematic/besrour_neuron_cm_lds.sym} 40 -130 0 0 {name=X3}
-C {/home/madvlsi/Documents/second/neuromorphic_computing_final/schematic/besrour_neuron_cm_lds.sym} 280 -130 0 0 {name=X1}
-C {/home/madvlsi/Documents/second/neuromorphic_computing_final/schematic/CMCI_synapse_lds.sym} 110 -130 0 0 {name=X2}
 C {madvlsi/gnd.sym} 160 -20 0 0 {name=l2 lab=GND}
 C {madvlsi/gnd.sym} -10 -280 0 0 {name=l3 lab=GND}
 C {madvlsi/vdd.sym} -10 -460 0 0 {name=l4 lab=VDD}
@@ -46,4 +43,7 @@ C {devices/lab_pin.sym} 180 -100 3 0 {name=p21 sig_type=std_logic lab=W3n}
 C {devices/lab_pin.sym} 190 -100 3 0 {name=p22 sig_type=std_logic lab=W4n}
 C {devices/lab_pin.sym} 340 -130 2 0 {name=p1 sig_type=std_logic lab=Vsyn}
 C {devices/lab_pin.sym} -20 -130 0 0 {name=p5 sig_type=std_logic lab=Isyn}
-C {/home/madvlsi/Documents/second/neuromorphic_computing_final/schematic/bias_gen_lds.sym} -320 -150 0 0 {name=X4}
+C {/home/madvlsi/neuromorphic_computing_final/schematic/bias_gen_lds.sym} -320 -150 0 0 {name=X5}
+C {/home/madvlsi/neuromorphic_computing_final/schematic/besrour_neuron_cm_lds.sym} 40 -130 0 0 {name=X3}
+C {/home/madvlsi/neuromorphic_computing_final/schematic/besrour_neuron_cm_lds.sym} 280 -130 0 0 {name=X1}
+C {/home/madvlsi/neuromorphic_computing_final/schematic/CMCI_synapse_lds.sym} 110 -130 0 0 {name=X2}

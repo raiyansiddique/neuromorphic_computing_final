@@ -8,28 +8,16 @@ Equate elements:  no current cell.
 Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
 
 Subcircuit summary:
-Circuit 1: bias_gen_lds.spice              |Circuit 2: bias_gen.spice                  
+Circuit 1: bias_gen.spice                  |Circuit 2: bias_gen_lds.spice              
 -------------------------------------------|-------------------------------------------
 sky130_fd_pr__nfet_01v8 (4)                |sky130_fd_pr__nfet_01v8 (4)                
 sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
 Number of devices: 5                       |Number of devices: 5                       
 Number of nets: 4                          |Number of nets: 4                          
 ---------------------------------------------------------------------------------------
-Netlists match uniquely with property errors.
-sky130_fd_pr__pfet_01v8:M6 vs. sky130_fd_pr__pfet_01v8:4:
- W circuit1: (unresolved expression)   "1"  (property type mismatch)
- L circuit1: (unresolved expression)   "0.15"  (property type mismatch)
-sky130_fd_pr__nfet_01v8:M5 vs. sky130_fd_pr__nfet_01v8:3:
- W circuit1: (unresolved expression)   1  (property type mismatch)
- L circuit1: (unresolved expression)   0.15  (property type mismatch)
-sky130_fd_pr__nfet_01v8:M4 vs. sky130_fd_pr__nfet_01v8:1:
- W circuit1: (unresolved expression)   1  (property type mismatch)
- L circuit1: (unresolved expression)   0.15  (property type mismatch)
+Netlists match uniquely.
 Cells have no pins;  pin matching not needed.
-Device classes bias_gen_lds.spice and bias_gen.spice are equivalent.
+Device classes bias_gen.spice and bias_gen_lds.spice are equivalent.
 
 Final result: Circuits match uniquely.
-Property errors were found.
-
-The following cells had property errors:
- bias_gen_lds.spice
+.

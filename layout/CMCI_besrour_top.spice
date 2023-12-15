@@ -1,4 +1,4 @@
-* NGSPICE file created from CMCI_besrour_top.ext - technology: sky130A
+* SPICE3 file created from CMCI_besrour_top.ext - technology: sky130A
 
 .subckt bias_gen VP VN VBN VBP
 X0 VBP VBN VN VN sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
@@ -47,6 +47,11 @@ X34 a_3970_n1120# VBN VN VN sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w
 X35 a_190_n1120# a_3470_n120# VP VP sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
 X36 VN VBN a_3170_n1120# VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
 X37 a_190_n1120# a_450_n1180# VN VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+C0 VP a_190_n1120# 2.12f
+C1 VBN VN 2.83f
+C2 VP VN 11.1f
+C3 a_190_n1120# VN 3.67f
+C4 a_450_n1180# VN 2.38f
 .ends
 
 .subckt neuron VP VN ISYN VSYN CMEM CRST a_n150_n600#
@@ -64,22 +69,29 @@ X10 VN ISYN a_n150_n600# VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=2.5 as=1 ps=5 w=2 
 X11 a_270_n40# CMEM VP VP sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=0.5 ps=2.5 w=2 l=0.3
 X12 ISYN ISYN VN VN sky130_fd_pr__nfet_01v8 ad=1 pd=5 as=0.5 ps=2.5 w=2 l=0.3
 X13 a_970_n10# CRST VN VN sky130_fd_pr__nfet_01v8 ad=1 pd=5 as=0.5 ps=2.5 w=2 l=0.3
+C0 VP VN 3.25f
 .ends
 
-.subckt neuron_top VSYN ISYN VN VP
+.subckt neuron_top VSYN ISYN VP VN
 Xneuron_0 VP VN ISYN VSYN neuron_0/CMEM neuron_0/CRST li_50_880# neuron
 X0 neuron_0/CMEM VN sky130_fd_pr__cap_mim_m3_1 l=14 w=9.3
 X1 neuron_0/CRST VN sky130_fd_pr__cap_mim_m3_1 l=14 w=9.3
+C0 VN 0 6.69f
+C1 VP 0 3.23f
 .ends
 
-
-* Top level circuit CMCI_besrour_top
-
-Xbias_gen_0 bias_gen_0/VP VSUBS bias_gen_0/VBN bias_gen_0/VBP bias_gen
-XCMCI_synapse_0 CMCI_synapse_0/W1m CMCI_synapse_0/W0m bias_gen_0/VBP CMCI_synapse_0/W2m
-+ CMCI_synapse_0/W3m bias_gen_0/VP neuron_top_0/ISYN neuron_top_1/VSYN CMCI_synapse_0/W1p
-+ CMCI_synapse_0/W0p bias_gen_0/VBN CMCI_synapse_0/W2p CMCI_synapse_0/W3p VSUBS CMCI_synapse
-Xneuron_top_0 neuron_top_0/VSYN neuron_top_0/ISYN VSUBS bias_gen_0/VP neuron_top
-Xneuron_top_1 neuron_top_1/VSYN neuron_top_1/ISYN VSUBS bias_gen_0/VP neuron_top
-.end
+.subckt CMCI_besrour_top VN VP ISYN VSYN W1m W0m W2m W3m W1p W0p W2p W3p VBN
+Xbias_gen_0 VP VN VBN bias_gen_0/VBP bias_gen
+XCMCI_synapse_0 W1m W0m bias_gen_0/VBP W2m W3m VP neuron_top_0/ISYN neuron_top_1/VSYN
++ W1p W0p VBN W2p W3p VN CMCI_synapse
+Xneuron_top_0 VSYN neuron_top_0/ISYN VP VN neuron_top
+Xneuron_top_1 neuron_top_1/VSYN ISYN VP VN neuron_top
+C0 VP VN 2.21f
+C1 VP 0 19.3f
+C2 VN 0 13.5f
+C3 CMCI_synapse_0/a_190_n1120# 0 3.67f **FLOATING
+C4 CMCI_synapse_0/a_450_n1180# 0 2.38f **FLOATING
+C5 VBN 0 5f
+C6 bias_gen_0/VBP 0 2.77f
+.ends
 

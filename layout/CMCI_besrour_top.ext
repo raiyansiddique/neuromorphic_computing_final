@@ -1,4 +1,4 @@
-timestamp 1702613197
+timestamp 1702627813
 version 8.3
 tech sky130A
 style ngspice()
@@ -8,424 +8,484 @@ use neuron_top neuron_top_1 0 1 1798 -1 0 3930
 use neuron_top neuron_top_0 0 1 1798 -1 0 -200
 use CMCI_synapse CMCI_synapse_0 1 0 250 0 1 1230
 use bias_gen bias_gen_0 1 0 -530 0 1 330
-node "m1_2070_n240#" 0 168.849 2070 -240 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 31500 880 0 0 0 0 0 0 0 0 0 0
+port "VN" 1 -840 310 -840 310 m1
+port "VP" 2 -720 720 -720 720 m1
+port "VSYN" 4 2370 -2040 2370 -2040 li
+port "W3p" 12 4164 0 4164 0 li
+port "W2p" 11 3968 0 3968 0 li
+port "W0p" 10 3386 0 3386 0 li
+port "W1p" 9 3184 0 3184 0 li
+port "W3m" 8 1590 1850 1590 1850 li
+port "W2m" 7 1384 1850 1384 1850 li
+port "W0m" 6 800 1850 800 1850 li
+port "W1m" 5 606 1850 606 1850 li
+port "ISYN" 3 1800 3560 1800 3560 li
+port "VBN" 13 -476 102 -476 102 li
+node "m1_2070_n240#" 0 168.842 2070 -240 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 31500 880 0 0 0 0 0 0 0 0 0 0
+node "VN" 0 8.58314 -840 310 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 168 52 0 0 0 0 0 0 0 0 0 0
 node "m1_n40_330#" 0 59.0027 -40 330 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5600 300 0 0 0 0 0 0 0 0 0 0
-node "m1_2810_n310#" 5 1667.3 2810 -310 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 305000 7400 0 0 0 0 0 0 0 0 0 0
+node "VP" 0 6.78189 -720 720 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 140 48 0 0 0 0 0 0 0 0 0 0
+node "m1_2810_n310#" 5 1667.16 2810 -310 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 305000 7400 0 0 0 0 0 0 0 0 0 0
 node "m1_n480_810#" 1 317.038 -480 810 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 64300 1880 0 0 0 0 0 0 0 0 0 0
-node "m1_2500_1740#" 0 475.459 2500 1740 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 204000 1820 0 0 0 0 0 0 0 0 0 0
-node "m1_n850_410#" 8 1899.94 -850 410 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 312404 9040 0 0 0 0 0 0 0 0 0 0
-node "li_1810_n530#" 173 228.384 1810 -530 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21600 1160 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_2350_1810#" 93 142.812 2350 1810 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11600 660 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_n280_590#" 874 1221.94 -280 590 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 109200 5540 0 0 0 0 0 0 0 0 0 0 0 0
-node "a_1480_n80#" 2044 2219.87 1480 -80 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 23000 1260 0 0 167200 8360 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_2500_1740#" 0 475.178 2500 1740 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 204000 1820 0 0 0 0 0 0 0 0 0 0
+node "m1_n850_410#" 8 1909.07 -850 410 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 314772 9104 0 0 0 0 0 0 0 0 0 0
+node "VSYN" 34 9.04278 2370 -2040 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 96 44 0 0 0 0 0 0 0 0 0 0 0 0
+node "W3p" 34 8.27837 4164 0 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 96 44 0 0 0 0 0 0 0 0 0 0 0 0
+node "W2p" 34 7.9309 3968 0 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 96 44 0 0 0 0 0 0 0 0 0 0 0 0
+node "W0p" 34 4.9951 3386 0 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 96 44 0 0 0 0 0 0 0 0 0 0 0 0
+node "W1p" 34 5.1862 3184 0 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 96 44 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_1810_n530#" 173 228.227 1810 -530 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21600 1160 0 0 0 0 0 0 0 0 0 0 0 0
+node "W3m" 47 10.4972 1590 1850 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 132 56 0 0 0 0 0 0 0 0 0 0 0 0
+node "W2m" 21 5.46958 1384 1850 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 60 32 0 0 0 0 0 0 0 0 0 0 0 0
+node "W0m" 34 4.97752 800 1850 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 96 44 0 0 0 0 0 0 0 0 0 0 0 0
+node "W1m" 34 5.08133 606 1850 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 96 44 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_2350_1810#" 93 142.544 2350 1810 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11600 660 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_n280_590#" 874 1215.79 -280 590 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 109200 5540 0 0 0 0 0 0 0 0 0 0 0 0
+node "ISYN" 29 10.7152 1800 3560 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 144 52 0 0 0 0 0 0 0 0 0 0 0 0
+node "VBN" 2045 2214.8 -476 102 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 23000 1260 0 0 167220 8364 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "m1_n850_410#" "m1_n480_810#" 82.2271
-cap "a_1480_n80#" "m1_n40_330#" 0.650525
-cap "li_1810_n530#" "m1_2070_n240#" 4.49757
-cap "li_2350_1810#" "m1_2500_1740#" 23.7136
-cap "li_n280_590#" "m1_n40_330#" 0.0232245
-cap "li_1810_n530#" "m1_2810_n310#" 0.497182
-cap "m1_2070_n240#" "m1_2810_n310#" 10.0571
-cap "li_2350_1810#" "m1_n850_410#" 1.44015
-cap "a_1480_n80#" "li_1810_n530#" 51.4707
-cap "a_1480_n80#" "m1_2070_n240#" 58.2832
-cap "a_1480_n80#" "m1_2810_n310#" 150.622
-cap "a_1480_n80#" "li_n280_590#" 1.55015
-cap "m1_n850_410#" "m1_2500_1740#" 19.4122
-cap "m1_n480_810#" "m1_n40_330#" 4.4
-cap "a_1480_n80#" "m1_n480_810#" 0.934513
-cap "li_n280_590#" "m1_n480_810#" 65.8308
+cap "m1_2810_n310#" "W1p" 0.109389
 cap "li_n280_590#" "li_2350_1810#" 1.60883
+cap "m1_2810_n310#" "m1_2070_n240#" 10.0571
+cap "m1_2810_n310#" "W2p" 0.694419
+cap "W0p" "VBN" 6
+cap "W2p" "W3p" 0.735577
+cap "VN" "m1_n850_410#" 3.71831
+cap "W2m" "W0m" 0.256711
+cap "li_n280_590#" "VP" 0.0511465
+cap "li_2350_1810#" "W3m" 0.196154
+cap "W0p" "W1p" 0.708333
+cap "li_2350_1810#" "m1_n850_410#" 1.44015
+cap "m1_2070_n240#" "W0p" 0.00105046
+cap "W2m" "W3m" 0.714953
+cap "W2m" "m1_n850_410#" 0.402057
+cap "li_n280_590#" "VBN" 1.55015
+cap "li_n280_590#" "W0m" 6
+cap "W2p" "W0p" 0.258446
+cap "m1_2810_n310#" "W3p" 0.707395
+cap "li_2350_1810#" "m1_2500_1740#" 23.7136
+cap "li_n280_590#" "m1_n850_410#" 232.512
+cap "li_n280_590#" "W1m" 6.17586
+cap "li_n280_590#" "m1_n480_810#" 65.8308
+cap "W2m" "m1_2500_1740#" 0.000795476
+cap "li_1810_n530#" "VBN" 51.4707
+cap "m1_n850_410#" "ISYN" 0.0138707
+cap "m1_n850_410#" "VP" 5.95144
+cap "li_n280_590#" "m1_n40_330#" 0.0232245
 cap "li_n280_590#" "m1_2500_1740#" 0.0757185
-cap "li_n280_590#" "m1_n850_410#" 232.546
-cap "bias_gen_0/VBN" "neuron_top_0/neuron_0/CRST" 0.346915
-cap "neuron_top_0/neuron_0/CRST" "neuron_top_0/VN" 3.03945
+cap "m1_2810_n310#" "W0p" 0.110185
+cap "W1p" "li_1810_n530#" 0.112999
+cap "W1p" "VBN" 6
+cap "m1_n850_410#" "W0m" 0.110022
+cap "m1_2070_n240#" "li_1810_n530#" 4.49757
+cap "W0m" "W1m" 0.742718
+cap "VBN" "m1_n480_810#" 0.934513
+cap "m1_2070_n240#" "VBN" 58.2832
+cap "m1_n850_410#" "W3m" 0.884525
+cap "m1_n850_410#" "W1m" 0.11021
+cap "m1_2070_n240#" "W1p" 0.00612357
+cap "m1_n850_410#" "m1_n480_810#" 82.2271
+cap "m1_n40_330#" "VBN" 0.650525
+cap "m1_n40_330#" "m1_n480_810#" 4.4
+cap "m1_2500_1740#" "W3m" 0.00260258
+cap "m1_2500_1740#" "m1_n850_410#" 19.658
+cap "m1_2810_n310#" "li_1810_n530#" 0.497182
+cap "m1_2810_n310#" "VBN" 150.622
 cap "neuron_top_0/neuron_0/CRST" "CMCI_synapse_0/a_450_n1180#" 0.62355
-cap "CMCI_synapse_0/a_450_n1180#" "neuron_top_0/neuron_0/CRST" 0.414972
-cap "CMCI_synapse_0/VBN" "neuron_top_0/VN" 0.900632
-cap "neuron_top_0/neuron_0/CRST" "neuron_top_0/ISYN" 10.4721
-cap "neuron_top_0/VP" "neuron_top_0/VN" 0.243618
+cap "neuron_top_0/neuron_0/CRST" "bias_gen_0/VBN" 0.346915
+cap "neuron_top_0/neuron_0/CRST" "neuron_top_0/VN" 3.03945
 cap "neuron_top_0/neuron_0/CMEM" "CMCI_synapse_0/SPKIN" 0.211321
-cap "neuron_top_0/neuron_0/CRST" "CMCI_synapse_0/SPKIN" 0.21913
-cap "neuron_top_0/neuron_0/CMEM" "neuron_top_0/VN" 0.0635792
-cap "neuron_top_0/neuron_0/CRST" "neuron_top_0/VN" 11.3493
-cap "neuron_top_0/neuron_0/CMEM" "CMCI_synapse_0/VBN" 0.0198262
+cap "neuron_top_0/VN" "neuron_top_0/neuron_0/CRST" 11.3493
+cap "neuron_top_0/VN" "neuron_top_0/neuron_0/CMEM" 0.0635792
 cap "neuron_top_0/neuron_0/CRST" "CMCI_synapse_0/VBN" 0.785445
-cap "neuron_top_0/VP" "neuron_top_0/VN" 0.0800418
+cap "neuron_top_0/ISYN" "neuron_top_0/neuron_0/CRST" 10.4721
+cap "neuron_top_0/VN" "neuron_top_0/VP" 0.243618
+cap "neuron_top_0/VN" "CMCI_synapse_0/VBN" 0.900632
+cap "neuron_top_0/neuron_0/CRST" "CMCI_synapse_0/SPKIN" 0.21913
+cap "neuron_top_0/neuron_0/CMEM" "CMCI_synapse_0/VBN" 0.0198262
+cap "CMCI_synapse_0/a_450_n1180#" "neuron_top_0/neuron_0/CRST" 0.414972
 cap "neuron_top_0/VN" "CMCI_synapse_0/VBN" 0.0375377
-cap "neuron_top_0/m1_1450_n34#" "CMCI_synapse_0/VN" 108.062
-cap "CMCI_synapse_0/a_190_n1120#" "bias_gen_0/VBN" 0.0944623
-cap "bias_gen_0/VBN" "CMCI_synapse_0/VBP" 8.74228
-cap "CMCI_synapse_0/a_n210_n90#" "bias_gen_0/VBN" 0.0556909
+cap "neuron_top_0/VN" "neuron_top_0/VP" 0.0800418
 cap "bias_gen_0/VBN" "CMCI_synapse_0/VP" 0.349078
-cap "CMCI_synapse_0/a_n210_n1120#" "bias_gen_0/VBN" 54.2576
-cap "neuron_top_1/m1_1450_n34#" "bias_gen_0/VBN" 0.0535453
-cap "neuron_top_0/m1_1450_n34#" "CMCI_synapse_0/VBP" 4.4853
-cap "CMCI_synapse_0/a_n210_n90#" "neuron_top_0/m1_1450_n34#" 0.338824
-cap "neuron_top_0/m1_1450_n34#" "CMCI_synapse_0/VP" 0.511016
-cap "CMCI_synapse_0/a_n210_n1120#" "neuron_top_0/m1_1450_n34#" 9.20217
-cap "CMCI_synapse_0/VN" "CMCI_synapse_0/VBP" 15.2608
-cap "CMCI_synapse_0/a_190_n1120#" "CMCI_synapse_0/VN" 0.282261
-cap "CMCI_synapse_0/VN" "CMCI_synapse_0/VP" 0.148275
+cap "neuron_top_0/m1_1450_n34#" "bias_gen_0/VBN" 58.718
 cap "CMCI_synapse_0/a_n210_n1120#" "CMCI_synapse_0/VN" 63.1743
-cap "bias_gen_0/VBN" "CMCI_synapse_0/VP" -0.396936
-cap "CMCI_synapse_0/a_190_n1120#" "CMCI_synapse_0/VBP" 0.155668
-cap "neuron_top_0/m1_1450_n34#" "CMCI_synapse_0/VP" 10.0874
-cap "CMCI_synapse_0/a_n210_n1120#" "CMCI_synapse_0/VBP" 23.1063
-cap "neuron_top_1/m1_1450_n34#" "CMCI_synapse_0/VBP" 0.508699
+cap "CMCI_synapse_0/VP" "bias_gen_0/VBN" -0.396936
+cap "CMCI_synapse_0/VN" "CMCI_synapse_0/a_190_n1120#" 0.282261
+cap "bias_gen_0/VBN" "CMCI_synapse_0/VBP" 8.74228
+cap "CMCI_synapse_0/VN" "CMCI_synapse_0/VP" 0.148275
+cap "neuron_top_0/m1_1450_n34#" "CMCI_synapse_0/VN" 108.062
 cap "CMCI_synapse_0/VN" "CMCI_synapse_0/VP" 62.6169
+cap "neuron_top_0/m1_1450_n34#" "CMCI_synapse_0/a_n210_n90#" 0.338824
+cap "neuron_top_0/m1_1450_n34#" "CMCI_synapse_0/a_n210_n1120#" 9.20217
+cap "CMCI_synapse_0/VN" "CMCI_synapse_0/VBP" 15.7695
+cap "neuron_top_0/m1_1450_n34#" "CMCI_synapse_0/VP" 0.511016
+cap "CMCI_synapse_0/VN" "bias_gen_0/VBN" 53.6875
+cap "CMCI_synapse_0/a_n210_n1120#" "CMCI_synapse_0/VBP" 23.1063
+cap "neuron_top_0/m1_1450_n34#" "CMCI_synapse_0/VP" 10.0874
+cap "CMCI_synapse_0/a_190_n1120#" "CMCI_synapse_0/VBP" 0.155668
+cap "CMCI_synapse_0/a_n210_n90#" "bias_gen_0/VBN" 0.0556909
+cap "CMCI_synapse_0/a_n210_n1120#" "bias_gen_0/VBN" 54.2578
+cap "neuron_top_0/m1_1450_n34#" "CMCI_synapse_0/VBP" 4.4853
+cap "CMCI_synapse_0/a_190_n1120#" "bias_gen_0/VBN" 0.0944623
 cap "CMCI_synapse_0/VP" "CMCI_synapse_0/VBP" 5.7535
-cap "neuron_top_0/m1_1450_n34#" "bias_gen_0/VBN" 58.7155
-cap "bias_gen_0/VBN" "CMCI_synapse_0/VN" 53.6274
-cap "neuron_top_0/VN" "bias_gen_0/VBN" 208.797
-cap "CMCI_synapse_0/a_450_n1180#" "neuron_top_0/VN" 31.8804
-cap "neuron_top_0/VN" "CMCI_synapse_0/a_n210_n90#" 0.569114
-cap "CMCI_synapse_0/VBP" "neuron_top_0/VN" 2.56942
-cap "CMCI_synapse_0/a_450_n1180#" "bias_gen_0/VBN" 123.434
-cap "CMCI_synapse_0/a_n210_n1120#" "neuron_top_0/VN" 8.09418
-cap "CMCI_synapse_0/W1m" "neuron_top_0/VN" 0.125679
-cap "CMCI_synapse_0/W0m" "neuron_top_0/VN" 0.125679
+cap "CMCI_synapse_0/a_n210_n90#" "neuron_top_1/neuron_0/VN" 0.569114
+cap "CMCI_synapse_0/W0m" "neuron_top_1/neuron_0/VN" 0.125679
+cap "CMCI_synapse_0/VBP" "neuron_top_1/neuron_0/VN" 2.56942
+cap "neuron_top_1/neuron_0/VN" "neuron_top_1/neuron_0/VP" 10.6791
 cap "CMCI_synapse_0/a_n210_n1120#" "bias_gen_0/VBN" 18.9917
-cap "CMCI_synapse_0/a_190_n1120#" "neuron_top_0/VN" 3.42391
-cap "neuron_top_1/neuron_0/VP" "neuron_top_0/VN" 10.6791
+cap "neuron_top_1/neuron_0/VN" "CMCI_synapse_0/a_190_n1120#" 3.42391
+cap "CMCI_synapse_0/W3m" "neuron_top_1/neuron_0/VN" 0.125679
+cap "neuron_top_1/neuron_0/VN" "bias_gen_0/VBN" 208.797
+cap "CMCI_synapse_0/W1m" "neuron_top_1/neuron_0/VN" 0.125679
+cap "neuron_top_1/neuron_0/VN" "CMCI_synapse_0/a_450_n1180#" 31.8804
 cap "CMCI_synapse_0/a_190_n1120#" "bias_gen_0/VBN" 48.7133
-cap "CMCI_synapse_0/W2m" "neuron_top_0/VN" 0.125679
-cap "CMCI_synapse_0/W3m" "neuron_top_0/VN" 0.125679
-cap "neuron_top_0/VP" "neuron_top_0/neuron_0/CMEM" 13.659
-cap "CMCI_synapse_0/a_1390_n90#" "neuron_top_0/VN" 0.16775
-cap "neuron_top_0/ISYN" "CMCI_synapse_0/VBN" 11.605
-cap "neuron_top_0/neuron_0/a_970_n10#" "CMCI_synapse_0/VBN" 0.0493943
-cap "neuron_top_1/VSYN" "neuron_top_0/ISYN" 0.79302
-cap "CMCI_synapse_0/W1p" "neuron_top_0/VN" 0.194682
-cap "neuron_top_1/neuron_0/VP" "neuron_top_0/VN" 0.40846
-cap "neuron_top_0/neuron_0/a_270_n40#" "neuron_top_0/VN" 0.451066
-cap "CMCI_synapse_0/a_190_n1120#" "CMCI_synapse_0/VBN" 19.3619
-cap "neuron_top_0/ISYN" "neuron_top_0/neuron_0/CMEM" 1.0316
-cap "neuron_top_0/VP" "neuron_top_0/neuron_0/a_n150_n600#" 9.96529
-cap "CMCI_synapse_0/a_2210_n1120#" "neuron_top_0/neuron_0/a_n150_n600#" 0.299558
-cap "CMCI_synapse_0/a_190_n1120#" "neuron_top_0/neuron_0/CMEM" 0.672612
-cap "neuron_top_0/ISYN" "neuron_top_0/neuron_0/a_n150_n600#" 27.091
-cap "neuron_top_0/VN" "CMCI_synapse_0/VBN" 111.562
-cap "CMCI_synapse_0/a_190_n1120#" "neuron_top_0/neuron_0/a_n150_n600#" 0.264554
-cap "neuron_top_0/neuron_0/a_270_n40#" "CMCI_synapse_0/VBN" 1.91
-cap "neuron_top_1/VSYN" "neuron_top_0/VN" 3.26783
-cap "neuron_top_0/neuron_0/CRST" "neuron_top_0/VP" 0.0429786
-cap "neuron_top_1/VSYN" "neuron_top_0/neuron_0/a_270_n40#" 0.0109972
-cap "CMCI_synapse_0/VBP" "neuron_top_0/VN" 0.0355517
-cap "neuron_top_0/neuron_0/CMEM" "neuron_top_0/VN" 10.3464
-cap "neuron_top_0/neuron_0/CMEM" "neuron_top_1/neuron_0/VP" 0.104051
-cap "neuron_top_0/neuron_0/CRST" "neuron_top_0/ISYN" 0.0582914
-cap "neuron_top_0/neuron_0/a_n150_n600#" "neuron_top_0/VN" 8.02578
-cap "neuron_top_1/VSYN" "CMCI_synapse_0/VBN" 35.9501
-cap "neuron_top_0/VP" "neuron_top_0/neuron_0/a_970_n10#" 0.0164764
+cap "CMCI_synapse_0/W2m" "neuron_top_1/neuron_0/VN" 0.125679
+cap "neuron_top_1/neuron_0/VN" "CMCI_synapse_0/a_n210_n1120#" 8.09418
+cap "CMCI_synapse_0/a_450_n1180#" "bias_gen_0/VBN" 123.434
 cap "neuron_top_0/ISYN" "neuron_top_0/VP" 1.70085
-cap "neuron_top_0/neuron_0/CMEM" "CMCI_synapse_0/VBN" 10.7383
-cap "neuron_top_1/VSYN" "neuron_top_0/neuron_0/CMEM" 0.223718
-cap "CMCI_synapse_0/a_2370_n1120#" "CMCI_synapse_0/VBN" 18.9761
-cap "neuron_top_0/neuron_0/CRST" "neuron_top_0/VN" 2.54814
-cap "neuron_top_0/ISYN" "CMCI_synapse_0/a_190_n1120#" 0.0993867
-cap "neuron_top_0/neuron_0/a_n150_n600#" "CMCI_synapse_0/VBN" 127.67
-cap "neuron_top_1/VSYN" "neuron_top_0/neuron_0/a_n150_n600#" 3.1719
-cap "neuron_top_0/neuron_0/CMEM" "CMCI_synapse_0/a_2370_n1120#" 0.422033
-cap "neuron_top_0/VP" "neuron_top_0/VN" 87.7816
-cap "neuron_top_0/VP" "neuron_top_0/neuron_0/a_270_n40#" 0.776849
-cap "CMCI_synapse_0/W0p" "neuron_top_0/VN" 0.136887
-cap "CMCI_synapse_0/a_450_n1180#" "neuron_top_0/VN" 6.8534
-cap "neuron_top_0/neuron_0/a_970_n10#" "neuron_top_0/VN" 0.0301179
-cap "neuron_top_0/ISYN" "neuron_top_0/VN" 82.2925
+cap "neuron_top_0/VN" "CMCI_synapse_0/W0p" 0.135837
 cap "neuron_top_0/neuron_0/CRST" "CMCI_synapse_0/VBN" 0.239248
+cap "CMCI_synapse_0/W1p" "neuron_top_0/VN" 0.193175
+cap "neuron_top_1/neuron_0/VP" "neuron_top_0/VN" 0.40846
+cap "neuron_top_1/neuron_0/VP" "neuron_top_0/neuron_0/CMEM" 0.104051
+cap "neuron_top_1/VSYN" "neuron_top_0/neuron_0/a_270_n40#" 0.0109972
 cap "CMCI_synapse_0/a_190_n1120#" "neuron_top_0/VN" 0.0830196
-cap "neuron_top_0/VP" "CMCI_synapse_0/VBN" 25.4351
-cap "neuron_top_1/VSYN" "neuron_top_0/VP" 0.0264772
+cap "CMCI_synapse_0/a_190_n1120#" "neuron_top_0/neuron_0/CMEM" 0.672612
+cap "neuron_top_0/neuron_0/a_n150_n600#" "neuron_top_0/VN" 8.02578
+cap "CMCI_synapse_0/a_2370_n1120#" "neuron_top_0/neuron_0/CMEM" 0.422033
+cap "CMCI_synapse_0/VBN" "neuron_top_0/VN" 111.562
+cap "neuron_top_1/VSYN" "neuron_top_0/ISYN" 0.79302
+cap "CMCI_synapse_0/VBN" "neuron_top_0/neuron_0/CMEM" 10.7383
+cap "neuron_top_0/neuron_0/a_n150_n600#" "neuron_top_0/VP" 9.96529
+cap "neuron_top_0/VN" "CMCI_synapse_0/a_450_n1180#" 6.8534
+cap "CMCI_synapse_0/VBN" "neuron_top_0/VP" 25.4351
+cap "CMCI_synapse_0/W1p" "neuron_top_0/ISYN" -0.0564993
+cap "CMCI_synapse_0/VBN" "neuron_top_0/neuron_0/a_970_n10#" 0.0493943
+cap "neuron_top_0/neuron_0/CRST" "neuron_top_0/VN" 2.54814
+cap "neuron_top_0/neuron_0/CRST" "neuron_top_0/VP" 0.0429786
+cap "neuron_top_0/ISYN" "CMCI_synapse_0/a_190_n1120#" 0.0993867
+cap "neuron_top_0/neuron_0/a_270_n40#" "CMCI_synapse_0/VBN" 1.91
+cap "neuron_top_1/VSYN" "neuron_top_0/neuron_0/a_n150_n600#" 3.1719
+cap "neuron_top_1/VSYN" "CMCI_synapse_0/VBN" 35.9501
+cap "CMCI_synapse_0/a_1390_n90#" "neuron_top_0/VN" 0.16775
+cap "neuron_top_0/neuron_0/a_n150_n600#" "neuron_top_0/ISYN" 27.091
+cap "CMCI_synapse_0/a_2210_n1120#" "neuron_top_0/neuron_0/a_n150_n600#" 0.299558
 cap "CMCI_synapse_0/a_2210_n1120#" "CMCI_synapse_0/VBN" 14.9126
-cap "CMCI_synapse_0/a_450_n1180#" "CMCI_synapse_0/VBN" 17.6964
-cap "CMCI_synapse_0/a_2810_n90#" "CMCI_synapse_0/VBN" 13.131
-cap "neuron_top_1/neuron_0/VP" "neuron_top_0/neuron_0/CMEM" 4.84635
+cap "neuron_top_0/ISYN" "CMCI_synapse_0/VBN" 11.605
+cap "neuron_top_0/neuron_0/CMEM" "neuron_top_0/VN" 10.3464
+cap "neuron_top_0/VP" "neuron_top_0/VN" 87.7816
+cap "neuron_top_0/VP" "neuron_top_0/neuron_0/CMEM" 13.659
+cap "neuron_top_0/neuron_0/a_970_n10#" "neuron_top_0/VN" 0.0301179
+cap "neuron_top_0/ISYN" "neuron_top_0/neuron_0/CRST" 0.0582914
+cap "neuron_top_0/neuron_0/a_n150_n600#" "CMCI_synapse_0/a_190_n1120#" 0.264554
+cap "CMCI_synapse_0/VBN" "CMCI_synapse_0/a_190_n1120#" 19.3619
+cap "neuron_top_0/VP" "neuron_top_0/neuron_0/a_970_n10#" 0.0164764
+cap "CMCI_synapse_0/a_2370_n1120#" "CMCI_synapse_0/VBN" 18.9761
+cap "neuron_top_0/neuron_0/a_n150_n600#" "CMCI_synapse_0/VBN" 127.67
+cap "neuron_top_0/neuron_0/a_270_n40#" "neuron_top_0/VN" 0.451066
+cap "neuron_top_1/VSYN" "neuron_top_0/VN" 3.26783
+cap "CMCI_synapse_0/VBP" "neuron_top_0/VN" 0.0355517
+cap "CMCI_synapse_0/VBN" "CMCI_synapse_0/a_450_n1180#" 17.6964
+cap "neuron_top_1/VSYN" "neuron_top_0/neuron_0/CMEM" 0.223718
+cap "neuron_top_0/neuron_0/a_270_n40#" "neuron_top_0/VP" 0.776849
+cap "neuron_top_0/ISYN" "neuron_top_0/VN" 82.2925
+cap "neuron_top_1/VSYN" "neuron_top_0/VP" 0.0264772
+cap "neuron_top_0/ISYN" "neuron_top_0/neuron_0/CMEM" 1.0316
+cap "neuron_top_0/ISYN" "neuron_top_0/neuron_0/CMEM" 0.03012
 cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/VBN" 25.5853
-cap "CMCI_synapse_0/VBN" "neuron_top_0/neuron_0/CMEM" 2.15545
+cap "CMCI_synapse_0/VBN" "CMCI_synapse_0/a_3170_n1120#" 13.019
+cap "neuron_top_1/neuron_0/VP" "neuron_top_0/VN" 489.667
+cap "CMCI_synapse_0/a_2370_n1120#" "neuron_top_0/neuron_0/CMEM" 0.245658
+cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/W3p" 10.1869
+cap "CMCI_synapse_0/a_2810_n90#" "neuron_top_0/neuron_0/CMEM" 1.01586
+cap "neuron_top_0/ISYN" "neuron_top_0/VN" 0.498424
 cap "CMCI_synapse_0/W2p" "neuron_top_0/VN" 8.76807
+cap "CMCI_synapse_0/W1p" "CMCI_synapse_0/W0p" -0.708333
+cap "CMCI_synapse_0/a_190_n1120#" "neuron_top_0/neuron_0/CMEM" 0.609702
+cap "CMCI_synapse_0/VBN" "CMCI_synapse_0/a_2370_n1120#" 10.7134
+cap "CMCI_synapse_0/W2p" "CMCI_synapse_0/W3p" -0.735577
+cap "CMCI_synapse_0/VBN" "CMCI_synapse_0/a_2810_n90#" 13.131
+cap "neuron_top_0/neuron_0/CMEM" "CMCI_synapse_0/W0p" 0.582627
+cap "CMCI_synapse_0/VBN" "CMCI_synapse_0/a_190_n1120#" 0.987587
+cap "CMCI_synapse_0/a_3570_n1120#" "neuron_top_0/VN" 2.85053
 cap "CMCI_synapse_0/a_2370_n1120#" "neuron_top_0/VN" 0.144733
 cap "CMCI_synapse_0/a_2810_n90#" "neuron_top_0/VN" 1.37553
-cap "neuron_top_1/neuron_0/VP" "neuron_top_0/VN" 489.667
-cap "neuron_top_0/neuron_0/CMEM" "neuron_top_0/VN" 15.5661
-cap "CMCI_synapse_0/VBN" "neuron_top_0/VN" 80.6696
-cap "CMCI_synapse_0/a_3970_n1120#" "neuron_top_1/neuron_0/VP" 0.968316
-cap "CMCI_synapse_0/W0p" "neuron_top_0/neuron_0/CMEM" 0.582627
-cap "CMCI_synapse_0/W0p" "neuron_top_1/neuron_0/VP" 7.62759
-cap "CMCI_synapse_0/W1p" "neuron_top_1/neuron_0/VP" 7.62759
-cap "CMCI_synapse_0/W0p" "CMCI_synapse_0/VBN" 33.9933
-cap "CMCI_synapse_0/W1p" "neuron_top_0/neuron_0/CMEM" 1.11696
-cap "neuron_top_0/ISYN" "neuron_top_0/neuron_0/CMEM" 0.03012
-cap "CMCI_synapse_0/a_190_n1120#" "neuron_top_0/neuron_0/CMEM" 0.609702
-cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/a_3470_n120#" 0.968316
-cap "CMCI_synapse_0/W1p" "CMCI_synapse_0/VBN" 33.9933
-cap "CMCI_synapse_0/a_190_n1120#" "CMCI_synapse_0/VBN" 0.987587
-cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/a_3570_n1120#" 0.968316
-cap "CMCI_synapse_0/W3p" "neuron_top_1/neuron_0/VP" 10.8904
-cap "CMCI_synapse_0/a_3970_n1120#" "neuron_top_0/VN" 3.53839
-cap "CMCI_synapse_0/W2p" "neuron_top_1/neuron_0/VP" 10.5414
-cap "CMCI_synapse_0/W0p" "neuron_top_0/VN" 5.13373
-cap "CMCI_synapse_0/a_3170_n1120#" "CMCI_synapse_0/VBN" 13.019
-cap "CMCI_synapse_0/a_2370_n1120#" "neuron_top_0/neuron_0/CMEM" 0.245658
-cap "CMCI_synapse_0/W1p" "neuron_top_0/VN" 5.27736
-cap "neuron_top_0/ISYN" "neuron_top_0/VN" 0.498424
+cap "CMCI_synapse_0/VBN" "CMCI_synapse_0/W0p" 27.9933
 cap "CMCI_synapse_0/a_190_n1120#" "neuron_top_0/VN" 2.42777
-cap "CMCI_synapse_0/VBN" "CMCI_synapse_0/a_2370_n1120#" 10.7134
+cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/W2p" 9.84922
+cap "neuron_top_0/VN" "CMCI_synapse_0/W0p" 5.13373
+cap "CMCI_synapse_0/a_3570_n1120#" "neuron_top_1/neuron_0/VP" 0.968316
+cap "CMCI_synapse_0/W1p" "neuron_top_0/neuron_0/CMEM" 1.11696
 cap "CMCI_synapse_0/a_3470_n120#" "neuron_top_0/VN" 4.68707
-cap "CMCI_synapse_0/a_2810_n90#" "neuron_top_0/neuron_0/CMEM" 1.01586
-cap "CMCI_synapse_0/a_3570_n1120#" "neuron_top_0/VN" 2.85053
+cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/W0p" 7.5182
+cap "CMCI_synapse_0/VBN" "CMCI_synapse_0/W1p" 27.9933
+cap "CMCI_synapse_0/W2p" "CMCI_synapse_0/W0p" -0.258446
+cap "CMCI_synapse_0/VBN" "neuron_top_0/neuron_0/CMEM" 2.15545
+cap "CMCI_synapse_0/a_3970_n1120#" "neuron_top_0/VN" 3.53839
+cap "CMCI_synapse_0/W1p" "neuron_top_0/VN" 5.27274
+cap "neuron_top_0/VN" "neuron_top_0/neuron_0/CMEM" 15.5661
+cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/a_3470_n120#" 0.968316
+cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/a_3970_n1120#" 0.968316
+cap "CMCI_synapse_0/VBN" "neuron_top_0/VN" 80.6696
+cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/W1p" 7.5182
+cap "neuron_top_1/neuron_0/VP" "neuron_top_0/neuron_0/CMEM" 4.84635
 cap "CMCI_synapse_0/W3p" "neuron_top_0/VN" 8.76807
-cap "neuron_top_0/m1_1450_n34#" "CMCI_synapse_0/VP" 0.673435
+cap "neuron_top_0/ISYN" "CMCI_synapse_0/W1p" -0.0564993
+cap "CMCI_synapse_0/VBN" "neuron_top_1/neuron_0/VP" 4.3994
+cap "CMCI_synapse_0/VN" "neuron_top_1/neuron_0/VP" 255.258
+cap "neuron_top_0/m1_1450_n34#" "CMCI_synapse_0/a_3970_n1120#" 3.58836
+cap "CMCI_synapse_0/VBN" "neuron_top_0/m1_1450_n34#" 3.56981
 cap "neuron_top_0/m1_1450_n34#" "CMCI_synapse_0/VN" 26.435
-cap "neuron_top_0/m1_1450_n34#" "CMCI_synapse_0/VBN" 3.56981
-cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/W3p" 0.479261
-cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/W1p" 0.0181888
-cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/W2p" 0.284327
-cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/W0p" 0.100063
-cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/a_3970_n1120#" 21.635
-cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/VN" 255.258
-cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/VP" 0.0504023
-cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/VBN" 4.3994
-cap "neuron_top_1/neuron_0/VP" "neuron_top_0/m1_1450_n34#" 92.4589
+cap "neuron_top_0/m1_1450_n34#" "neuron_top_1/neuron_0/VP" 92.4589
+cap "CMCI_synapse_0/W3p" "neuron_top_1/neuron_0/VP" 0.475398
+cap "CMCI_synapse_0/W2p" "neuron_top_1/neuron_0/VP" 0.282052
 cap "neuron_top_0/m1_1450_n34#" "CMCI_synapse_0/a_3470_n120#" 0.709042
-cap "CMCI_synapse_0/a_3970_n1120#" "neuron_top_0/m1_1450_n34#" 3.58836
-cap "CMCI_synapse_0/VP" "CMCI_synapse_0/VN" 7.11382
-cap "CMCI_synapse_0/VP" "CMCI_synapse_0/VP" 7.88162
+cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/VP" 0.0504023
+cap "CMCI_synapse_0/a_3970_n1120#" "neuron_top_1/neuron_0/VP" 21.635
+cap "CMCI_synapse_0/W1p" "neuron_top_1/neuron_0/VP" 0.0181888
+cap "CMCI_synapse_0/W0p" "neuron_top_1/neuron_0/VP" 0.0992678
+cap "neuron_top_0/m1_1450_n34#" "CMCI_synapse_0/VP" 0.673435
 cap "CMCI_synapse_0/a_n210_n90#" "CMCI_synapse_0/VP" 9.82322
-cap "CMCI_synapse_0/VBP" "neuron_top_1/m1_1450_n34#" 41.9052
-cap "CMCI_synapse_0/VBP" "CMCI_synapse_0/a_590_n90#" 0.0194933
-cap "CMCI_synapse_0/VBP" "CMCI_synapse_0/W2m" 0.00552203
-cap "CMCI_synapse_0/VBP" "CMCI_synapse_0/a_n210_n90#" 72.3374
-cap "CMCI_synapse_0/VBP" "CMCI_synapse_0/VP" 15.5491
-cap "CMCI_synapse_0/a_n210_n1120#" "CMCI_synapse_0/VN" 0.0259152
-cap "CMCI_synapse_0/VBP" "CMCI_synapse_0/a_990_n90#" 0.0107464
-cap "CMCI_synapse_0/VP" "CMCI_synapse_0/VN" 133.273
-cap "CMCI_synapse_0/VP" "CMCI_synapse_0/a_n210_n1120#" 2.4474
-cap "bias_gen_0/VBN" "neuron_top_1/m1_1450_n34#" 0.248767
-cap "CMCI_synapse_0/W0m" "CMCI_synapse_0/VN" 0.0642984
-cap "CMCI_synapse_0/VBP" "CMCI_synapse_0/VN" 4.09172
-cap "CMCI_synapse_0/VBP" "CMCI_synapse_0/a_n210_n1120#" 21.4304
-cap "CMCI_synapse_0/a_190_n1120#" "CMCI_synapse_0/VP" 0.374812
-cap "CMCI_synapse_0/W0m" "CMCI_synapse_0/VP" 0.0680281
-cap "CMCI_synapse_0/VBP" "CMCI_synapse_0/VP" 38.3851
-cap "CMCI_synapse_0/a_n210_n90#" "neuron_top_1/m1_1450_n34#" 0.515075
-cap "CMCI_synapse_0/VP" "neuron_top_1/m1_1450_n34#" 3.53728
-cap "CMCI_synapse_0/W1m" "CMCI_synapse_0/VN" 0.107294
+cap "CMCI_synapse_0/W1m" "CMCI_synapse_0/VP" 0.0968895
 cap "CMCI_synapse_0/W0m" "CMCI_synapse_0/VBP" 0.0655407
-cap "CMCI_synapse_0/VP" "CMCI_synapse_0/W1m" 0.0968895
-cap "bias_gen_0/VBN" "CMCI_synapse_0/a_n210_n1120#" 1.3643
-cap "bias_gen_0/VBN" "CMCI_synapse_0/VP" -0.312064
-cap "neuron_top_1/m1_1450_n34#" "CMCI_synapse_0/VN" 172.003
-cap "CMCI_synapse_0/VBP" "CMCI_synapse_0/W1m" 1.33237
-cap "neuron_top_1/m1_1450_n34#" "CMCI_synapse_0/a_n210_n1120#" 0.864561
+cap "CMCI_synapse_0/VN" "CMCI_synapse_0/a_n210_n1120#" 0.890476
+cap "CMCI_synapse_0/a_n210_n1120#" "CMCI_synapse_0/VP" 2.4474
+cap "CMCI_synapse_0/VP" "CMCI_synapse_0/VN" 10.6511
+cap "CMCI_synapse_0/a_n210_n90#" "CMCI_synapse_0/VBP" 72.3374
+cap "CMCI_synapse_0/VN" "CMCI_synapse_0/VP" 150.789
+cap "CMCI_synapse_0/a_190_n1120#" "CMCI_synapse_0/VP" 0.374812
+cap "CMCI_synapse_0/W1m" "CMCI_synapse_0/VBP" 1.24444
+cap "CMCI_synapse_0/VP" "CMCI_synapse_0/VP" 7.88162
+cap "CMCI_synapse_0/a_n210_n1120#" "bias_gen_0/VBN" 1.3643
+cap "CMCI_synapse_0/VBP" "CMCI_synapse_0/W2m" 0.00552203
+cap "CMCI_synapse_0/VN" "CMCI_synapse_0/W0m" 0.0636658
+cap "CMCI_synapse_0/VN" "bias_gen_0/VBN" 0.248767
+cap "CMCI_synapse_0/a_n210_n1120#" "CMCI_synapse_0/VBP" 21.4304
+cap "CMCI_synapse_0/a_990_n90#" "CMCI_synapse_0/VBP" 0.0107464
+cap "CMCI_synapse_0/VN" "CMCI_synapse_0/VBP" 46.0303
 cap "CMCI_synapse_0/a_450_n1180#" "CMCI_synapse_0/VP" 0.16909
-cap "CMCI_synapse_0/VP" "neuron_top_1/m1_1450_n34#" 23.4672
-cap "CMCI_synapse_0/a_190_n1120#" "neuron_top_0/m1_1450_n34#" 0.0735343
-cap "neuron_top_0/VN" "CMCI_synapse_0/W3m" 18.529
-cap "CMCI_synapse_0/VBP" "CMCI_synapse_0/a_n210_n1120#" 14.6738
-cap "CMCI_synapse_0/a_n210_n1120#" "neuron_top_0/VN" 1.4529
-cap "CMCI_synapse_0/a_450_n1180#" "neuron_top_0/VN" 5.42948
-cap "CMCI_synapse_0/a_190_n1120#" "CMCI_synapse_0/a_450_n1180#" 2.84217e-14
-cap "neuron_top_1/VSYN" "CMCI_synapse_0/W3m" 0.0709047
-cap "CMCI_synapse_0/a_n210_n1120#" "bias_gen_0/VBN" 1.61235
-cap "CMCI_synapse_0/VBP" "CMCI_synapse_0/W0m" 33.9933
-cap "neuron_top_0/VN" "CMCI_synapse_0/W0m" 12.4075
-cap "neuron_top_1/neuron_0/VP" "neuron_top_0/VN" 382.116
-cap "CMCI_synapse_0/VBP" "CMCI_synapse_0/a_n210_n90#" 16.9749
-cap "CMCI_synapse_0/VBP" "neuron_top_1/neuron_0/VP" 49.0336
-cap "neuron_top_0/VN" "CMCI_synapse_0/a_n210_n90#" 0.850095
-cap "neuron_top_0/VN" "CMCI_synapse_0/W2m" 18.529
-cap "CMCI_synapse_0/VBP" "neuron_top_0/VN" 105.405
-cap "CMCI_synapse_0/a_450_n1180#" "bias_gen_0/VBN" 0.019811
-cap "CMCI_synapse_0/a_190_n1120#" "CMCI_synapse_0/VBP" 1.56854
-cap "CMCI_synapse_0/a_190_n1120#" "neuron_top_0/VN" 2.60559
-cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/a_590_n90#" 5.68434e-14
+cap "CMCI_synapse_0/a_590_n90#" "CMCI_synapse_0/VBP" 0.0194933
+cap "CMCI_synapse_0/W0m" "CMCI_synapse_0/VP" 0.0680281
+cap "bias_gen_0/VBN" "CMCI_synapse_0/VP" -0.312064
+cap "CMCI_synapse_0/VN" "CMCI_synapse_0/a_n210_n90#" 0.515075
+cap "CMCI_synapse_0/VP" "CMCI_synapse_0/VBP" 15.5491
+cap "CMCI_synapse_0/VBP" "CMCI_synapse_0/VP" 38.3339
+cap "CMCI_synapse_0/VN" "CMCI_synapse_0/W1m" 0.106473
 cap "CMCI_synapse_0/VBP" "CMCI_synapse_0/a_590_n90#" 13.019
-cap "CMCI_synapse_0/VBP" "bias_gen_0/VBN" 0.0737149
+cap "neuron_top_1/neuron_0/VN" "CMCI_synapse_0/W2m" 18.127
+cap "neuron_top_1/neuron_0/VN" "CMCI_synapse_0/a_n210_n90#" 0.850095
+cap "CMCI_synapse_0/a_n210_n1120#" "CMCI_synapse_0/VBP" 14.6738
+cap "CMCI_synapse_0/W0m" "neuron_top_1/neuron_0/VN" 12.2981
+cap "neuron_top_1/neuron_0/VN" "CMCI_synapse_0/a_990_n90#" 3.57621
+cap "neuron_top_1/neuron_0/VN" "CMCI_synapse_0/a_n210_n1120#" 1.4529
+cap "CMCI_synapse_0/VBP" "neuron_top_1/neuron_0/VP" 49.0336
+cap "CMCI_synapse_0/a_190_n1120#" "CMCI_synapse_0/VBP" 1.56854
+cap "neuron_top_1/neuron_0/VN" "CMCI_synapse_0/W3m" 17.6445
+cap "CMCI_synapse_0/W1m" "CMCI_synapse_0/VBP" 29.177
+cap "neuron_top_1/neuron_0/VN" "neuron_top_1/neuron_0/VP" 382.116
+cap "CMCI_synapse_0/a_n210_n1120#" "bias_gen_0/VBN" 1.61235
+cap "CMCI_synapse_0/a_450_n1180#" "CMCI_synapse_0/a_190_n1120#" 2.84217e-14
+cap "neuron_top_1/neuron_0/VN" "CMCI_synapse_0/a_190_n1120#" 2.60559
+cap "neuron_top_1/neuron_0/VN" "CMCI_synapse_0/W1m" 12.3323
+cap "CMCI_synapse_0/a_190_n1120#" "neuron_top_0/m1_1450_n34#" 0.0735343
+cap "neuron_top_1/neuron_0/VN" "CMCI_synapse_0/VBP" 105.405
+cap "neuron_top_0/m1_1450_n34#" "CMCI_synapse_0/VBP" 0.821968
+cap "neuron_top_1/neuron_0/VN" "CMCI_synapse_0/a_450_n1180#" 5.42948
 cap "CMCI_synapse_0/a_190_n1120#" "bias_gen_0/VBN" 9.66265
 cap "CMCI_synapse_0/a_450_n1180#" "neuron_top_0/m1_1450_n34#" 0.213198
-cap "CMCI_synapse_0/VBP" "CMCI_synapse_0/W1m" 35.2649
-cap "neuron_top_0/VN" "CMCI_synapse_0/W1m" 12.4417
-cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/a_990_n90#" 5.68434e-14
-cap "neuron_top_0/VN" "CMCI_synapse_0/a_990_n90#" 3.57621
-cap "CMCI_synapse_0/VBP" "neuron_top_0/m1_1450_n34#" 0.821968
-cap "CMCI_synapse_0/VBP" "neuron_top_1/neuron_0/VP" 0.744028
-cap "neuron_top_0/VN" "CMCI_synapse_0/a_1390_n90#" 2.39087
-cap "CMCI_synapse_0/VBN" "CMCI_synapse_0/a_2370_n1120#" 3.65155
-cap "neuron_top_1/neuron_0/a_970_n10#" "neuron_top_1/neuron_0/VP" 2.16356
-cap "neuron_top_0/neuron_0/VP" "CMCI_synapse_0/a_190_n1120#" 0.256285
-cap "CMCI_synapse_0/VBN" "neuron_top_0/VP" 0.4639
-cap "neuron_top_1/neuron_0/a_970_n10#" "CMCI_synapse_0/VBN" 0.141772
-cap "CMCI_synapse_0/VBP" "neuron_top_1/neuron_0/a_970_n10#" 0.336569
-cap "neuron_top_0/neuron_0/CMEM" "CMCI_synapse_0/a_190_n1120#" 0.00888834
-cap "neuron_top_0/ISYN" "neuron_top_1/neuron_0/VP" 2.96762
-cap "neuron_top_0/VN" "CMCI_synapse_0/a_2210_n1120#" 0.00874555
-cap "CMCI_synapse_0/a_190_n1120#" "neuron_top_1/neuron_0/VP" 1.41657
-cap "CMCI_synapse_0/VBN" "neuron_top_0/ISYN" 0.019811
-cap "CMCI_synapse_0/VBN" "CMCI_synapse_0/a_190_n1120#" 5.34902
-cap "neuron_top_1/neuron_0/CRST" "neuron_top_1/neuron_0/VP" 1.46649
-cap "CMCI_synapse_0/a_190_n1120#" "neuron_top_0/VP" 0.0803704
-cap "neuron_top_1/neuron_0/a_970_n10#" "CMCI_synapse_0/a_190_n1120#" 0.0549835
-cap "neuron_top_0/VN" "m1_n850_410#" 26.4437
-cap "CMCI_synapse_0/VBP" "neuron_top_1/neuron_0/CRST" 0.69927
-cap "neuron_top_0/neuron_0/CMEM" "neuron_top_1/VSYN" 0.0990439
-cap "CMCI_synapse_0/a_2810_n90#" "neuron_top_1/neuron_0/VP" 5.13133
-cap "CMCI_synapse_0/W3m" "neuron_top_1/neuron_0/VP" 0.238209
-cap "neuron_top_1/VSYN" "neuron_top_1/neuron_0/VP" 59.112
-cap "neuron_top_0/neuron_0/a_n150_n600#" "CMCI_synapse_0/VBN" 0.206145
-cap "CMCI_synapse_0/VBN" "neuron_top_1/VSYN" 0.437815
-cap "CMCI_synapse_0/VBP" "neuron_top_1/VSYN" 3.90882
-cap "CMCI_synapse_0/a_1390_n90#" "neuron_top_1/neuron_0/VP" -4.54747e-13
-cap "neuron_top_0/ISYN" "CMCI_synapse_0/a_190_n1120#" 0.123766
-cap "CMCI_synapse_0/VBN" "CMCI_synapse_0/a_1390_n90#" 0.0341421
-cap "neuron_top_1/neuron_0/a_970_n10#" "neuron_top_1/VSYN" 2.24246
-cap "neuron_top_1/neuron_0/CRST" "CMCI_synapse_0/a_190_n1120#" 0.0163852
-cap "neuron_top_1/neuron_0/a_270_n40#" "neuron_top_1/neuron_0/VP" 0.602397
-cap "CMCI_synapse_0/a_2210_n1120#" "neuron_top_1/neuron_0/VP" 122.855
-cap "CMCI_synapse_0/VBP" "neuron_top_1/neuron_0/a_270_n40#" 0.0419002
-cap "neuron_top_1/VSYN" "neuron_top_0/ISYN" 2.16785
-cap "CMCI_synapse_0/a_2210_n1120#" "CMCI_synapse_0/VBN" 1.89356
-cap "neuron_top_0/neuron_0/a_n150_n600#" "CMCI_synapse_0/a_190_n1120#" 0.287158
+cap "CMCI_synapse_0/VBP" "bias_gen_0/VBN" 0.0737149
+cap "CMCI_synapse_0/W0m" "CMCI_synapse_0/W2m" -0.256711
+cap "CMCI_synapse_0/a_450_n1180#" "bias_gen_0/VBN" 0.019811
+cap "neuron_top_1/VSYN" "CMCI_synapse_0/W3m" -0.0271722
+cap "CMCI_synapse_0/W2m" "CMCI_synapse_0/W3m" -0.714953
+cap "CMCI_synapse_0/a_990_n90#" "neuron_top_1/neuron_0/VP" 5.68434e-14
+cap "CMCI_synapse_0/VBP" "CMCI_synapse_0/a_n210_n90#" 16.9749
+cap "CMCI_synapse_0/W0m" "CMCI_synapse_0/W1m" -0.742718
+cap "CMCI_synapse_0/a_590_n90#" "neuron_top_1/neuron_0/VP" 5.68434e-14
+cap "CMCI_synapse_0/W0m" "CMCI_synapse_0/VBP" 27.9933
+cap "neuron_top_1/VSYN" "CMCI_synapse_0/a_2210_n1120#" 11.2761
+cap "neuron_top_1/neuron_0/VP" "neuron_top_1/neuron_0/a_970_n10#" 2.16356
 cap "neuron_top_1/VSYN" "CMCI_synapse_0/a_190_n1120#" 0.0980641
-cap "neuron_top_1/neuron_0/a_970_n10#" "CMCI_synapse_0/a_2210_n1120#" 0.104497
+cap "neuron_top_0/VP" "CMCI_synapse_0/a_190_n1120#" 0.0803704
+cap "neuron_top_0/ISYN" "CMCI_synapse_0/VBN" 0.019811
+cap "CMCI_synapse_0/a_1390_n90#" "neuron_top_0/m1_1450_n34#" 0.0250286
+cap "neuron_top_1/neuron_0/CRST" "CMCI_synapse_0/VBP" 0.69927
 cap "neuron_top_1/neuron_0/CRST" "neuron_top_1/VSYN" 0.000405896
-cap "m1_n850_410#" "neuron_top_1/neuron_0/VP" 35.6674
-cap "neuron_top_0/m1_1450_n34#" "CMCI_synapse_0/a_1390_n90#" 0.0250286
-cap "neuron_top_1/neuron_0/CRST" "CMCI_synapse_0/a_1390_n90#" 0.459411
-cap "CMCI_synapse_0/a_450_n1180#" "m1_n850_410#" 0.00722009
-cap "CMCI_synapse_0/VBP" "m1_n850_410#" 3.4396
-cap "neuron_top_0/neuron_0/a_n150_n600#" "neuron_top_1/VSYN" 0.220871
-cap "CMCI_synapse_0/W3m" "neuron_top_1/VSYN" 0.0416351
-cap "neuron_top_1/neuron_0/a_270_n40#" "CMCI_synapse_0/a_190_n1120#" 0.809361
-cap "neuron_top_1/VSYN" "CMCI_synapse_0/a_1390_n90#" 9.10714
-cap "CMCI_synapse_0/a_2210_n1120#" "CMCI_synapse_0/a_190_n1120#" 2.84217e-14
-cap "CMCI_synapse_0/a_2210_n1120#" "neuron_top_1/neuron_0/CRST" 0.0414988
-cap "neuron_top_0/VN" "neuron_top_1/neuron_0/VP" 68.8673
-cap "neuron_top_0/VN" "CMCI_synapse_0/VBN" 0.127582
-cap "neuron_top_0/VN" "CMCI_synapse_0/a_450_n1180#" 0.195169
-cap "neuron_top_0/VN" "CMCI_synapse_0/VBP" 3.45579
-cap "neuron_top_1/neuron_0/a_270_n40#" "neuron_top_1/VSYN" 0.000340108
-cap "CMCI_synapse_0/a_2210_n1120#" "neuron_top_1/VSYN" 11.2761
-cap "CMCI_synapse_0/W2m" "neuron_top_1/neuron_0/VP" 0.162014
-cap "m1_n850_410#" "neuron_top_1/neuron_0/CRST" 0.121092
-cap "neuron_top_1/neuron_0/CMEM" "neuron_top_1/neuron_0/VP" 0.184913
-cap "CMCI_synapse_0/a_3470_n120#" "neuron_top_1/neuron_0/VP" 0.879494
-cap "CMCI_synapse_0/VBP" "neuron_top_1/neuron_0/CMEM" 0.0170562
-cap "m1_n850_410#" "neuron_top_1/VSYN" 0.354559
-cap "neuron_top_0/VN" "neuron_top_0/ISYN" 0.00641213
-cap "m1_n850_410#" "CMCI_synapse_0/a_1390_n90#" 1.12647
-cap "CMCI_synapse_0/a_2210_n1120#" "neuron_top_1/neuron_0/a_270_n40#" 0.0339412
-cap "neuron_top_0/VN" "CMCI_synapse_0/a_190_n1120#" 1.11393
+cap "CMCI_synapse_0/a_1390_n90#" "neuron_top_1/VSYN" 9.10714
+cap "neuron_top_1/neuron_0/VN" "CMCI_synapse_0/a_2210_n1120#" 0.00874555
+cap "neuron_top_1/neuron_0/a_970_n10#" "CMCI_synapse_0/VBP" 0.336569
+cap "neuron_top_1/neuron_0/a_970_n10#" "neuron_top_1/VSYN" 2.24246
+cap "CMCI_synapse_0/a_190_n1120#" "neuron_top_1/neuron_0/VN" 1.11393
+cap "neuron_top_0/neuron_0/CMEM" "CMCI_synapse_0/a_190_n1120#" 0.00888834
+cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/VBP" 0.744028
+cap "neuron_top_1/neuron_0/a_270_n40#" "CMCI_synapse_0/a_2210_n1120#" 0.0339412
+cap "neuron_top_1/neuron_0/CRST" "neuron_top_1/neuron_0/VN" 0.121092
+cap "neuron_top_1/neuron_0/VP" "neuron_top_1/VSYN" 59.112
+cap "CMCI_synapse_0/a_1390_n90#" "neuron_top_1/neuron_0/VN" 3.51751
+cap "CMCI_synapse_0/VBN" "CMCI_synapse_0/a_2370_n1120#" 3.65155
+cap "CMCI_synapse_0/a_190_n1120#" "neuron_top_1/neuron_0/a_270_n40#" 0.809361
+cap "neuron_top_1/VSYN" "CMCI_synapse_0/VBP" 3.90882
+cap "neuron_top_1/neuron_0/VP" "neuron_top_1/neuron_0/VN" 104.535
+cap "neuron_top_1/neuron_0/VP" "neuron_top_1/neuron_0/a_270_n40#" 0.602397
+cap "neuron_top_1/neuron_0/VN" "CMCI_synapse_0/VBP" 6.90311
+cap "neuron_top_1/VSYN" "neuron_top_1/neuron_0/VN" 4.35612
+cap "neuron_top_0/neuron_0/CMEM" "neuron_top_1/VSYN" 0.0990439
+cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/W2m" 0.161218
+cap "neuron_top_1/neuron_0/a_270_n40#" "CMCI_synapse_0/VBP" 0.0419002
+cap "neuron_top_1/VSYN" "neuron_top_1/neuron_0/a_270_n40#" 0.000340108
+cap "CMCI_synapse_0/VBN" "CMCI_synapse_0/a_2210_n1120#" 1.89356
+cap "neuron_top_0/neuron_0/a_n150_n600#" "CMCI_synapse_0/a_190_n1120#" 0.287158
+cap "CMCI_synapse_0/VBN" "CMCI_synapse_0/a_190_n1120#" 5.34902
+cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/W3m" 0.235607
+cap "CMCI_synapse_0/a_450_n1180#" "neuron_top_1/neuron_0/VN" 0.202389
+cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/a_2810_n90#" 5.13133
+cap "CMCI_synapse_0/a_1390_n90#" "CMCI_synapse_0/VBN" 0.0341421
 cap "CMCI_synapse_0/VBN" "neuron_top_0/neuron_0/VP" 0.613591
-cap "CMCI_synapse_0/VBN" "neuron_top_0/neuron_0/CMEM" 0.0477941
-cap "neuron_top_0/VN" "neuron_top_1/VSYN" 4.00156
-cap "CMCI_synapse_0/VBN" "neuron_top_1/neuron_0/VP" 0.437156
-cap "m1_n850_410#" "neuron_top_0/VN" 0.149575
-cap "neuron_top_1/VSYN" "neuron_top_0/VN" 0.19156
-cap "CMCI_synapse_0/W3p" "neuron_top_0/VN" 0.122272
-cap "CMCI_synapse_0/a_3970_n1120#" "neuron_top_0/VN" 0.424301
-cap "CMCI_synapse_0/VBN" "neuron_top_0/neuron_0/CMEM" 0.0465736
-cap "CMCI_synapse_0/a_3970_n1120#" "neuron_top_0/m1_1450_n34#" 1.05215
-cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/a_3970_n1120#" 0.116323
-cap "CMCI_synapse_0/W1p" "neuron_top_0/VN" 0.122272
-cap "CMCI_synapse_0/a_2370_n1120#" "neuron_top_0/VN" 0.0842391
-cap "CMCI_synapse_0/a_3470_n120#" "neuron_top_0/VN" 26.9003
-cap "CMCI_synapse_0/a_2810_n90#" "neuron_top_0/VN" 19.1626
-cap "CMCI_synapse_0/a_190_n1120#" "neuron_top_0/VN" 16.4949
-cap "CMCI_synapse_0/VBN" "neuron_top_0/VN" 3.2207
-cap "CMCI_synapse_0/VBN" "CMCI_synapse_0/a_2810_n90#" 0.112039
-cap "CMCI_synapse_0/W0p" "neuron_top_0/VN" 0.122272
-cap "CMCI_synapse_0/a_3470_n120#" "neuron_top_0/m1_1450_n34#" 0.196356
-cap "neuron_top_1/neuron_0/VP" "neuron_top_0/VN" 195.945
-cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/a_3470_n120#" 0.297151
-cap "CMCI_synapse_0/a_2810_n90#" "neuron_top_1/neuron_0/VP" 1.5959
-cap "CMCI_synapse_0/VBN" "CMCI_synapse_0/a_190_n1120#" 0.973554
-cap "neuron_top_0/VN" "CMCI_synapse_0/W2p" 0.122272
-cap "CMCI_synapse_0/a_190_n1120#" "neuron_top_0/m1_1450_n34#" 0.265759
-cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/a_190_n1120#" 0.0785942
-cap "CMCI_synapse_0/VBN" "neuron_top_0/m1_1450_n34#" 3.9424
+cap "neuron_top_1/neuron_0/VP" "neuron_top_1/neuron_0/CMEM" 0.184913
+cap "neuron_top_1/neuron_0/a_970_n10#" "CMCI_synapse_0/VBN" 0.141772
+cap "neuron_top_0/ISYN" "CMCI_synapse_0/a_190_n1120#" 0.123766
+cap "neuron_top_1/VSYN" "CMCI_synapse_0/W3m" -0.0564418
+cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/VBN" 0.437156
+cap "neuron_top_1/neuron_0/CMEM" "CMCI_synapse_0/VBP" 0.0170562
+cap "neuron_top_0/ISYN" "neuron_top_1/neuron_0/VP" 2.96762
+cap "neuron_top_1/VSYN" "CMCI_synapse_0/VBN" 0.437815
+cap "neuron_top_1/VSYN" "neuron_top_0/neuron_0/a_n150_n600#" 0.220871
+cap "neuron_top_0/VP" "CMCI_synapse_0/VBN" 0.4639
+cap "neuron_top_0/ISYN" "neuron_top_1/VSYN" 2.16785
+cap "CMCI_synapse_0/VBN" "neuron_top_1/neuron_0/VN" 0.127582
+cap "neuron_top_0/neuron_0/CMEM" "CMCI_synapse_0/VBN" 0.0477941
+cap "neuron_top_0/ISYN" "neuron_top_1/neuron_0/VN" 0.00641213
+cap "CMCI_synapse_0/a_190_n1120#" "CMCI_synapse_0/a_2210_n1120#" 2.84217e-14
+cap "neuron_top_1/neuron_0/CRST" "CMCI_synapse_0/a_2210_n1120#" 0.0414988
+cap "neuron_top_1/neuron_0/CRST" "CMCI_synapse_0/a_190_n1120#" 0.0163852
+cap "neuron_top_1/neuron_0/a_970_n10#" "CMCI_synapse_0/a_2210_n1120#" 0.104497
+cap "CMCI_synapse_0/a_190_n1120#" "neuron_top_0/neuron_0/VP" 0.256285
+cap "CMCI_synapse_0/a_1390_n90#" "neuron_top_1/neuron_0/CRST" 0.459411
+cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/a_2210_n1120#" 122.855
+cap "neuron_top_1/neuron_0/a_970_n10#" "CMCI_synapse_0/a_190_n1120#" 0.0549835
+cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/a_190_n1120#" 1.41657
+cap "neuron_top_0/neuron_0/a_n150_n600#" "CMCI_synapse_0/VBN" 0.206145
+cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/a_3470_n120#" 0.879494
+cap "neuron_top_1/neuron_0/VP" "neuron_top_1/neuron_0/CRST" 1.46649
+cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/a_1390_n90#" -4.54747e-13
+cap "CMCI_synapse_0/a_3970_n1120#" "neuron_top_1/neuron_0/VP" 0.116323
+cap "CMCI_synapse_0/a_3470_n120#" "neuron_top_1/neuron_0/VP" 0.297151
+cap "neuron_top_0/m1_1450_n34#" "CMCI_synapse_0/a_190_n1120#" 0.265759
+cap "neuron_top_1/neuron_0/VN" "CMCI_synapse_0/W1p" 0.122272
+cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/a_2810_n90#" 1.5959
 cap "CMCI_synapse_0/VBN" "neuron_top_1/neuron_0/VP" 1.15122
-cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/a_3470_n120#" 21.7316
-cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/W2p" 0.135193
-cap "neuron_top_0/m1_1450_n34#" "CMCI_synapse_0/VBN" 0.53998
-cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/W3p" 0.223944
-cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/a_190_n1120#" 0.985295
-cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/VP" 9.93441
-cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/a_3970_n1120#" 7.2749
-cap "CMCI_synapse_0/a_2810_n90#" "neuron_top_1/neuron_0/VP" 0.200392
-cap "neuron_top_0/m1_1450_n34#" "CMCI_synapse_0/a_3970_n1120#" 1.05215
-cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/W1p" 0.00772442
-cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/W0p" 0.0475845
-cap "neuron_top_1/m1_1450_n34#" "CMCI_synapse_0/VBN" 0.350782
-cap "neuron_top_1/neuron_0/VP" "neuron_top_1/m1_1450_n34#" 44.0612
-cap "CMCI_synapse_0/a_3470_n120#" "neuron_top_1/m1_1450_n34#" 15.5919
-cap "CMCI_synapse_0/VP" "neuron_top_1/m1_1450_n34#" 3.6729
+cap "neuron_top_1/neuron_0/VN" "CMCI_synapse_0/a_2370_n1120#" 0.0842391
+cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/a_190_n1120#" 0.0785942
+cap "neuron_top_1/neuron_0/VN" "neuron_top_1/neuron_0/VP" 195.945
+cap "CMCI_synapse_0/VBN" "CMCI_synapse_0/a_2810_n90#" 0.112039
+cap "CMCI_synapse_0/a_3970_n1120#" "neuron_top_1/neuron_0/VN" 0.424301
+cap "neuron_top_1/neuron_0/VN" "CMCI_synapse_0/a_3470_n120#" 26.9003
+cap "neuron_top_1/neuron_0/VN" "CMCI_synapse_0/W2p" 0.122272
+cap "CMCI_synapse_0/VBN" "CMCI_synapse_0/a_190_n1120#" 0.973554
+cap "neuron_top_1/neuron_0/VN" "CMCI_synapse_0/a_2810_n90#" 19.1626
+cap "neuron_top_1/neuron_0/VN" "CMCI_synapse_0/VBN" 3.2207
+cap "CMCI_synapse_0/W0p" "neuron_top_1/neuron_0/VN" 0.122272
+cap "neuron_top_1/neuron_0/VN" "neuron_top_1/VSYN" 0.19156
+cap "CMCI_synapse_0/a_3970_n1120#" "neuron_top_0/m1_1450_n34#" 1.05215
+cap "CMCI_synapse_0/a_3470_n120#" "neuron_top_0/m1_1450_n34#" 0.196356
+cap "CMCI_synapse_0/VBN" "neuron_top_0/neuron_0/CMEM" 0.0465736
+cap "neuron_top_1/neuron_0/VN" "CMCI_synapse_0/a_190_n1120#" 16.4949
+cap "neuron_top_1/neuron_0/VN" "CMCI_synapse_0/W3p" 0.122272
+cap "CMCI_synapse_0/VBN" "neuron_top_0/m1_1450_n34#" 3.9424
 cap "neuron_top_1/m1_1450_n34#" "CMCI_synapse_0/a_3970_n1120#" 0.4562
+cap "neuron_top_1/m1_1450_n34#" "CMCI_synapse_0/VP" 3.6729
+cap "CMCI_synapse_0/VBN" "neuron_top_1/neuron_0/VP" 5.68224
+cap "CMCI_synapse_0/W2p" "neuron_top_1/neuron_0/VP" 0.135193
+cap "CMCI_synapse_0/a_3470_n120#" "neuron_top_1/neuron_0/VP" 21.7316
 cap "CMCI_synapse_0/VN" "neuron_top_1/m1_1450_n34#" 1.7257
-cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/VBN" 5.68224
-cap "neuron_top_1/neuron_0/CRST" "m1_n850_410#" 0.326968
-cap "neuron_top_1/neuron_0/CRST" "neuron_top_1/neuron_0/VP" 0.428608
-cap "CMCI_synapse_0/W3m" "neuron_top_1/neuron_0/CRST" 0.371838
-cap "neuron_top_1/neuron_0/VP" "m1_n850_410#" -8.35754
-cap "CMCI_synapse_0/VN" "m1_n850_410#" 158.294
+cap "CMCI_synapse_0/a_3970_n1120#" "neuron_top_1/neuron_0/VP" 7.2749
+cap "CMCI_synapse_0/VP" "neuron_top_1/neuron_0/VP" 9.93441
+cap "CMCI_synapse_0/W3p" "neuron_top_1/neuron_0/VP" 0.223944
+cap "CMCI_synapse_0/a_2810_n90#" "neuron_top_1/neuron_0/VP" 0.200392
+cap "CMCI_synapse_0/VBN" "neuron_top_0/m1_1450_n34#" 0.53998
+cap "neuron_top_1/m1_1450_n34#" "neuron_top_1/neuron_0/VP" 44.0612
+cap "CMCI_synapse_0/W1p" "neuron_top_1/neuron_0/VP" 0.00772442
+cap "CMCI_synapse_0/a_3970_n1120#" "neuron_top_0/m1_1450_n34#" 1.05215
+cap "CMCI_synapse_0/VBN" "neuron_top_1/m1_1450_n34#" 0.350782
+cap "neuron_top_1/m1_1450_n34#" "CMCI_synapse_0/a_3470_n120#" 15.5919
+cap "CMCI_synapse_0/W0p" "neuron_top_1/neuron_0/VP" 0.0475845
+cap "CMCI_synapse_0/a_190_n1120#" "neuron_top_1/neuron_0/VP" 0.985295
+cap "neuron_top_1/neuron_0/CRST" "neuron_top_1/VP" 0.428608
+cap "neuron_top_1/neuron_0/CRST" "CMCI_synapse_0/W3m" 0.371838
+cap "neuron_top_1/neuron_0/CRST" "neuron_top_1/VN" 0.326968
+cap "neuron_top_1/VSYN" "neuron_top_1/VN" 8.01979
+cap "neuron_top_1/VN" "neuron_top_1/ISYN" -0.0014486
+cap "neuron_top_1/VN" "CMCI_synapse_0/IOUT" 2.45965
+cap "neuron_top_1/VN" "neuron_top_1/neuron_0/CRST" 2.51598
+cap "neuron_top_1/VN" "CMCI_synapse_0/a_2210_n1120#" 1.22165
+cap "CMCI_synapse_0/VBP" "neuron_top_1/neuron_0/CRST" 1.11238
 cap "CMCI_synapse_0/a_1390_n90#" "neuron_top_1/neuron_0/CRST" 0.425546
-cap "neuron_top_1/neuron_0/a_970_n10#" "CMCI_synapse_0/a_190_n1120#" 0.139994
-cap "neuron_top_1/neuron_0/VP" "CMCI_synapse_0/VN" 178.165
-cap "CMCI_synapse_0/a_1390_n90#" "CMCI_synapse_0/VN" 0.957534
-cap "neuron_top_1/VSYN" "CMCI_synapse_0/a_2210_n1120#" 10.6752
-cap "neuron_top_1/neuron_0/a_270_n40#" "CMCI_synapse_0/VN" -0.000487874
-cap "neuron_top_1/neuron_0/VP" "neuron_top_1/neuron_0/a_270_n40#" 0.637255
-cap "CMCI_synapse_0/VN" "CMCI_synapse_0/a_190_n1120#" 2.68122
-cap "neuron_top_1/neuron_0/a_270_n40#" "CMCI_synapse_0/a_190_n1120#" 0.987944
-cap "neuron_top_1/VSYN" "neuron_top_1/neuron_0/a_970_n10#" 3.14762
-cap "CMCI_synapse_0/a_2370_n1120#" "neuron_top_1/neuron_0/a_970_n10#" 0.00389374
-cap "neuron_top_1/VSYN" "m1_n850_410#" 2.4531
-cap "neuron_top_1/VSYN" "CMCI_synapse_0/VN" 5.56328
-cap "neuron_top_1/VSYN" "neuron_top_1/neuron_0/VP" 74.0131
-cap "CMCI_synapse_0/a_2370_n1120#" "CMCI_synapse_0/VN" 0.517618
+cap "neuron_top_1/VN" "CMCI_synapse_0/VBP" 2.18841
+cap "CMCI_synapse_0/a_190_n1120#" "neuron_top_1/neuron_0/a_270_n40#" 0.987944
+cap "neuron_top_1/VP" "neuron_top_1/neuron_0/a_270_n40#" 0.637255
+cap "neuron_top_1/VN" "CMCI_synapse_0/a_1390_n90#" 0.957534
+cap "neuron_top_1/neuron_0/a_n150_n600#" "neuron_top_1/VP" 0.0038379
+cap "neuron_top_1/neuron_0/a_970_n10#" "CMCI_synapse_0/a_2370_n1120#" 0.00389374
+cap "CMCI_synapse_0/a_2210_n1120#" "neuron_top_1/neuron_0/a_270_n40#" 0.0155506
+cap "CMCI_synapse_0/a_190_n1120#" "neuron_top_1/neuron_0/a_970_n10#" 0.139994
+cap "neuron_top_1/VP" "neuron_top_1/neuron_0/a_970_n10#" 7.55092
+cap "neuron_top_1/VN" "neuron_top_1/neuron_0/a_270_n40#" -0.000487874
 cap "neuron_top_1/VSYN" "CMCI_synapse_0/a_190_n1120#" 0.0762332
-cap "CMCI_synapse_0/VN" "CMCI_synapse_0/IOUT" 2.45965
-cap "neuron_top_1/neuron_0/a_970_n10#" "CMCI_synapse_0/VBP" 0.222222
-cap "neuron_top_1/neuron_0/CRST" "CMCI_synapse_0/VBP" 1.11238
+cap "neuron_top_1/VSYN" "neuron_top_1/VP" 74.0131
+cap "neuron_top_1/neuron_0/a_970_n10#" "CMCI_synapse_0/VBN" 0.141772
+cap "neuron_top_1/VP" "neuron_top_1/neuron_0/CRST" 3.06033
+cap "neuron_top_1/VN" "CMCI_synapse_0/a_2370_n1120#" 0.517618
+cap "neuron_top_1/VSYN" "neuron_top_1/neuron_0/a_970_n10#" 3.14762
+cap "neuron_top_1/VN" "CMCI_synapse_0/a_190_n1120#" 2.68122
+cap "neuron_top_1/VN" "neuron_top_1/VP" 169.562
 cap "CMCI_synapse_0/a_2210_n1120#" "neuron_top_1/neuron_0/a_970_n10#" 0.0275862
-cap "neuron_top_1/neuron_0/VP" "neuron_top_1/neuron_0/a_n150_n600#" 0.0038379
-cap "CMCI_synapse_0/VN" "CMCI_synapse_0/VBP" 2.18841
-cap "neuron_top_1/neuron_0/CMEM" "neuron_top_1/neuron_0/VP" 0.00446685
-cap "CMCI_synapse_0/a_2210_n1120#" "CMCI_synapse_0/VN" 1.22165
-cap "neuron_top_1/neuron_0/a_270_n40#" "CMCI_synapse_0/a_2210_n1120#" 0.0155506
-cap "CMCI_synapse_0/VBN" "neuron_top_1/neuron_0/a_970_n10#" 0.141772
-cap "CMCI_synapse_0/VBN" "CMCI_synapse_0/VN" 0.505639
-cap "m1_n850_410#" "neuron_top_1/neuron_0/a_970_n10#" 1.91313
-cap "CMCI_synapse_0/VN" "neuron_top_1/neuron_0/a_970_n10#" -0.0292941
-cap "neuron_top_1/neuron_0/CRST" "m1_n850_410#" 2.49616
-cap "neuron_top_1/neuron_0/VP" "neuron_top_1/neuron_0/a_970_n10#" 7.55092
-cap "neuron_top_1/neuron_0/VP" "neuron_top_1/neuron_0/CRST" 3.06033
-cap "CMCI_synapse_0/a_2370_n1120#" "CMCI_synapse_0/VN" 0.0890975
-cap "CMCI_synapse_0/VN" "CMCI_synapse_0/a_190_n1120#" 0.0778529
-cap "CMCI_synapse_0/VN" "m1_n850_410#" 0.290603
-cap "CMCI_synapse_0/a_2810_n90#" "CMCI_synapse_0/VN" 0.38363
-cap "CMCI_synapse_0/VBN" "CMCI_synapse_0/VN" 0.0169637
-cap "CMCI_synapse_0/VN" "neuron_top_1/neuron_0/VP" 13.3571
-merge "CMCI_synapse_0/VP" "neuron_top_0/neuron_0/VP" -1395.71 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1580 -2118 0 0 0 0 0 0 0 0 0 0
+cap "neuron_top_1/VP" "neuron_top_1/neuron_0/CMEM" 0.00446685
+cap "neuron_top_1/VN" "CMCI_synapse_0/VBN" 0.505639
+cap "neuron_top_1/VN" "neuron_top_1/neuron_0/a_970_n10#" 1.95395
+cap "neuron_top_1/VSYN" "CMCI_synapse_0/a_2210_n1120#" 10.6752
+cap "CMCI_synapse_0/VBP" "neuron_top_1/neuron_0/a_970_n10#" 0.222222
+cap "neuron_top_1/VN" "CMCI_synapse_0/a_2370_n1120#" 0.0890975
+cap "neuron_top_1/VN" "CMCI_synapse_0/a_2810_n90#" 0.38363
+cap "neuron_top_1/VN" "CMCI_synapse_0/VBN" 0.0169637
+cap "CMCI_synapse_0/a_190_n1120#" "neuron_top_1/VN" 0.0778529
+cap "neuron_top_1/VN" "neuron_top_1/VP" 13.3571
+cap "neuron_top_1/ISYN" "neuron_top_1/VN" -0.0124221
+merge "neuron_top_1/VP" "CMCI_synapse_0/VP" -1402.08 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1720 -2166 0 0 0 0 0 0 0 0 0 0
+merge "CMCI_synapse_0/VP" "neuron_top_0/neuron_0/VP"
 merge "neuron_top_0/neuron_0/VP" "neuron_top_0/VP"
 merge "neuron_top_0/VP" "m1_2810_n310#"
 merge "m1_2810_n310#" "neuron_top_1/neuron_0/VP"
 merge "neuron_top_1/neuron_0/VP" "m1_2500_1740#"
 merge "m1_2500_1740#" "bias_gen_0/VP"
-merge "bias_gen_0/VP" "m1_n480_810#"
-merge "neuron_top_1/VSUBS" "bias_gen_0/VN" -1932.33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32544 -1754 0 0 0 0 0 0 0 0 0 0
+merge "bias_gen_0/VP" "VP"
+merge "VP" "m1_n480_810#"
+merge "neuron_top_1/VN" "neuron_top_1/neuron_0/VN" -2062.28 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3108 -1056 0 0 0 0 0 0 0 0 0 0
+merge "neuron_top_1/neuron_0/VN" "neuron_top_1/VSUBS"
+merge "neuron_top_1/VSUBS" "neuron_top_1/m1_1450_n34#"
+merge "neuron_top_1/m1_1450_n34#" "bias_gen_0/VN"
 merge "bias_gen_0/VN" "neuron_top_0/VN"
 merge "neuron_top_0/VN" "m1_2070_n240#"
-merge "m1_2070_n240#" "m1_n850_410#"
+merge "m1_2070_n240#" "VN"
+merge "VN" "m1_n850_410#"
 merge "m1_n850_410#" "CMCI_synapse_0/VN"
 merge "CMCI_synapse_0/VN" "m1_n40_330#"
 merge "m1_n40_330#" "neuron_top_0/VSUBS"
 merge "neuron_top_0/VSUBS" "VSUBS"
-merge "CMCI_synapse_0/IOUT" "neuron_top_0/ISYN" -104.267 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -400 -180 0 0 0 0 0 0 0 0 0 0 0 0
+merge "CMCI_synapse_0/IOUT" "neuron_top_0/ISYN" -104.111 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -400 -180 0 0 0 0 0 0 0 0 0 0 0 0
 merge "neuron_top_0/ISYN" "li_1810_n530#"
-merge "CMCI_synapse_0/SPKIN" "neuron_top_1/VSYN" -147.911 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -156 0 0 0 0 0 0 0 0 0 0 0 0
+merge "CMCI_synapse_0/SPKIN" "neuron_top_1/VSYN" -147.643 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -156 0 0 0 0 0 0 0 0 0 0 0 0
 merge "neuron_top_1/VSYN" "li_2350_1810#"
-merge "CMCI_synapse_0/VBN" "bias_gen_0/VBN" -794.239 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -320 -176 0 0 0 0 0 0 0 0 0 0 0 0
-merge "bias_gen_0/VBN" "a_1480_n80#"
-merge "CMCI_synapse_0/VBP" "bias_gen_0/VBP" -446.798 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -202 0 0 0 0 0 0 0 0 0 0 0 0
+merge "CMCI_synapse_0/W3m" "W3m" -10.6062 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -132 -56 0 0 0 0 0 0 0 0 0 0 0 0
+merge "CMCI_synapse_0/W2m" "W2m" -5.46958 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -60 -32 0 0 0 0 0 0 0 0 0 0 0 0
+merge "neuron_top_1/ISYN" "ISYN" -10.7152 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -144 -52 0 0 0 0 0 0 0 0 0 0 0 0
+merge "CMCI_synapse_0/W1m" "W1m" -23.2168 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -96 -44 0 0 0 0 0 0 0 0 0 0 0 0
+merge "CMCI_synapse_0/W0m" "W0m" -19.7351 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -96 -44 0 0 0 0 0 0 0 0 0 0 0 0
+merge "CMCI_synapse_0/W3p" "W3p" -8.27837 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -96 -44 0 0 0 0 0 0 0 0 0 0 0 0
+merge "CMCI_synapse_0/W2p" "W2p" -7.9309 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -96 -44 0 0 0 0 0 0 0 0 0 0 0 0
+merge "CMCI_synapse_0/W1p" "W1p" -19.9438 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -96 -44 0 0 0 0 0 0 0 0 0 0 0 0
+merge "CMCI_synapse_0/W0p" "W0p" -19.7527 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -96 -44 0 0 0 0 0 0 0 0 0 0 0 0
+merge "neuron_top_0/VSYN" "VSYN" -9.04278 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -96 -44 0 0 0 0 0 0 0 0 0 0 0 0
+merge "CMCI_synapse_0/VBN" "bias_gen_0/VBN" -789.161 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -332 -180 0 0 0 0 0 0 0 0 0 0 0 0
+merge "bias_gen_0/VBN" "VBN"
+merge "CMCI_synapse_0/VBP" "bias_gen_0/VBP" -440.654 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -202 0 0 0 0 0 0 0 0 0 0 0 0
 merge "bias_gen_0/VBP" "li_n280_590#"

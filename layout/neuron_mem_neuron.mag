@@ -1,0 +1,60 @@
+magic
+tech sky130A
+timestamp 1702633108
+<< poly >>
+rect 2440 2450 2455 2452
+rect 936 2326 1109 2348
+rect 939 1780 966 2326
+rect 912 1774 966 1780
+rect 912 1757 920 1774
+rect 956 1757 966 1774
+rect 912 1752 966 1757
+<< polycont >>
+rect 920 1757 956 1774
+<< locali >>
+rect 3203 2523 3247 2524
+rect 2418 2487 3247 2523
+rect 2419 2359 2436 2487
+rect 2394 2330 2436 2359
+rect 912 1774 965 1780
+rect 912 1757 920 1774
+rect 956 1757 965 1774
+rect 912 1752 965 1757
+rect 3203 1515 3247 2487
+rect 4165 1761 4167 1770
+rect 3202 1483 3452 1515
+rect 197 1479 204 1481
+<< metal1 >>
+rect 1947 2663 4024 2666
+rect 1947 2658 4045 2663
+rect 468 2480 4045 2658
+rect 468 2472 2545 2480
+rect 553 1960 855 2472
+rect 42 1892 45 1896
+rect 3864 1838 4045 2480
+rect 42 1632 44 1636
+rect 889 1540 4047 1734
+use memristor_emulator_res  memristor_emulator_res_0
+timestamp 1702621296
+transform 1 0 1090 0 1 15
+box -100 -15 2100 2641
+use neuron_top  neuron_top_0
+timestamp 1702524960
+transform 1 0 17 0 1 1479
+box -17 -1479 945 2073
+use neuron_top  neuron_top_1
+timestamp 1702524960
+transform 1 0 3247 0 1 1479
+box -17 -1479 945 2073
+<< labels >>
+rlabel metal1 42 1633 42 1633 1 VN
+port 1 n
+rlabel metal1 42 1893 42 1893 1 VP
+port 2 n
+rlabel locali 199 1480 199 1480 1 ISYN
+port 3 n
+rlabel poly 2444 2452 2444 2452 1 W
+port 4 n
+rlabel locali 4167 1768 4167 1768 1 VSYN
+port 5 n
+<< end >>

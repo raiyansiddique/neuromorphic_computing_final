@@ -1,0 +1,42 @@
+* NGSPICE file created from neuron_mem_neuron.ext - technology: sky130A
+
+.subckt memristor_emulator_res W VN B A VP
+X0 VN B a_n80_4020# VN sky130_fd_pr__nfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=3
+X1 VN a_n80_4020# VN VN sky130_fd_pr__nfet_01v8 ad=10 pd=41 as=23.8 ps=100 w=20 l=20
+X2 VP A a_n80_4020# VP sky130_fd_pr__pfet_01v8 ad=1.5 pd=7 as=1.5 ps=7 w=3 l=2
+X3 B a_n80_4020# A B sky130_fd_pr__pfet_01v8 ad=6 pd=25 as=6 ps=25 w=12 l=0.5
+X4 VP A a_218_4108# VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X5 a_742_5144# A B VN sky130_fd_pr__nfet_01v8 ad=3 pd=13 as=3 ps=13 w=6 l=0.3
+X6 a_742_5144# a_218_4108# B VP sky130_fd_pr__pfet_01v8 ad=3 pd=13 as=3 ps=13 w=6 l=0.3
+X7 VN A a_218_4108# VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X8 VN W B VN sky130_fd_pr__nfet_01v8 ad=2.25 pd=10 as=2.25 ps=10 w=4.5 l=0.15
+.ends
+
+.subckt neuron VP VN ISYN VSYN CMEM CRST a_n150_n600#
+X0 VN a_270_n40# CRST VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=2.5 as=1 ps=5 w=2 l=0.3
+X1 VP a_270_n40# CMEM VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=2.5 as=0.5 ps=2.5 w=2 l=0.3
+X2 a_970_n10# CRST VP VP sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=0.5 ps=2.5 w=2 l=0.3
+X3 CMEM a_n150_n600# VP VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=2.5 as=0.5 ps=2.5 w=2 l=0.3
+X4 VSYN a_970_n10# VN VN sky130_fd_pr__nfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.3
+X5 VP a_270_n40# CRST VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=2.5 as=1 ps=5 w=2 l=0.3
+X6 VSYN a_970_n10# VP VP sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.3
+X7 VP a_n150_n600# a_n150_n600# VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=2.5 as=1 ps=5 w=2 l=0.3
+X8 a_270_n40# CMEM VN VN sky130_fd_pr__nfet_01v8 ad=1 pd=5 as=0.5 ps=2.5 w=2 l=0.3
+X9 VN CRST CMEM VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=2.5 as=1 ps=5 w=2 l=0.3
+X10 VN ISYN a_n150_n600# VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=2.5 as=1 ps=5 w=2 l=0.3
+X11 a_270_n40# CMEM VP VP sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=0.5 ps=2.5 w=2 l=0.3
+X12 ISYN ISYN VN VN sky130_fd_pr__nfet_01v8 ad=1 pd=5 as=0.5 ps=2.5 w=2 l=0.3
+X13 a_970_n10# CRST VN VN sky130_fd_pr__nfet_01v8 ad=1 pd=5 as=0.5 ps=2.5 w=2 l=0.3
+.ends
+
+.subckt neuron_top VSYN ISYN VN VP
+Xneuron_0 VP VN ISYN VSYN neuron_0/CMEM neuron_0/CRST li_50_880# neuron
+X0 neuron_0/CMEM VN sky130_fd_pr__cap_mim_m3_1 l=14 w=9.3
+X1 neuron_0/CRST VN sky130_fd_pr__cap_mim_m3_1 l=14 w=9.3
+.ends
+
+
+Xmemristor_emulator_res_0 W VN neuron_top_1/ISYN neuron_top_0/VSYN VP memristor_emulator_res
+Xneuron_top_0 neuron_top_0/VSYN ISYN VN VP neuron_top
+Xneuron_top_1 VSYN neuron_top_1/ISYN VN VP neuron_top
+

@@ -1,4 +1,4 @@
-* NGSPICE file created from memristor_emulator_res.ext - technology: sky130A
+* SPICE3 file created from memristor_emulator_res.ext - technology: sky130A
 
 .subckt memristor_emulator_res W VN B A VP
 X0 VN B a_n80_4020# VN sky130_fd_pr__nfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=3
@@ -10,5 +10,7 @@ X5 a_742_5144# A B VN sky130_fd_pr__nfet_01v8 ad=3 pd=13 as=3 ps=13 w=6 l=0.3
 X6 a_742_5144# a_218_4108# B VP sky130_fd_pr__pfet_01v8 ad=3 pd=13 as=3 ps=13 w=6 l=0.3
 X7 VN A a_218_4108# VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
 X8 VN W B VN sky130_fd_pr__nfet_01v8 ad=2.25 pd=10 as=2.25 ps=10 w=4.5 l=0.15
+C0 B VN 7.1f
+C1 VP VN 4.77f
+C2 a_n80_4020# VN 25.6f **FLOATING
 .ends
-
